@@ -1,13 +1,9 @@
 `default_nettype none
 
-/*  This code first displays a background image (MIF) on the VGA output. Then, the code
- *  displays two objects, each of which is read from a small memory, on the screen. Each
- *  object can be moved left/right/up/down by pressing PS2 keyboard keys. To use the circuit,
- *  first use KEY[0] to perform a reset. The background MIF should appear on the VGA output. 
- *  Pressing KEY[1] displays one object, at its initial position, and pressing KEY[2] displays
- *  the other object. Move the first object left/right/up/down using PS2 keys a/s/w/z, and 
- *  the other object using d/f/r/c.
-*/
+/* Displays a background and a movable sprite on the VGA output.
+ * Press KEY[0] to reset, then KEY[1] to draw the sprite.
+ * Move the sprite left/right/up/down with the PS/2 keys a/s/w/z.
+ */
 module visual_display (CLOCK_50, SW, KEY, LEDR, PS2_CLK, PS2_DAT, HEX5, HEX4, HEX3, HEX2, HEX1, HEX0,
 				VGA_R, VGA_G, VGA_B,
 				VGA_HS, VGA_VS, VGA_BLANK_N, VGA_SYNC_N, VGA_CLK);
@@ -17,7 +13,7 @@ module visual_display (CLOCK_50, SW, KEY, LEDR, PS2_CLK, PS2_DAT, HEX5, HEX4, HE
     // specify the number of bits needed for a Y (row) pixel coordinate on the VGA display
     parameter nY = 9;
 
-    // state names for the FSM that controls drawing of objects
+    // state names for the keyboard command FSM
     parameter A = 2'b00, B = 2'b01, C = 2'b10, D = 2'b11;
 
 	input wire CLOCK_50;	
@@ -35,16 +31,14 @@ module visual_display (CLOCK_50, SW, KEY, LEDR, PS2_CLK, PS2_DAT, HEX5, HEX4, HE
 	output wire VGA_SYNC_N;
 	output wire VGA_CLK;	
 	
-    // The signals below are used to multiplex the pixels displayed for objects 1 and 2
-	wire [nX-1:0] O1_x, O2_x, MUX_x;    // x coordinate multiplexer
-	wire [nY-1:0] O1_y, O2_y, MUX_y;    // y coordinate multiplexer
-	wire [8:0] O1_color, O2_color, MUX_color; // color multiplexer
-	wire O1_write, O2_write, MUX_write; // write control multiplexer
+    wire [nX-1:0] O1_x;
+    wire [nY-1:0] O1_y;
+    wire [8:0] O1_color;
+    wire O1_write;
 
     reg prev_ps2_clk;               // ps2_clk value in the previous clock cycle
     wire negedge_ps2_clk;           // used for PS2 keyboard signals
     wire ps2_rec;                   // set when a PS2 packet has been received
-    wire object_sel;                // used to select which object to erase/draw
     reg [32:0] Serial;              // each PS2 serial data packet has 11 bits:
                                     // STOP (1) PARITY d7 d6 d5 d4 d3 d2 d1 d0 START (0)
                                     // 33 total bits are received (scancode/release/scancode
@@ -52,17 +46,16 @@ module visual_display (CLOCK_50, SW, KEY, LEDR, PS2_CLK, PS2_DAT, HEX5, HEX4, HE
     wire [7:0] scancode;            // used to save the current ps2 scancode
     reg Esc;                        // enable scancode register
     reg step;                       // move an object
-    wire O1_done, O2_done, done;    // object move completed
-    reg O1_O2;                      // draw object 1 when cleared, object 2 when set
-    wire [1:0] O1_dir, O2_dir;      // used to set direction of moving for objects
-    reg [1:0] y_Q, Y_D;             // FSM, used to control drawing of objects
+    wire O1_done;                   // sprite draw or move completed
+    wire [1:0] O1_dir;
+    wire move_key;                  // scan code is one of the movement keys
+    reg [1:0] y_Q, Y_D;             // keyboard command FSM
 
-    wire Resetn, KEY1, KEY2;        // Reset, and synchronized versions of KEYs
+    wire Resetn, KEY1;
     wire PS2_CLK_S, PS2_DAT_S;      // synchronized versions of PS2 signals
 
     assign Resetn = KEY[0];
     sync S1 (~KEY[1], Resetn, CLOCK_50, KEY1);
-    sync S2 (~KEY[2], Resetn, CLOCK_50, KEY2);
 
     sync S3 (PS2_CLK, Resetn, CLOCK_50, PS2_CLK_S);
     sync S4 (PS2_DAT, Resetn, CLOCK_50, PS2_DAT_S);
@@ -100,28 +93,17 @@ module visual_display (CLOCK_50, SW, KEY, LEDR, PS2_CLK, PS2_DAT, HEX5, HEX4, HE
     regn USC (Serial[8:1], Resetn, Esc, CLOCK_50, scancode);
     assign LEDR = {2'b0,scancode};
 
-    // select object according to which PS2 key was pressed. 
-    // scancode[4] == 1 for a/s/w/z and 0 for d/f/r/c
-    assign object_sel = scancode[4];
-    // register whether to move object 1 or object 2
-    always @(posedge CLOCK_50)
-        if (!Resetn | KEY1)
-            O1_O2 <= 1'b0;  // select object 1
-        else if (KEY2)
-            O1_O2 <= 1'b1;  // select object 2
-        else if (step)
-            O1_O2 <= !object_sel;
-
-    assign O1_dir = scancode[1:0]; // ps2 key identifier (for a, s, w, z)
-    assign O2_dir = {scancode[3],scancode[1]}; // ps2 key identifier (for d, f, r, c)
+    assign move_key = (scancode == 8'h1C) || (scancode == 8'h1B) || // a, s
+                      (scancode == 8'h1D) || (scancode == 8'h1A);   // w, z
+    assign O1_dir = scancode[1:0];
     // FSM state table
     always @ (*)
         case (y_Q)
             A:  if (!ps2_rec) Y_D = A;
                 else Y_D = B;
             B:  Y_D = C;        // enable scancode register
-            C:  Y_D = D;        // send step signal to object
-            D:  if (done == 1'b0) Y_D = D;
+            C:  Y_D = move_key ? D : A;
+            D:  if (O1_done == 1'b0) Y_D = D;
                 else Y_D = A;
             default: Y_D = A;
         endcase
@@ -133,7 +115,7 @@ module visual_display (CLOCK_50, SW, KEY, LEDR, PS2_CLK, PS2_DAT, HEX5, HEX4, HE
         case (y_Q)
             A:  ;
             B:  Esc = 1'b1;
-            C:  step = 1'b1;  
+            C:  step = move_key;
             D:  ;
         endcase
     end
@@ -145,34 +127,31 @@ module visual_display (CLOCK_50, SW, KEY, LEDR, PS2_CLK, PS2_DAT, HEX5, HEX4, HE
         else
             y_Q <= Y_D;
 
-    // instantiate object 1
-    object O1 (Resetn, CLOCK_50, KEY1, object_sel & step, O1_dir, O1_x, O1_y, 
+    // instantiate the sprite
+    object O1 (Resetn, CLOCK_50, KEY1, step, O1_dir, O1_x, O1_y,
                O1_color, O1_write, O1_done);
         defparam O1.LEFT  = 2'b00;  // 'a'
         defparam O1.RIGHT = 2'b11;  // 's'
         defparam O1.UP    = 2'b01;  // 'w'
         defparam O1.DOWN =  2'b10;  // 'z'
-
-    // instantiate object 2
-	 /*
-    object O2 (Resetn, CLOCK_50, KEY2, !object_sel & step, O2_dir, O2_x, O2_y,
-               O2_color, O2_write, O2_done);
-        defparam O2.XOFFSET = 160;
-        defparam O2.YOFFSET = 150;
-        defparam O2.LEFT  = 2'b01;  // 'd'
-        defparam O2.RIGHT = 2'b11;  // 'f'
-        defparam O2.UP    = 2'b10;  // 'r'
-        defparam O2.DOWN =  2'b00;  // 'c'
-        defparam O2.INIT_FILE = "./MIF/circle_16_16_9.mif";
+		  
+	// instantiate the box
+	wire [8:0] box_x, box_color;
+	wire [7:0] box_y;
+	wire box_write, box_done;
+	
+	/*
+	draw_boxes Boxes (
+		.Clock(CLOCK_50),
+		.Resetn(Resetn),
+		.x(box_x),
+		.y(box_y),
+		.color(box_color),
+		.write(box_write),
+		.done(boxes_done)
+	);
 	*/
-
-    assign done = O1_done;
-
-    // choose x, y, color, and write for one of the two objects
-    assign MUX_x = !O1_O2 ? O1_x : O2_x;
-    assign MUX_y = !O1_O2 ? O1_y : O2_y;
-    assign MUX_color = !O1_O2 ? O1_color : O2_color;
-    assign MUX_write = !O1_O2 ? O1_write : O2_write;
+		
 
     // display PS2 data
     hex7seg H0 (Serial[4:1], HEX0);
@@ -186,10 +165,10 @@ module visual_display (CLOCK_50, SW, KEY, LEDR, PS2_CLK, PS2_DAT, HEX5, HEX4, HE
     vga_adapter VGA (
 			.resetn(Resetn),
 			.clock(CLOCK_50),
-			.color(MUX_color),
-			.x(MUX_x),
-			.y(MUX_y),
-			.write(MUX_write),
+			.color(O1_color),
+			.x(O1_x),
+			.y(O1_y),
+			.write(O1_write),
 			.VGA_R(VGA_R),
 			.VGA_G(VGA_G),
 			.VGA_B(VGA_B),
@@ -310,13 +289,13 @@ module object (Resetn, Clock, go, ps2_rec, dir, VGA_x, VGA_y, VGA_color, VGA_wri
     parameter BOX_SIZE_X = 1 << xOBJ;
     parameter BOX_SIZE_Y = 1 << yOBJ;
     parameter Mn = xOBJ + yOBJ; // address lines needed for the object memory
-    parameter INIT_FILE = "./MIF/test_sprite.mif";
+    parameter INIT_FILE = "./MIF/test_sprite2.mif";
 	 parameter WORDS = 1 << Mn;
 
     // state names for the FSM that draws the object
     parameter A = 3'b000, B = 3'b001, C = 3'b010, D = 3'b011, E = 3'b100,
               F = 3'b101, G = 3'b110, H = 3'b111;
-    
+				  
     input wire Resetn, Clock;
     input wire go;                              // can be used to draw at initial position
     input wire ps2_rec;                         // PS2 data received
@@ -435,7 +414,7 @@ module object (Resetn, Clock, go, ps2_rec, dir, VGA_x, VGA_y, VGA_color, VGA_wri
     // (black background is assumed below)
     // assign VGA_color = erase ? {9{1'b0}} : obj_color;
 	 
-	 // store previous pixel from last cycle: erase or sprite pixel
+	 // remember erase or draw for pixel for one clock cycle since memory is slower
 	 reg erase_delay;
 	 
 	 always @(posedge Clock) begin
@@ -445,19 +424,25 @@ module object (Resetn, Clock, go, ps2_rec, dir, VGA_x, VGA_y, VGA_color, VGA_wri
 			erase_delay <= erase;
 	 end
 	 
+	 wire [8:0] background_color;
 	 // select color for the pixel stored in the ROM
-	 assign VGA_color = erase_delay ? background_color : obj_color;
+	 // assign VGA_color = erase_delay ? background_color : obj_color;
+	 
+	 wire transparent_pixel;
+	 assign transparent_pixel = (obj_color == 9'b111000111);
+	 
+	 assign VGA_color = (erase_delay || transparent_pixel) ? background_color : obj_color;
 	 
 	 // use background when erasing by making background a read only inside ROM
+	 
+	 // screen coordinatesassign the background pixels
 	 wire [nX-1:0] background_x;
 	 wire [nY-1:0] background_y;
 	 
-	 // assign the background pixels
 	 assign background_x = X - (size_x >> 1) + XC;
 	 assign background_y = Y - (size_y >> 1) + YC;
 	 
 	 wire [16:0] background_address;
-	 wire [8:0] background_color;
 	 
 	 assign background_address = background_y * 17'd320 + background_x;
 
@@ -470,3 +455,5 @@ module object (Resetn, Clock, go, ps2_rec, dir, VGA_x, VGA_y, VGA_color, VGA_wri
 	 
 
 endmodule
+
+

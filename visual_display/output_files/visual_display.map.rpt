@@ -1,6 +1,6 @@
 Analysis & Synthesis report for visual_display
-Fri Nov 20 00:25:52 2026
-Quartus Prime Version 23.1std.0 Build 991 11/28/2023 SC Lite Edition
+Fri Nov 20 11:42:35 2026
+Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
 ---------------------
@@ -63,9 +63,9 @@ Quartus Prime Version 23.1std.0 Build 991 11/28/2023 SC Lite Edition
 ----------------
 ; Legal Notice ;
 ----------------
-Copyright (C) 2023  Intel Corporation. All rights reserved.
+Copyright (C) 2018  Intel Corporation. All rights reserved.
 Your use of Intel Corporation's design tools, logic functions 
-and other software and tools, and any partner logic 
+and other software and tools, and its AMPP partner logic 
 functions, and any output files from any of the foregoing 
 (including device programming or simulation files), and any 
 associated documentation or information are expressly subject 
@@ -75,32 +75,31 @@ the Intel FPGA IP License Agreement, or other applicable license
 agreement, including, without limitation, that your use is for
 the sole purpose of programming logic devices manufactured by
 Intel and sold by Intel or its authorized distributors.  Please
-refer to the applicable agreement for further details, at
-https://fpgasoftware.intel.com/eula.
+refer to the applicable agreement for further details.
 
 
 
-+----------------------------------------------------------------------------------+
-; Analysis & Synthesis Summary                                                     ;
-+---------------------------------+------------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Fri Nov 20 00:25:51 2026          ;
-; Quartus Prime Version           ; 23.1std.0 Build 991 11/28/2023 SC Lite Edition ;
-; Revision Name                   ; visual_display                                 ;
-; Top-level Entity Name           ; visual_display                                 ;
-; Family                          ; Cyclone V                                      ;
-; Logic utilization (in ALMs)     ; N/A                                            ;
-; Total registers                 ; 148                                            ;
-; Total pins                      ; 98                                             ;
-; Total virtual pins              ; 0                                              ;
-; Total block memory bits         ; 1,384,704                                      ;
-; Total DSP Blocks                ; 0                                              ;
-; Total HSSI RX PCSs              ; 0                                              ;
-; Total HSSI PMA RX Deserializers ; 0                                              ;
-; Total HSSI TX PCSs              ; 0                                              ;
-; Total HSSI PMA TX Serializers   ; 0                                              ;
-; Total PLLs                      ; 1                                              ;
-; Total DLLs                      ; 0                                              ;
-+---------------------------------+------------------------------------------------+
++-------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                  ;
++---------------------------------+---------------------------------------------+
+; Analysis & Synthesis Status     ; Successful - Fri Nov 20 11:42:35 2026       ;
+; Quartus Prime Version           ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
+; Revision Name                   ; visual_display                              ;
+; Top-level Entity Name           ; visual_display                              ;
+; Family                          ; Cyclone V                                   ;
+; Logic utilization (in ALMs)     ; N/A                                         ;
+; Total registers                 ; 145                                         ;
+; Total pins                      ; 98                                          ;
+; Total virtual pins              ; 0                                           ;
+; Total block memory bits         ; 1,384,704                                   ;
+; Total DSP Blocks                ; 0                                           ;
+; Total HSSI RX PCSs              ; 0                                           ;
+; Total HSSI PMA RX Deserializers ; 0                                           ;
+; Total HSSI TX PCSs              ; 0                                           ;
+; Total HSSI PMA TX Serializers   ; 0                                           ;
+; Total PLLs                      ; 1                                           ;
+; Total DLLs                      ; 0                                           ;
++---------------------------------+---------------------------------------------+
 
 
 +---------------------------------------------------------------------------------------------------------------------------+
@@ -195,11 +194,11 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+-------------+
 ; Processors                 ; Number      ;
 +----------------------------+-------------+
-; Number detected on machine ; 12          ;
-; Maximum allowed            ; 6           ;
+; Number detected on machine ; 16          ;
+; Maximum allowed            ; 16          ;
 ;                            ;             ;
 ; Average used               ; 1.00        ;
-; Maximum used               ; 6           ;
+; Maximum used               ; 16          ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
@@ -207,45 +206,45 @@ https://fpgasoftware.intel.com/eula.
 ;     Processor 3            ;   0.0%      ;
 ;     Processor 4            ;   0.0%      ;
 ;     Processor 5            ;   0.0%      ;
-;     Processor 6            ;   0.0%      ;
+;     Processors 6-16        ;   0.0%      ;
 +----------------------------+-------------+
 
 
-+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                                                                                                                           ;
-+------------------------------------------------------------------------------------------------------+-----------------+----------------------------------------+------------------------------------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path                                                                     ; Used in Netlist ; File Type                              ; File Name with Absolute Path                                                                         ; Library ;
-+------------------------------------------------------------------------------------------------------+-----------------+----------------------------------------+------------------------------------------------------------------------------------------------------+---------+
-; //vsrv2/D.Homes$/pansabr2/Desktop/ece241/project/visual_display/background_mem.v                     ; yes             ; User Verilog HDL File                  ; //vsrv2/D.Homes$/pansabr2/Desktop/ece241/project/visual_display/background_mem.v                     ;         ;
-; //VSRV2/D.Homes$/pansabr2/Desktop/ece241/project/visual_display/vga_adapter/vga_pll.v                ; yes             ; User Wizard-Generated File             ; //VSRV2/D.Homes$/pansabr2/Desktop/ece241/project/visual_display/vga_adapter/vga_pll.v                ;         ;
-; //VSRV2/D.Homes$/pansabr2/Desktop/ece241/project/visual_display/vga_adapter/vga_controller.v         ; yes             ; User Verilog HDL File                  ; //VSRV2/D.Homes$/pansabr2/Desktop/ece241/project/visual_display/vga_adapter/vga_controller.v         ;         ;
-; //VSRV2/D.Homes$/pansabr2/Desktop/ece241/project/visual_display/vga_adapter/vga_address_translator.v ; yes             ; User Verilog HDL File                  ; //VSRV2/D.Homes$/pansabr2/Desktop/ece241/project/visual_display/vga_adapter/vga_address_translator.v ;         ;
-; //VSRV2/D.Homes$/pansabr2/Desktop/ece241/project/visual_display/vga_adapter/vga_adapter.v            ; yes             ; User Verilog HDL File                  ; //VSRV2/D.Homes$/pansabr2/Desktop/ece241/project/visual_display/vga_adapter/vga_adapter.v            ;         ;
-; //vsrv2/D.Homes$/pansabr2/Desktop/ece241/project/visual_display/visual_display.v                     ; yes             ; User Verilog HDL File                  ; //vsrv2/D.Homes$/pansabr2/Desktop/ece241/project/visual_display/visual_display.v                     ;         ;
-; //vsrv2/D.Homes$/pansabr2/Desktop/ece241/project/visual_display/object_mem.v                         ; yes             ; User Verilog HDL File                  ; //vsrv2/D.Homes$/pansabr2/Desktop/ece241/project/visual_display/object_mem.v                         ;         ;
-; altsyncram.tdf                                                                                       ; yes             ; Megafunction                           ; c:/intelfpga/quartus_prime_lite_23.1/quartus/libraries/megafunctions/altsyncram.tdf                  ;         ;
-; stratix_ram_block.inc                                                                                ; yes             ; Megafunction                           ; c:/intelfpga/quartus_prime_lite_23.1/quartus/libraries/megafunctions/stratix_ram_block.inc           ;         ;
-; lpm_mux.inc                                                                                          ; yes             ; Megafunction                           ; c:/intelfpga/quartus_prime_lite_23.1/quartus/libraries/megafunctions/lpm_mux.inc                     ;         ;
-; lpm_decode.inc                                                                                       ; yes             ; Megafunction                           ; c:/intelfpga/quartus_prime_lite_23.1/quartus/libraries/megafunctions/lpm_decode.inc                  ;         ;
-; aglobal231.inc                                                                                       ; yes             ; Megafunction                           ; c:/intelfpga/quartus_prime_lite_23.1/quartus/libraries/megafunctions/aglobal231.inc                  ;         ;
-; a_rdenreg.inc                                                                                        ; yes             ; Megafunction                           ; c:/intelfpga/quartus_prime_lite_23.1/quartus/libraries/megafunctions/a_rdenreg.inc                   ;         ;
-; altrom.inc                                                                                           ; yes             ; Megafunction                           ; c:/intelfpga/quartus_prime_lite_23.1/quartus/libraries/megafunctions/altrom.inc                      ;         ;
-; altram.inc                                                                                           ; yes             ; Megafunction                           ; c:/intelfpga/quartus_prime_lite_23.1/quartus/libraries/megafunctions/altram.inc                      ;         ;
-; altdpram.inc                                                                                         ; yes             ; Megafunction                           ; c:/intelfpga/quartus_prime_lite_23.1/quartus/libraries/megafunctions/altdpram.inc                    ;         ;
-; altsyncram_45h1.tdf                                                                                  ; yes             ; Auto-Found AHDL File                   ; //vsrv2/D.Homes$/pansabr2/Desktop/ece241/project/visual_display/db/altsyncram_45h1.tdf               ;         ;
-; ./MIF/test_sprite.mif                                                                                ; yes             ; Auto-Found Memory Initialization File  ; //vsrv2/D.Homes$/pansabr2/Desktop/ece241/project/visual_display/MIF/test_sprite.mif                  ;         ;
-; altsyncram_hqg1.tdf                                                                                  ; yes             ; Auto-Found AHDL File                   ; //vsrv2/D.Homes$/pansabr2/Desktop/ece241/project/visual_display/db/altsyncram_hqg1.tdf               ;         ;
-; mif/bmp_320_9.mif                                                                                    ; yes             ; Auto-Found Memory Initialization File  ; //vsrv2/D.Homes$/pansabr2/Desktop/ece241/project/visual_display/mif/bmp_320_9.mif                    ;         ;
-; decode_g2a.tdf                                                                                       ; yes             ; Auto-Found AHDL File                   ; //vsrv2/D.Homes$/pansabr2/Desktop/ece241/project/visual_display/db/decode_g2a.tdf                    ;         ;
-; mux_8hb.tdf                                                                                          ; yes             ; Auto-Found AHDL File                   ; //vsrv2/D.Homes$/pansabr2/Desktop/ece241/project/visual_display/db/mux_8hb.tdf                       ;         ;
-; altsyncram_esm1.tdf                                                                                  ; yes             ; Auto-Found AHDL File                   ; //vsrv2/D.Homes$/pansabr2/Desktop/ece241/project/visual_display/db/altsyncram_esm1.tdf               ;         ;
-; decode_nma.tdf                                                                                       ; yes             ; Auto-Found AHDL File                   ; //vsrv2/D.Homes$/pansabr2/Desktop/ece241/project/visual_display/db/decode_nma.tdf                    ;         ;
-; altpll.tdf                                                                                           ; yes             ; Megafunction                           ; c:/intelfpga/quartus_prime_lite_23.1/quartus/libraries/megafunctions/altpll.tdf                      ;         ;
-; stratix_pll.inc                                                                                      ; yes             ; Megafunction                           ; c:/intelfpga/quartus_prime_lite_23.1/quartus/libraries/megafunctions/stratix_pll.inc                 ;         ;
-; stratixii_pll.inc                                                                                    ; yes             ; Megafunction                           ; c:/intelfpga/quartus_prime_lite_23.1/quartus/libraries/megafunctions/stratixii_pll.inc               ;         ;
-; cycloneii_pll.inc                                                                                    ; yes             ; Megafunction                           ; c:/intelfpga/quartus_prime_lite_23.1/quartus/libraries/megafunctions/cycloneii_pll.inc               ;         ;
-; altpll_80u.tdf                                                                                       ; yes             ; Auto-Found AHDL File                   ; //vsrv2/D.Homes$/pansabr2/Desktop/ece241/project/visual_display/db/altpll_80u.tdf                    ;         ;
-+------------------------------------------------------------------------------------------------------+-----------------+----------------------------------------+------------------------------------------------------------------------------------------------------+---------+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                                                ;
++--------------------------------------+-----------------+----------------------------------------+-----------------------------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path     ; Used in Netlist ; File Type                              ; File Name with Absolute Path                                                                              ; Library ;
++--------------------------------------+-----------------+----------------------------------------+-----------------------------------------------------------------------------------------------------------+---------+
+; vga_adapter/vga_pll.v                ; yes             ; User Wizard-Generated File             ; C:/Users/sabri/UofT/second_year/ece241/ECE241-Project/visual_display/vga_adapter/vga_pll.v                ;         ;
+; vga_adapter/vga_controller.v         ; yes             ; User Verilog HDL File                  ; C:/Users/sabri/UofT/second_year/ece241/ECE241-Project/visual_display/vga_adapter/vga_controller.v         ;         ;
+; vga_adapter/vga_address_translator.v ; yes             ; User Verilog HDL File                  ; C:/Users/sabri/UofT/second_year/ece241/ECE241-Project/visual_display/vga_adapter/vga_address_translator.v ;         ;
+; vga_adapter/vga_adapter.v            ; yes             ; User Verilog HDL File                  ; C:/Users/sabri/UofT/second_year/ece241/ECE241-Project/visual_display/vga_adapter/vga_adapter.v            ;         ;
+; background_mem.v                     ; yes             ; User Verilog HDL File                  ; C:/Users/sabri/UofT/second_year/ece241/ECE241-Project/visual_display/background_mem.v                     ;         ;
+; visual_display.v                     ; yes             ; User Verilog HDL File                  ; C:/Users/sabri/UofT/second_year/ece241/ECE241-Project/visual_display/visual_display.v                     ;         ;
+; object_mem.v                         ; yes             ; User Verilog HDL File                  ; C:/Users/sabri/UofT/second_year/ece241/ECE241-Project/visual_display/object_mem.v                         ;         ;
+; altsyncram.tdf                       ; yes             ; Megafunction                           ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/altsyncram.tdf                                     ;         ;
+; stratix_ram_block.inc                ; yes             ; Megafunction                           ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/stratix_ram_block.inc                              ;         ;
+; lpm_mux.inc                          ; yes             ; Megafunction                           ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/lpm_mux.inc                                        ;         ;
+; lpm_decode.inc                       ; yes             ; Megafunction                           ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/lpm_decode.inc                                     ;         ;
+; aglobal181.inc                       ; yes             ; Megafunction                           ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/aglobal181.inc                                     ;         ;
+; a_rdenreg.inc                        ; yes             ; Megafunction                           ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/a_rdenreg.inc                                      ;         ;
+; altrom.inc                           ; yes             ; Megafunction                           ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/altrom.inc                                         ;         ;
+; altram.inc                           ; yes             ; Megafunction                           ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/altram.inc                                         ;         ;
+; altdpram.inc                         ; yes             ; Megafunction                           ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/altdpram.inc                                       ;         ;
+; db/altsyncram_45h1.tdf               ; yes             ; Auto-Generated Megafunction            ; C:/Users/sabri/UofT/second_year/ece241/ECE241-Project/visual_display/db/altsyncram_45h1.tdf               ;         ;
+; mif/test_sprite.mif                  ; yes             ; Auto-Found Memory Initialization File  ; C:/Users/sabri/UofT/second_year/ece241/ECE241-Project/visual_display/mif/test_sprite.mif                  ;         ;
+; db/altsyncram_hqg1.tdf               ; yes             ; Auto-Generated Megafunction            ; C:/Users/sabri/UofT/second_year/ece241/ECE241-Project/visual_display/db/altsyncram_hqg1.tdf               ;         ;
+; mif/bmp_320_9.mif                    ; yes             ; Auto-Found Memory Initialization File  ; C:/Users/sabri/UofT/second_year/ece241/ECE241-Project/visual_display/mif/bmp_320_9.mif                    ;         ;
+; db/decode_g2a.tdf                    ; yes             ; Auto-Generated Megafunction            ; C:/Users/sabri/UofT/second_year/ece241/ECE241-Project/visual_display/db/decode_g2a.tdf                    ;         ;
+; db/mux_8hb.tdf                       ; yes             ; Auto-Generated Megafunction            ; C:/Users/sabri/UofT/second_year/ece241/ECE241-Project/visual_display/db/mux_8hb.tdf                       ;         ;
+; db/altsyncram_esm1.tdf               ; yes             ; Auto-Generated Megafunction            ; C:/Users/sabri/UofT/second_year/ece241/ECE241-Project/visual_display/db/altsyncram_esm1.tdf               ;         ;
+; db/decode_nma.tdf                    ; yes             ; Auto-Generated Megafunction            ; C:/Users/sabri/UofT/second_year/ece241/ECE241-Project/visual_display/db/decode_nma.tdf                    ;         ;
+; altpll.tdf                           ; yes             ; Megafunction                           ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/altpll.tdf                                         ;         ;
+; stratix_pll.inc                      ; yes             ; Megafunction                           ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/stratix_pll.inc                                    ;         ;
+; stratixii_pll.inc                    ; yes             ; Megafunction                           ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/stratixii_pll.inc                                  ;         ;
+; cycloneii_pll.inc                    ; yes             ; Megafunction                           ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/cycloneii_pll.inc                                  ;         ;
+; db/altpll_80u.tdf                    ; yes             ; Auto-Generated Megafunction            ; C:/Users/sabri/UofT/second_year/ece241/ECE241-Project/visual_display/db/altpll_80u.tdf                    ;         ;
++--------------------------------------+-----------------+----------------------------------------+-----------------------------------------------------------------------------------------------------------+---------+
 
 
 +--------------------------------------------------------------+
@@ -253,16 +252,16 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------+----------------+
 ; Resource                                    ; Usage          ;
 +---------------------------------------------+----------------+
-; Estimate of Logic utilization (ALMs needed) ; 218            ;
+; Estimate of Logic utilization (ALMs needed) ; 212            ;
 ;                                             ;                ;
-; Combinational ALUT usage for logic          ; 355            ;
+; Combinational ALUT usage for logic          ; 341            ;
 ;     -- 7 input functions                    ; 0              ;
-;     -- 6 input functions                    ; 73             ;
-;     -- 5 input functions                    ; 39             ;
-;     -- 4 input functions                    ; 82             ;
-;     -- <=3 input functions                  ; 161            ;
+;     -- 6 input functions                    ; 77             ;
+;     -- 5 input functions                    ; 41             ;
+;     -- 4 input functions                    ; 80             ;
+;     -- <=3 input functions                  ; 143            ;
 ;                                             ;                ;
-; Dedicated logic registers                   ; 148            ;
+; Dedicated logic registers                   ; 145            ;
 ;                                             ;                ;
 ; I/O pins                                    ; 98             ;
 ; Total MLAB memory bits                      ; 0              ;
@@ -274,9 +273,9 @@ https://fpgasoftware.intel.com/eula.
 ;     -- PLLs                                 ; 1              ;
 ;                                             ;                ;
 ; Maximum fan-out node                        ; CLOCK_50~input ;
-; Maximum fan-out                             ; 304            ;
-; Total fan-out                               ; 6230           ;
-; Average fan-out                             ; 6.99           ;
+; Maximum fan-out                             ; 301            ;
+; Total fan-out                               ; 6188           ;
+; Average fan-out                             ; 7.08           ;
 +---------------------------------------------+----------------+
 
 
@@ -285,18 +284,19 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+-----------------------------------------------------------------------------------------------------------------------------------+------------------------+--------------+
 ; Compilation Hierarchy Node                              ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                                               ; Entity Name            ; Library Name ;
 +---------------------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+-----------------------------------------------------------------------------------------------------------------------------------+------------------------+--------------+
-; |visual_display                                         ; 355 (72)            ; 148 (42)                  ; 1384704           ; 0          ; 98   ; 0            ; |visual_display                                                                                                                   ; visual_display         ; work         ;
+; |visual_display                                         ; 341 (21)            ; 145 (41)                  ; 1384704           ; 0          ; 98   ; 0            ; |visual_display                                                                                                                   ; visual_display         ; work         ;
 ;    |hex7seg:H0|                                         ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |visual_display|hex7seg:H0                                                                                                        ; hex7seg                ; work         ;
 ;    |hex7seg:H1|                                         ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |visual_display|hex7seg:H1                                                                                                        ; hex7seg                ; work         ;
 ;    |hex7seg:H2|                                         ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |visual_display|hex7seg:H2                                                                                                        ; hex7seg                ; work         ;
 ;    |hex7seg:H3|                                         ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |visual_display|hex7seg:H3                                                                                                        ; hex7seg                ; work         ;
 ;    |hex7seg:H4|                                         ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |visual_display|hex7seg:H4                                                                                                        ; hex7seg                ; work         ;
 ;    |hex7seg:H5|                                         ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |visual_display|hex7seg:H5                                                                                                        ; hex7seg                ; work         ;
-;    |object:O1|                                          ; 119 (61)            ; 56 (9)                    ; 693504            ; 0          ; 0    ; 0            ; |visual_display|object:O1                                                                                                         ; object                 ; work         ;
-;       |background_mem:b0|                               ; 10 (0)              ; 4 (0)                     ; 691200            ; 0          ; 0    ; 0            ; |visual_display|object:O1|background_mem:b0                                                                                       ; background_mem         ; work         ;
-;          |altsyncram:altsyncram_component|              ; 10 (0)              ; 4 (0)                     ; 691200            ; 0          ; 0    ; 0            ; |visual_display|object:O1|background_mem:b0|altsyncram:altsyncram_component                                                       ; altsyncram             ; work         ;
-;             |altsyncram_hqg1:auto_generated|            ; 10 (0)              ; 4 (4)                     ; 691200            ; 0          ; 0    ; 0            ; |visual_display|object:O1|background_mem:b0|altsyncram:altsyncram_component|altsyncram_hqg1:auto_generated                        ; altsyncram_hqg1        ; work         ;
+;    |object:O1|                                          ; 163 (95)            ; 56 (9)                    ; 693504            ; 0          ; 0    ; 0            ; |visual_display|object:O1                                                                                                         ; object                 ; work         ;
+;       |background_mem:b0|                               ; 20 (0)              ; 4 (0)                     ; 691200            ; 0          ; 0    ; 0            ; |visual_display|object:O1|background_mem:b0                                                                                       ; background_mem         ; work         ;
+;          |altsyncram:altsyncram_component|              ; 20 (0)              ; 4 (0)                     ; 691200            ; 0          ; 0    ; 0            ; |visual_display|object:O1|background_mem:b0|altsyncram:altsyncram_component                                                       ; altsyncram             ; work         ;
+;             |altsyncram_hqg1:auto_generated|            ; 20 (0)              ; 4 (4)                     ; 691200            ; 0          ; 0    ; 0            ; |visual_display|object:O1|background_mem:b0|altsyncram:altsyncram_component|altsyncram_hqg1:auto_generated                        ; altsyncram_hqg1        ; work         ;
 ;                |decode_g2a:rden_decode|                 ; 10 (10)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |visual_display|object:O1|background_mem:b0|altsyncram:altsyncram_component|altsyncram_hqg1:auto_generated|decode_g2a:rden_decode ; decode_g2a             ; work         ;
+;                |mux_8hb:mux2|                           ; 10 (10)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |visual_display|object:O1|background_mem:b0|altsyncram:altsyncram_component|altsyncram_hqg1:auto_generated|mux_8hb:mux2           ; mux_8hb                ; work         ;
 ;       |object_mem:U6|                                   ; 0 (0)               ; 0 (0)                     ; 2304              ; 0          ; 0    ; 0            ; |visual_display|object:O1|object_mem:U6                                                                                           ; object_mem             ; work         ;
 ;          |altsyncram:altsyncram_component|              ; 0 (0)               ; 0 (0)                     ; 2304              ; 0          ; 0    ; 0            ; |visual_display|object:O1|object_mem:U6|altsyncram:altsyncram_component                                                           ; altsyncram             ; work         ;
 ;             |altsyncram_45h1:auto_generated|            ; 0 (0)               ; 0 (0)                     ; 2304              ; 0          ; 0    ; 0            ; |visual_display|object:O1|object_mem:U6|altsyncram:altsyncram_component|altsyncram_45h1:auto_generated                            ; altsyncram_45h1        ; work         ;
@@ -309,16 +309,15 @@ https://fpgasoftware.intel.com/eula.
 ;       |upDn_count:UY|                                   ; 17 (17)             ; 8 (8)                     ; 0                 ; 0          ; 0    ; 0            ; |visual_display|object:O1|upDn_count:UY                                                                                           ; upDn_count             ; work         ;
 ;    |regn:USC|                                           ; 1 (1)               ; 8 (8)                     ; 0                 ; 0          ; 0    ; 0            ; |visual_display|regn:USC                                                                                                          ; regn                   ; work         ;
 ;    |sync:S1|                                            ; 0 (0)               ; 2 (2)                     ; 0                 ; 0          ; 0    ; 0            ; |visual_display|sync:S1                                                                                                           ; sync                   ; work         ;
-;    |sync:S2|                                            ; 0 (0)               ; 2 (2)                     ; 0                 ; 0          ; 0    ; 0            ; |visual_display|sync:S2                                                                                                           ; sync                   ; work         ;
 ;    |sync:S3|                                            ; 0 (0)               ; 2 (2)                     ; 0                 ; 0          ; 0    ; 0            ; |visual_display|sync:S3                                                                                                           ; sync                   ; work         ;
 ;    |sync:S4|                                            ; 0 (0)               ; 2 (2)                     ; 0                 ; 0          ; 0    ; 0            ; |visual_display|sync:S4                                                                                                           ; sync                   ; work         ;
-;    |vga_adapter:VGA|                                    ; 121 (2)             ; 34 (0)                    ; 691200            ; 0          ; 0    ; 0            ; |visual_display|vga_adapter:VGA                                                                                                   ; vga_adapter            ; work         ;
+;    |vga_adapter:VGA|                                    ; 114 (2)             ; 34 (0)                    ; 691200            ; 0          ; 0    ; 0            ; |visual_display|vga_adapter:VGA                                                                                                   ; vga_adapter            ; work         ;
 ;       |altsyncram:VideoMemory|                          ; 38 (0)              ; 8 (0)                     ; 691200            ; 0          ; 0    ; 0            ; |visual_display|vga_adapter:VGA|altsyncram:VideoMemory                                                                            ; altsyncram             ; work         ;
 ;          |altsyncram_esm1:auto_generated|               ; 38 (0)              ; 8 (8)                     ; 691200            ; 0          ; 0    ; 0            ; |visual_display|vga_adapter:VGA|altsyncram:VideoMemory|altsyncram_esm1:auto_generated                                             ; altsyncram_esm1        ; work         ;
 ;             |decode_g2a:rden_decode_b|                  ; 10 (10)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |visual_display|vga_adapter:VGA|altsyncram:VideoMemory|altsyncram_esm1:auto_generated|decode_g2a:rden_decode_b                    ; decode_g2a             ; work         ;
 ;             |decode_nma:decode2|                        ; 10 (10)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |visual_display|vga_adapter:VGA|altsyncram:VideoMemory|altsyncram_esm1:auto_generated|decode_nma:decode2                          ; decode_nma             ; work         ;
 ;             |mux_8hb:mux3|                              ; 18 (18)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |visual_display|vga_adapter:VGA|altsyncram:VideoMemory|altsyncram_esm1:auto_generated|mux_8hb:mux3                                ; mux_8hb                ; work         ;
-;       |vga_address_translator:user_input_translator|    ; 18 (18)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |visual_display|vga_adapter:VGA|vga_address_translator:user_input_translator                                                      ; vga_address_translator ; work         ;
+;       |vga_address_translator:user_input_translator|    ; 11 (11)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |visual_display|vga_adapter:VGA|vga_address_translator:user_input_translator                                                      ; vga_address_translator ; work         ;
 ;       |vga_controller:controller|                       ; 63 (52)             ; 26 (26)                   ; 0                 ; 0          ; 0    ; 0            ; |visual_display|vga_adapter:VGA|vga_controller:controller                                                                         ; vga_controller         ; work         ;
 ;          |vga_address_translator:controller_translator| ; 11 (11)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |visual_display|vga_adapter:VGA|vga_controller:controller|vga_address_translator:controller_translator                            ; vga_address_translator ; work         ;
 ;       |vga_pll:mypll|                                   ; 0 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |visual_display|vga_adapter:VGA|vga_pll:mypll                                                                                     ; vga_pll                ; work         ;
@@ -388,8 +387,8 @@ Encoding Type:  One-Hot
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 148   ;
-; Number of registers using Synchronous Clear  ; 109   ;
+; Total registers                              ; 145   ;
+; Number of registers using Synchronous Clear  ; 107   ;
 ; Number of registers using Synchronous Load   ; 0     ;
 ; Number of registers using Asynchronous Clear ; 20    ;
 ; Number of registers using Asynchronous Load  ; 0     ;
@@ -403,16 +402,16 @@ Encoding Type:  One-Hot
 +--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------------------------------------------------------------------------------------------------+
 ; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                                                                              ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------------------------------------------------------------------------------------------------+
-; 3:1                ; 8 bits    ; 16 LEs        ; 0 LEs                ; 16 LEs                 ; Yes        ; |visual_display|regn:USC|Q[0]                                                                                           ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |visual_display|Serial[10]                                                                                              ;
-; 3:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |visual_display|Packet[3]                                                                                               ;
-; 3:1                ; 10 bits   ; 20 LEs        ; 0 LEs                ; 20 LEs                 ; Yes        ; |visual_display|vga_adapter:VGA|vga_controller:controller|yCounter[0]                                                   ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 0 LEs                ; 16 LEs                 ; Yes        ; |visual_display|regn:USC|Q[3]                                                                                           ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |visual_display|Serial[2]                                                                                               ;
+; 3:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |visual_display|Packet[1]                                                                                               ;
+; 3:1                ; 10 bits   ; 20 LEs        ; 0 LEs                ; 20 LEs                 ; Yes        ; |visual_display|vga_adapter:VGA|vga_controller:controller|yCounter[1]                                                   ;
 ; 4:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; Yes        ; |visual_display|object:O1|upDn_count:U3|Q[3]                                                                            ;
 ; 4:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; Yes        ; |visual_display|object:O1|upDn_count:U4|Q[1]                                                                            ;
-; 4:1                ; 9 bits    ; 18 LEs        ; 9 LEs                ; 9 LEs                  ; Yes        ; |visual_display|object:O1|upDn_count:UX|Q[5]                                                                            ;
-; 4:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |visual_display|object:O1|upDn_count:UY|Q[0]                                                                            ;
-; 9:1                ; 9 bits    ; 54 LEs        ; 54 LEs               ; 0 LEs                  ; No         ; |visual_display|vga_adapter:VGA|altsyncram:VideoMemory|altsyncram_esm1:auto_generated|mux_8hb:mux3|l4_w4_n0_mux_dataout ;
-; 11:1               ; 9 bits    ; 63 LEs        ; 63 LEs               ; 0 LEs                  ; No         ; |visual_display|MUX_color[7]                                                                                            ;
+; 4:1                ; 9 bits    ; 18 LEs        ; 9 LEs                ; 9 LEs                  ; Yes        ; |visual_display|object:O1|upDn_count:UX|Q[8]                                                                            ;
+; 4:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |visual_display|object:O1|upDn_count:UY|Q[7]                                                                            ;
+; 9:1                ; 9 bits    ; 54 LEs        ; 54 LEs               ; 0 LEs                  ; No         ; |visual_display|vga_adapter:VGA|altsyncram:VideoMemory|altsyncram_esm1:auto_generated|mux_8hb:mux3|l4_w7_n0_mux_dataout ;
+; 10:1               ; 9 bits    ; 54 LEs        ; 54 LEs               ; 0 LEs                  ; No         ; |visual_display|object:O1|VGA_color[5]                                                                                  ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------------------------------------------------------------------------------------------------+
 
 
@@ -1372,39 +1371,39 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; arriav_ff             ; 148                         ;
+; arriav_ff             ; 145                         ;
 ;     CLR SCLR          ; 10                          ;
 ;     ENA               ; 8                           ;
 ;     ENA CLR SCLR      ; 10                          ;
 ;     ENA SCLR          ; 57                          ;
-;     SCLR              ; 32                          ;
-;     plain             ; 31                          ;
+;     SCLR              ; 30                          ;
+;     plain             ; 30                          ;
 ; arriav_io_obuf        ; 2                           ;
-; arriav_lcell_comb     ; 363                         ;
-;     arith             ; 103                         ;
-;         0 data inputs ; 3                           ;
-;         1 data inputs ; 52                          ;
-;         2 data inputs ; 23                          ;
-;         3 data inputs ; 25                          ;
-;     normal            ; 249                         ;
-;         0 data inputs ; 2                           ;
-;         1 data inputs ; 8                           ;
-;         2 data inputs ; 29                          ;
-;         3 data inputs ; 16                          ;
-;         4 data inputs ; 82                          ;
-;         5 data inputs ; 39                          ;
-;         6 data inputs ; 73                          ;
-;     shared            ; 11                          ;
+; arriav_lcell_comb     ; 349                         ;
+;     arith             ; 85                          ;
 ;         0 data inputs ; 1                           ;
-;         1 data inputs ; 2                           ;
-;         2 data inputs ; 7                           ;
-;         3 data inputs ; 1                           ;
+;         1 data inputs ; 52                          ;
+;         2 data inputs ; 17                          ;
+;         3 data inputs ; 15                          ;
+;     normal            ; 242                         ;
+;         0 data inputs ; 2                           ;
+;         1 data inputs ; 7                           ;
+;         2 data inputs ; 29                          ;
+;         3 data inputs ; 6                           ;
+;         4 data inputs ; 80                          ;
+;         5 data inputs ; 41                          ;
+;         6 data inputs ; 77                          ;
+;     shared            ; 22                          ;
+;         0 data inputs ; 2                           ;
+;         1 data inputs ; 4                           ;
+;         2 data inputs ; 14                          ;
+;         3 data inputs ; 2                           ;
 ; boundary_port         ; 98                          ;
 ; generic_pll           ; 1                           ;
 ; stratixv_ram_block    ; 189                         ;
 ;                       ;                             ;
 ; Max LUT depth         ; 6.00                        ;
-; Average LUT depth     ; 2.62                        ;
+; Average LUT depth     ; 2.58                        ;
 +-----------------------+-----------------------------+
 
 
@@ -1422,55 +1421,52 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-------------------------------+
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
-    Info: Version 23.1std.0 Build 991 11/28/2023 SC Lite Edition
-    Info: Processing started: Fri Nov 20 00:25:20 2026
+    Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
+    Info: Processing started: Fri Nov 20 11:42:09 2026
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off visual_display -c visual_display
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
-Info (20030): Parallel compilation is enabled and will use 6 of the 6 processors detected
-Info (12021): Found 1 design units, including 1 entities, in source file background_mem.v
-    Info (12023): Found entity 1: background_mem File: //vsrv2/D.Homes$/pansabr2/Desktop/ece241/project/visual_display/background_mem.v Line: 1
+Info (20030): Parallel compilation is enabled and will use 16 of the 16 processors detected
 Info (12021): Found 1 design units, including 1 entities, in source file vga_adapter/vga_pll.v
-    Info (12023): Found entity 1: vga_pll File: //vsrv2/D.Homes$/pansabr2/Desktop/ece241/project/visual_display/vga_adapter/vga_pll.v Line: 36
+    Info (12023): Found entity 1: vga_pll File: C:/Users/sabri/UofT/second_year/ece241/ECE241-Project/visual_display/vga_adapter/vga_pll.v Line: 36
 Info (12021): Found 1 design units, including 1 entities, in source file vga_adapter/vga_controller.v
-    Info (12023): Found entity 1: vga_controller File: //vsrv2/D.Homes$/pansabr2/Desktop/ece241/project/visual_display/vga_adapter/vga_controller.v Line: 8
+    Info (12023): Found entity 1: vga_controller File: C:/Users/sabri/UofT/second_year/ece241/ECE241-Project/visual_display/vga_adapter/vga_controller.v Line: 8
 Info (12021): Found 1 design units, including 1 entities, in source file vga_adapter/vga_address_translator.v
-    Info (12023): Found entity 1: vga_address_translator File: //vsrv2/D.Homes$/pansabr2/Desktop/ece241/project/visual_display/vga_adapter/vga_address_translator.v Line: 4
+    Info (12023): Found entity 1: vga_address_translator File: C:/Users/sabri/UofT/second_year/ece241/ECE241-Project/visual_display/vga_adapter/vga_address_translator.v Line: 4
 Info (12021): Found 1 design units, including 1 entities, in source file vga_adapter/vga_adapter.v
-    Info (12023): Found entity 1: vga_adapter File: //vsrv2/D.Homes$/pansabr2/Desktop/ece241/project/visual_display/vga_adapter/vga_adapter.v Line: 42
+    Info (12023): Found entity 1: vga_adapter File: C:/Users/sabri/UofT/second_year/ece241/ECE241-Project/visual_display/vga_adapter/vga_adapter.v Line: 42
+Info (12021): Found 1 design units, including 1 entities, in source file background_mem.v
+    Info (12023): Found entity 1: background_mem File: C:/Users/sabri/UofT/second_year/ece241/ECE241-Project/visual_display/background_mem.v Line: 1
+Warning (12019): Can't analyze file -- file //VSRV2/D.Homes$/pansabr2/Desktop/ece241/project/visual_display/vga_adapter/vga_pll.v is missing
+Warning (12019): Can't analyze file -- file //VSRV2/D.Homes$/pansabr2/Desktop/ece241/project/visual_display/vga_adapter/vga_controller.v is missing
+Warning (12019): Can't analyze file -- file //VSRV2/D.Homes$/pansabr2/Desktop/ece241/project/visual_display/vga_adapter/vga_address_translator.v is missing
+Warning (12019): Can't analyze file -- file //VSRV2/D.Homes$/pansabr2/Desktop/ece241/project/visual_display/vga_adapter/vga_adapter.v is missing
 Info (12021): Found 6 design units, including 6 entities, in source file visual_display.v
-    Info (12023): Found entity 1: visual_display File: //vsrv2/D.Homes$/pansabr2/Desktop/ece241/project/visual_display/visual_display.v Line: 11
-    Info (12023): Found entity 2: sync File: //vsrv2/D.Homes$/pansabr2/Desktop/ece241/project/visual_display/visual_display.v Line: 210
-    Info (12023): Found entity 3: regn File: //vsrv2/D.Homes$/pansabr2/Desktop/ece241/project/visual_display/visual_display.v Line: 229
-    Info (12023): Found entity 4: upDn_count File: //vsrv2/D.Homes$/pansabr2/Desktop/ece241/project/visual_display/visual_display.v Line: 243
-    Info (12023): Found entity 5: hex7seg File: //vsrv2/D.Homes$/pansabr2/Desktop/ece241/project/visual_display/visual_display.v Line: 261
-    Info (12023): Found entity 6: object File: //vsrv2/D.Homes$/pansabr2/Desktop/ece241/project/visual_display/visual_display.v Line: 300
+    Info (12023): Found entity 1: visual_display File: C:/Users/sabri/UofT/second_year/ece241/ECE241-Project/visual_display/visual_display.v Line: 7
+    Info (12023): Found entity 2: sync File: C:/Users/sabri/UofT/second_year/ece241/ECE241-Project/visual_display/visual_display.v Line: 189
+    Info (12023): Found entity 3: regn File: C:/Users/sabri/UofT/second_year/ece241/ECE241-Project/visual_display/visual_display.v Line: 208
+    Info (12023): Found entity 4: upDn_count File: C:/Users/sabri/UofT/second_year/ece241/ECE241-Project/visual_display/visual_display.v Line: 222
+    Info (12023): Found entity 5: hex7seg File: C:/Users/sabri/UofT/second_year/ece241/ECE241-Project/visual_display/visual_display.v Line: 240
+    Info (12023): Found entity 6: object File: C:/Users/sabri/UofT/second_year/ece241/ECE241-Project/visual_display/visual_display.v Line: 279
 Info (12021): Found 1 design units, including 1 entities, in source file object_mem.v
-    Info (12023): Found entity 1: object_mem File: //vsrv2/D.Homes$/pansabr2/Desktop/ece241/project/visual_display/object_mem.v Line: 1
+    Info (12023): Found entity 1: object_mem File: C:/Users/sabri/UofT/second_year/ece241/ECE241-Project/visual_display/object_mem.v Line: 1
+Warning (12019): Can't analyze file -- file //VSRV2/D.Homes$/pansabr2/Desktop/ece241/project/visual_display/visual_display.v is missing
+Warning (12019): Can't analyze file -- file //VSRV2/D.Homes$/pansabr2/Desktop/ece241/project/visual_display/background_mem.v is missing
 Info (12127): Elaborating entity "visual_display" for the top level hierarchy
-Warning (10858): Verilog HDL warning at visual_display.v(39): object O2_x used but never assigned File: //vsrv2/D.Homes$/pansabr2/Desktop/ece241/project/visual_display/visual_display.v Line: 39
-Warning (10858): Verilog HDL warning at visual_display.v(40): object O2_y used but never assigned File: //vsrv2/D.Homes$/pansabr2/Desktop/ece241/project/visual_display/visual_display.v Line: 40
-Warning (10858): Verilog HDL warning at visual_display.v(41): object O2_color used but never assigned File: //vsrv2/D.Homes$/pansabr2/Desktop/ece241/project/visual_display/visual_display.v Line: 41
-Warning (10858): Verilog HDL warning at visual_display.v(42): object O2_write used but never assigned File: //vsrv2/D.Homes$/pansabr2/Desktop/ece241/project/visual_display/visual_display.v Line: 42
-Warning (10036): Verilog HDL or VHDL warning at visual_display.v(57): object "O2_dir" assigned a value but never read File: //vsrv2/D.Homes$/pansabr2/Desktop/ece241/project/visual_display/visual_display.v Line: 57
-Warning (10230): Verilog HDL assignment warning at visual_display.v(91): truncated value with size 32 to match size of target (4) File: //vsrv2/D.Homes$/pansabr2/Desktop/ece241/project/visual_display/visual_display.v Line: 91
-Warning (10030): Net "O2_x" at visual_display.v(39) has no driver or initial value, using a default initial value '0' File: //vsrv2/D.Homes$/pansabr2/Desktop/ece241/project/visual_display/visual_display.v Line: 39
-Warning (10030): Net "O2_y" at visual_display.v(40) has no driver or initial value, using a default initial value '0' File: //vsrv2/D.Homes$/pansabr2/Desktop/ece241/project/visual_display/visual_display.v Line: 40
-Warning (10030): Net "O2_color" at visual_display.v(41) has no driver or initial value, using a default initial value '0' File: //vsrv2/D.Homes$/pansabr2/Desktop/ece241/project/visual_display/visual_display.v Line: 41
-Warning (10030): Net "O2_write" at visual_display.v(42) has no driver or initial value, using a default initial value '0' File: //vsrv2/D.Homes$/pansabr2/Desktop/ece241/project/visual_display/visual_display.v Line: 42
-Info (12128): Elaborating entity "sync" for hierarchy "sync:S1" File: //vsrv2/D.Homes$/pansabr2/Desktop/ece241/project/visual_display/visual_display.v Line: 64
-Info (12128): Elaborating entity "regn" for hierarchy "regn:USC" File: //vsrv2/D.Homes$/pansabr2/Desktop/ece241/project/visual_display/visual_display.v Line: 100
-Info (12128): Elaborating entity "object" for hierarchy "object:O1" File: //vsrv2/D.Homes$/pansabr2/Desktop/ece241/project/visual_display/visual_display.v Line: 150
-Warning (10230): Verilog HDL assignment warning at visual_display.v(332): truncated value with size 32 to match size of target (9) File: //vsrv2/D.Homes$/pansabr2/Desktop/ece241/project/visual_display/visual_display.v Line: 332
-Warning (10230): Verilog HDL assignment warning at visual_display.v(333): truncated value with size 32 to match size of target (8) File: //vsrv2/D.Homes$/pansabr2/Desktop/ece241/project/visual_display/visual_display.v Line: 333
-Warning (10230): Verilog HDL assignment warning at visual_display.v(347): truncated value with size 32 to match size of target (9) File: //vsrv2/D.Homes$/pansabr2/Desktop/ece241/project/visual_display/visual_display.v Line: 347
-Warning (10230): Verilog HDL assignment warning at visual_display.v(348): truncated value with size 32 to match size of target (8) File: //vsrv2/D.Homes$/pansabr2/Desktop/ece241/project/visual_display/visual_display.v Line: 348
-Info (12128): Elaborating entity "upDn_count" for hierarchy "object:O1|upDn_count:UX" File: //vsrv2/D.Homes$/pansabr2/Desktop/ece241/project/visual_display/visual_display.v Line: 349
-Info (12128): Elaborating entity "upDn_count" for hierarchy "object:O1|upDn_count:UY" File: //vsrv2/D.Homes$/pansabr2/Desktop/ece241/project/visual_display/visual_display.v Line: 351
-Info (12128): Elaborating entity "upDn_count" for hierarchy "object:O1|upDn_count:U3" File: //vsrv2/D.Homes$/pansabr2/Desktop/ece241/project/visual_display/visual_display.v Line: 355
-Info (12128): Elaborating entity "object_mem" for hierarchy "object:O1|object_mem:U6" File: //vsrv2/D.Homes$/pansabr2/Desktop/ece241/project/visual_display/visual_display.v Line: 415
-Info (12128): Elaborating entity "altsyncram" for hierarchy "object:O1|object_mem:U6|altsyncram:altsyncram_component" File: //vsrv2/D.Homes$/pansabr2/Desktop/ece241/project/visual_display/object_mem.v Line: 35
-Info (12130): Elaborated megafunction instantiation "object:O1|object_mem:U6|altsyncram:altsyncram_component" File: //vsrv2/D.Homes$/pansabr2/Desktop/ece241/project/visual_display/object_mem.v Line: 35
-Info (12133): Instantiated megafunction "object:O1|object_mem:U6|altsyncram:altsyncram_component" with the following parameter: File: //vsrv2/D.Homes$/pansabr2/Desktop/ece241/project/visual_display/object_mem.v Line: 35
+Warning (10230): Verilog HDL assignment warning at visual_display.v(84): truncated value with size 32 to match size of target (4) File: C:/Users/sabri/UofT/second_year/ece241/ECE241-Project/visual_display/visual_display.v Line: 84
+Info (12128): Elaborating entity "sync" for hierarchy "sync:S1" File: C:/Users/sabri/UofT/second_year/ece241/ECE241-Project/visual_display/visual_display.v Line: 58
+Info (12128): Elaborating entity "regn" for hierarchy "regn:USC" File: C:/Users/sabri/UofT/second_year/ece241/ECE241-Project/visual_display/visual_display.v Line: 93
+Info (12128): Elaborating entity "object" for hierarchy "object:O1" File: C:/Users/sabri/UofT/second_year/ece241/ECE241-Project/visual_display/visual_display.v Line: 132
+Warning (10230): Verilog HDL assignment warning at visual_display.v(311): truncated value with size 32 to match size of target (9) File: C:/Users/sabri/UofT/second_year/ece241/ECE241-Project/visual_display/visual_display.v Line: 311
+Warning (10230): Verilog HDL assignment warning at visual_display.v(312): truncated value with size 32 to match size of target (8) File: C:/Users/sabri/UofT/second_year/ece241/ECE241-Project/visual_display/visual_display.v Line: 312
+Warning (10230): Verilog HDL assignment warning at visual_display.v(326): truncated value with size 32 to match size of target (9) File: C:/Users/sabri/UofT/second_year/ece241/ECE241-Project/visual_display/visual_display.v Line: 326
+Warning (10230): Verilog HDL assignment warning at visual_display.v(327): truncated value with size 32 to match size of target (8) File: C:/Users/sabri/UofT/second_year/ece241/ECE241-Project/visual_display/visual_display.v Line: 327
+Info (12128): Elaborating entity "upDn_count" for hierarchy "object:O1|upDn_count:UX" File: C:/Users/sabri/UofT/second_year/ece241/ECE241-Project/visual_display/visual_display.v Line: 328
+Info (12128): Elaborating entity "upDn_count" for hierarchy "object:O1|upDn_count:UY" File: C:/Users/sabri/UofT/second_year/ece241/ECE241-Project/visual_display/visual_display.v Line: 330
+Info (12128): Elaborating entity "upDn_count" for hierarchy "object:O1|upDn_count:U3" File: C:/Users/sabri/UofT/second_year/ece241/ECE241-Project/visual_display/visual_display.v Line: 334
+Info (12128): Elaborating entity "object_mem" for hierarchy "object:O1|object_mem:U6" File: C:/Users/sabri/UofT/second_year/ece241/ECE241-Project/visual_display/visual_display.v Line: 394
+Info (12128): Elaborating entity "altsyncram" for hierarchy "object:O1|object_mem:U6|altsyncram:altsyncram_component" File: C:/Users/sabri/UofT/second_year/ece241/ECE241-Project/visual_display/object_mem.v Line: 35
+Info (12130): Elaborated megafunction instantiation "object:O1|object_mem:U6|altsyncram:altsyncram_component" File: C:/Users/sabri/UofT/second_year/ece241/ECE241-Project/visual_display/object_mem.v Line: 35
+Info (12133): Instantiated megafunction "object:O1|object_mem:U6|altsyncram:altsyncram_component" with the following parameter: File: C:/Users/sabri/UofT/second_year/ece241/ECE241-Project/visual_display/object_mem.v Line: 35
     Info (12134): Parameter "address_aclr_a" = "NONE"
     Info (12134): Parameter "clock_enable_input_a" = "BYPASS"
     Info (12134): Parameter "clock_enable_output_a" = "BYPASS"
@@ -1485,15 +1481,15 @@ Info (12133): Instantiated megafunction "object:O1|object_mem:U6|altsyncram:alts
     Info (12134): Parameter "widthad_a" = "8"
     Info (12134): Parameter "width_a" = "9"
     Info (12134): Parameter "width_byteena_a" = "1"
-Warning (12125): Using design file db/altsyncram_45h1.tdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
-    Info (12023): Found entity 1: altsyncram_45h1 File: //vsrv2/D.Homes$/pansabr2/Desktop/ece241/project/visual_display/db/altsyncram_45h1.tdf Line: 28
-Info (12128): Elaborating entity "altsyncram_45h1" for hierarchy "object:O1|object_mem:U6|altsyncram:altsyncram_component|altsyncram_45h1:auto_generated" File: c:/intelfpga/quartus_prime_lite_23.1/quartus/libraries/megafunctions/altsyncram.tdf Line: 792
-Info (12128): Elaborating entity "regn" for hierarchy "object:O1|regn:U7" File: //vsrv2/D.Homes$/pansabr2/Desktop/ece241/project/visual_display/visual_display.v Line: 425
-Info (12128): Elaborating entity "regn" for hierarchy "object:O1|regn:U9" File: //vsrv2/D.Homes$/pansabr2/Desktop/ece241/project/visual_display/visual_display.v Line: 431
-Info (12128): Elaborating entity "background_mem" for hierarchy "object:O1|background_mem:b0" File: //vsrv2/D.Homes$/pansabr2/Desktop/ece241/project/visual_display/visual_display.v Line: 469
-Info (12128): Elaborating entity "altsyncram" for hierarchy "object:O1|background_mem:b0|altsyncram:altsyncram_component" File: //vsrv2/D.Homes$/pansabr2/Desktop/ece241/project/visual_display/background_mem.v Line: 35
-Info (12130): Elaborated megafunction instantiation "object:O1|background_mem:b0|altsyncram:altsyncram_component" File: //vsrv2/D.Homes$/pansabr2/Desktop/ece241/project/visual_display/background_mem.v Line: 35
-Info (12133): Instantiated megafunction "object:O1|background_mem:b0|altsyncram:altsyncram_component" with the following parameter: File: //vsrv2/D.Homes$/pansabr2/Desktop/ece241/project/visual_display/background_mem.v Line: 35
+Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_45h1.tdf
+    Info (12023): Found entity 1: altsyncram_45h1 File: C:/Users/sabri/UofT/second_year/ece241/ECE241-Project/visual_display/db/altsyncram_45h1.tdf Line: 27
+Info (12128): Elaborating entity "altsyncram_45h1" for hierarchy "object:O1|object_mem:U6|altsyncram:altsyncram_component|altsyncram_45h1:auto_generated" File: c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/altsyncram.tdf Line: 791
+Info (12128): Elaborating entity "regn" for hierarchy "object:O1|regn:U7" File: C:/Users/sabri/UofT/second_year/ece241/ECE241-Project/visual_display/visual_display.v Line: 404
+Info (12128): Elaborating entity "regn" for hierarchy "object:O1|regn:U9" File: C:/Users/sabri/UofT/second_year/ece241/ECE241-Project/visual_display/visual_display.v Line: 410
+Info (12128): Elaborating entity "background_mem" for hierarchy "object:O1|background_mem:b0" File: C:/Users/sabri/UofT/second_year/ece241/ECE241-Project/visual_display/visual_display.v Line: 454
+Info (12128): Elaborating entity "altsyncram" for hierarchy "object:O1|background_mem:b0|altsyncram:altsyncram_component" File: C:/Users/sabri/UofT/second_year/ece241/ECE241-Project/visual_display/background_mem.v Line: 35
+Info (12130): Elaborated megafunction instantiation "object:O1|background_mem:b0|altsyncram:altsyncram_component" File: C:/Users/sabri/UofT/second_year/ece241/ECE241-Project/visual_display/background_mem.v Line: 35
+Info (12133): Instantiated megafunction "object:O1|background_mem:b0|altsyncram:altsyncram_component" with the following parameter: File: C:/Users/sabri/UofT/second_year/ece241/ECE241-Project/visual_display/background_mem.v Line: 35
     Info (12134): Parameter "address_aclr_a" = "NONE"
     Info (12134): Parameter "clock_enable_input_a" = "BYPASS"
     Info (12134): Parameter "clock_enable_output_a" = "BYPASS"
@@ -1508,21 +1504,21 @@ Info (12133): Instantiated megafunction "object:O1|background_mem:b0|altsyncram:
     Info (12134): Parameter "widthad_a" = "17"
     Info (12134): Parameter "width_a" = "9"
     Info (12134): Parameter "width_byteena_a" = "1"
-Warning (12125): Using design file db/altsyncram_hqg1.tdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
-    Info (12023): Found entity 1: altsyncram_hqg1 File: //vsrv2/D.Homes$/pansabr2/Desktop/ece241/project/visual_display/db/altsyncram_hqg1.tdf Line: 32
-Info (12128): Elaborating entity "altsyncram_hqg1" for hierarchy "object:O1|background_mem:b0|altsyncram:altsyncram_component|altsyncram_hqg1:auto_generated" File: c:/intelfpga/quartus_prime_lite_23.1/quartus/libraries/megafunctions/altsyncram.tdf Line: 792
-Warning (12125): Using design file db/decode_g2a.tdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
-    Info (12023): Found entity 1: decode_g2a File: //vsrv2/D.Homes$/pansabr2/Desktop/ece241/project/visual_display/db/decode_g2a.tdf Line: 23
-Info (12128): Elaborating entity "decode_g2a" for hierarchy "object:O1|background_mem:b0|altsyncram:altsyncram_component|altsyncram_hqg1:auto_generated|decode_g2a:rden_decode" File: //vsrv2/D.Homes$/pansabr2/Desktop/ece241/project/visual_display/db/altsyncram_hqg1.tdf Line: 40
-Warning (12125): Using design file db/mux_8hb.tdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
-    Info (12023): Found entity 1: mux_8hb File: //vsrv2/D.Homes$/pansabr2/Desktop/ece241/project/visual_display/db/mux_8hb.tdf Line: 23
-Info (12128): Elaborating entity "mux_8hb" for hierarchy "object:O1|background_mem:b0|altsyncram:altsyncram_component|altsyncram_hqg1:auto_generated|mux_8hb:mux2" File: //vsrv2/D.Homes$/pansabr2/Desktop/ece241/project/visual_display/db/altsyncram_hqg1.tdf Line: 41
-Info (12128): Elaborating entity "hex7seg" for hierarchy "hex7seg:H0" File: //vsrv2/D.Homes$/pansabr2/Desktop/ece241/project/visual_display/visual_display.v Line: 178
-Info (12128): Elaborating entity "vga_adapter" for hierarchy "vga_adapter:VGA" File: //vsrv2/D.Homes$/pansabr2/Desktop/ece241/project/visual_display/visual_display.v Line: 200
-Info (12128): Elaborating entity "vga_address_translator" for hierarchy "vga_adapter:VGA|vga_address_translator:user_input_translator" File: //vsrv2/D.Homes$/pansabr2/Desktop/ece241/project/visual_display/vga_adapter/vga_adapter.v Line: 128
-Info (12128): Elaborating entity "altsyncram" for hierarchy "vga_adapter:VGA|altsyncram:VideoMemory" File: //vsrv2/D.Homes$/pansabr2/Desktop/ece241/project/visual_display/vga_adapter/vga_adapter.v Line: 151
-Info (12130): Elaborated megafunction instantiation "vga_adapter:VGA|altsyncram:VideoMemory" File: //vsrv2/D.Homes$/pansabr2/Desktop/ece241/project/visual_display/vga_adapter/vga_adapter.v Line: 151
-Info (12133): Instantiated megafunction "vga_adapter:VGA|altsyncram:VideoMemory" with the following parameter: File: //vsrv2/D.Homes$/pansabr2/Desktop/ece241/project/visual_display/vga_adapter/vga_adapter.v Line: 151
+Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_hqg1.tdf
+    Info (12023): Found entity 1: altsyncram_hqg1 File: C:/Users/sabri/UofT/second_year/ece241/ECE241-Project/visual_display/db/altsyncram_hqg1.tdf Line: 31
+Info (12128): Elaborating entity "altsyncram_hqg1" for hierarchy "object:O1|background_mem:b0|altsyncram:altsyncram_component|altsyncram_hqg1:auto_generated" File: c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/altsyncram.tdf Line: 791
+Info (12021): Found 1 design units, including 1 entities, in source file db/decode_g2a.tdf
+    Info (12023): Found entity 1: decode_g2a File: C:/Users/sabri/UofT/second_year/ece241/ECE241-Project/visual_display/db/decode_g2a.tdf Line: 22
+Info (12128): Elaborating entity "decode_g2a" for hierarchy "object:O1|background_mem:b0|altsyncram:altsyncram_component|altsyncram_hqg1:auto_generated|decode_g2a:rden_decode" File: C:/Users/sabri/UofT/second_year/ece241/ECE241-Project/visual_display/db/altsyncram_hqg1.tdf Line: 39
+Info (12021): Found 1 design units, including 1 entities, in source file db/mux_8hb.tdf
+    Info (12023): Found entity 1: mux_8hb File: C:/Users/sabri/UofT/second_year/ece241/ECE241-Project/visual_display/db/mux_8hb.tdf Line: 22
+Info (12128): Elaborating entity "mux_8hb" for hierarchy "object:O1|background_mem:b0|altsyncram:altsyncram_component|altsyncram_hqg1:auto_generated|mux_8hb:mux2" File: C:/Users/sabri/UofT/second_year/ece241/ECE241-Project/visual_display/db/altsyncram_hqg1.tdf Line: 40
+Info (12128): Elaborating entity "hex7seg" for hierarchy "hex7seg:H0" File: C:/Users/sabri/UofT/second_year/ece241/ECE241-Project/visual_display/visual_display.v Line: 157
+Info (12128): Elaborating entity "vga_adapter" for hierarchy "vga_adapter:VGA" File: C:/Users/sabri/UofT/second_year/ece241/ECE241-Project/visual_display/visual_display.v Line: 179
+Info (12128): Elaborating entity "vga_address_translator" for hierarchy "vga_adapter:VGA|vga_address_translator:user_input_translator" File: C:/Users/sabri/UofT/second_year/ece241/ECE241-Project/visual_display/vga_adapter/vga_adapter.v Line: 128
+Info (12128): Elaborating entity "altsyncram" for hierarchy "vga_adapter:VGA|altsyncram:VideoMemory" File: C:/Users/sabri/UofT/second_year/ece241/ECE241-Project/visual_display/vga_adapter/vga_adapter.v Line: 151
+Info (12130): Elaborated megafunction instantiation "vga_adapter:VGA|altsyncram:VideoMemory" File: C:/Users/sabri/UofT/second_year/ece241/ECE241-Project/visual_display/vga_adapter/vga_adapter.v Line: 151
+Info (12133): Instantiated megafunction "vga_adapter:VGA|altsyncram:VideoMemory" with the following parameter: File: C:/Users/sabri/UofT/second_year/ece241/ECE241-Project/visual_display/vga_adapter/vga_adapter.v Line: 151
     Info (12134): Parameter "width_a" = "9"
     Info (12134): Parameter "width_b" = "9"
     Info (12134): Parameter "intended_device_family" = "Cyclone V"
@@ -1538,16 +1534,16 @@ Info (12133): Instantiated megafunction "vga_adapter:VGA|altsyncram:VideoMemory"
     Info (12134): Parameter "clock_enable_output_b" = "BYPASS"
     Info (12134): Parameter "power_up_uninitialized" = "FALSE"
     Info (12134): Parameter "init_file" = "./MIF/bmp_320_9.mif"
-Warning (12125): Using design file db/altsyncram_esm1.tdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
-    Info (12023): Found entity 1: altsyncram_esm1 File: //vsrv2/D.Homes$/pansabr2/Desktop/ece241/project/visual_display/db/altsyncram_esm1.tdf Line: 34
-Info (12128): Elaborating entity "altsyncram_esm1" for hierarchy "vga_adapter:VGA|altsyncram:VideoMemory|altsyncram_esm1:auto_generated" File: c:/intelfpga/quartus_prime_lite_23.1/quartus/libraries/megafunctions/altsyncram.tdf Line: 792
-Warning (12125): Using design file db/decode_nma.tdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
-    Info (12023): Found entity 1: decode_nma File: //vsrv2/D.Homes$/pansabr2/Desktop/ece241/project/visual_display/db/decode_nma.tdf Line: 23
-Info (12128): Elaborating entity "decode_nma" for hierarchy "vga_adapter:VGA|altsyncram:VideoMemory|altsyncram_esm1:auto_generated|decode_nma:decode2" File: //vsrv2/D.Homes$/pansabr2/Desktop/ece241/project/visual_display/db/altsyncram_esm1.tdf Line: 47
-Info (12128): Elaborating entity "vga_pll" for hierarchy "vga_adapter:VGA|vga_pll:mypll" File: //vsrv2/D.Homes$/pansabr2/Desktop/ece241/project/visual_display/vga_adapter/vga_adapter.v Line: 173
-Info (12128): Elaborating entity "altpll" for hierarchy "vga_adapter:VGA|vga_pll:mypll|altpll:altpll_component" File: //vsrv2/D.Homes$/pansabr2/Desktop/ece241/project/visual_display/vga_adapter/vga_pll.v Line: 53
-Info (12130): Elaborated megafunction instantiation "vga_adapter:VGA|vga_pll:mypll|altpll:altpll_component" File: //vsrv2/D.Homes$/pansabr2/Desktop/ece241/project/visual_display/vga_adapter/vga_pll.v Line: 53
-Info (12133): Instantiated megafunction "vga_adapter:VGA|vga_pll:mypll|altpll:altpll_component" with the following parameter: File: //vsrv2/D.Homes$/pansabr2/Desktop/ece241/project/visual_display/vga_adapter/vga_pll.v Line: 53
+Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_esm1.tdf
+    Info (12023): Found entity 1: altsyncram_esm1 File: C:/Users/sabri/UofT/second_year/ece241/ECE241-Project/visual_display/db/altsyncram_esm1.tdf Line: 33
+Info (12128): Elaborating entity "altsyncram_esm1" for hierarchy "vga_adapter:VGA|altsyncram:VideoMemory|altsyncram_esm1:auto_generated" File: c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/altsyncram.tdf Line: 791
+Info (12021): Found 1 design units, including 1 entities, in source file db/decode_nma.tdf
+    Info (12023): Found entity 1: decode_nma File: C:/Users/sabri/UofT/second_year/ece241/ECE241-Project/visual_display/db/decode_nma.tdf Line: 22
+Info (12128): Elaborating entity "decode_nma" for hierarchy "vga_adapter:VGA|altsyncram:VideoMemory|altsyncram_esm1:auto_generated|decode_nma:decode2" File: C:/Users/sabri/UofT/second_year/ece241/ECE241-Project/visual_display/db/altsyncram_esm1.tdf Line: 46
+Info (12128): Elaborating entity "vga_pll" for hierarchy "vga_adapter:VGA|vga_pll:mypll" File: C:/Users/sabri/UofT/second_year/ece241/ECE241-Project/visual_display/vga_adapter/vga_adapter.v Line: 173
+Info (12128): Elaborating entity "altpll" for hierarchy "vga_adapter:VGA|vga_pll:mypll|altpll:altpll_component" File: C:/Users/sabri/UofT/second_year/ece241/ECE241-Project/visual_display/vga_adapter/vga_pll.v Line: 53
+Info (12130): Elaborated megafunction instantiation "vga_adapter:VGA|vga_pll:mypll|altpll:altpll_component" File: C:/Users/sabri/UofT/second_year/ece241/ECE241-Project/visual_display/vga_adapter/vga_pll.v Line: 53
+Info (12133): Instantiated megafunction "vga_adapter:VGA|vga_pll:mypll|altpll:altpll_component" with the following parameter: File: C:/Users/sabri/UofT/second_year/ece241/ECE241-Project/visual_display/vga_adapter/vga_pll.v Line: 53
     Info (12134): Parameter "operation_mode" = "NORMAL"
     Info (12134): Parameter "intended_device_family" = "Cyclone II"
     Info (12134): Parameter "lpm_type" = "altpll"
@@ -1559,24 +1555,39 @@ Info (12133): Instantiated megafunction "vga_adapter:VGA|vga_pll:mypll|altpll:al
     Info (12134): Parameter "clk0_divide_by" = "2"
     Info (12134): Parameter "clk0_multiply_by" = "1"
     Info (12134): Parameter "clk0_duty_cycle" = "50"
-Warning (12125): Using design file db/altpll_80u.tdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
-    Info (12023): Found entity 1: altpll_80u File: //vsrv2/D.Homes$/pansabr2/Desktop/ece241/project/visual_display/db/altpll_80u.tdf Line: 26
-Info (12128): Elaborating entity "altpll_80u" for hierarchy "vga_adapter:VGA|vga_pll:mypll|altpll:altpll_component|altpll_80u:auto_generated" File: c:/intelfpga/quartus_prime_lite_23.1/quartus/libraries/megafunctions/altpll.tdf Line: 898
-Info (12128): Elaborating entity "vga_controller" for hierarchy "vga_adapter:VGA|vga_controller:controller" File: //vsrv2/D.Homes$/pansabr2/Desktop/ece241/project/visual_display/vga_adapter/vga_adapter.v Line: 188
+Info (12021): Found 1 design units, including 1 entities, in source file db/altpll_80u.tdf
+    Info (12023): Found entity 1: altpll_80u File: C:/Users/sabri/UofT/second_year/ece241/ECE241-Project/visual_display/db/altpll_80u.tdf Line: 25
+Info (12128): Elaborating entity "altpll_80u" for hierarchy "vga_adapter:VGA|vga_pll:mypll|altpll:altpll_component|altpll_80u:auto_generated" File: c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/altpll.tdf Line: 897
+Info (12128): Elaborating entity "vga_controller" for hierarchy "vga_adapter:VGA|vga_controller:controller" File: C:/Users/sabri/UofT/second_year/ece241/ECE241-Project/visual_display/vga_adapter/vga_adapter.v Line: 188
+Warning (12011): Net is missing source, defaulting to GND
+    Warning (12110): Net "O1_x[9]" is missing source, defaulting to GND File: C:/Users/sabri/UofT/second_year/ece241/ECE241-Project/visual_display/visual_display.v Line: 34
+    Warning (12110): Net "O1_y[8]" is missing source, defaulting to GND File: C:/Users/sabri/UofT/second_year/ece241/ECE241-Project/visual_display/visual_display.v Line: 35
+Warning (12011): Net is missing source, defaulting to GND
+    Warning (12110): Net "O1_x[9]" is missing source, defaulting to GND File: C:/Users/sabri/UofT/second_year/ece241/ECE241-Project/visual_display/visual_display.v Line: 34
+    Warning (12110): Net "O1_y[8]" is missing source, defaulting to GND File: C:/Users/sabri/UofT/second_year/ece241/ECE241-Project/visual_display/visual_display.v Line: 35
+Warning (12011): Net is missing source, defaulting to GND
+    Warning (12110): Net "O1_x[9]" is missing source, defaulting to GND File: C:/Users/sabri/UofT/second_year/ece241/ECE241-Project/visual_display/visual_display.v Line: 34
+    Warning (12110): Net "O1_y[8]" is missing source, defaulting to GND File: C:/Users/sabri/UofT/second_year/ece241/ECE241-Project/visual_display/visual_display.v Line: 35
+Warning (12011): Net is missing source, defaulting to GND
+    Warning (12110): Net "O1_x[9]" is missing source, defaulting to GND File: C:/Users/sabri/UofT/second_year/ece241/ECE241-Project/visual_display/visual_display.v Line: 34
+    Warning (12110): Net "O1_y[8]" is missing source, defaulting to GND File: C:/Users/sabri/UofT/second_year/ece241/ECE241-Project/visual_display/visual_display.v Line: 35
+Warning (12011): Net is missing source, defaulting to GND
+    Warning (12110): Net "O1_x[9]" is missing source, defaulting to GND File: C:/Users/sabri/UofT/second_year/ece241/ECE241-Project/visual_display/visual_display.v Line: 34
+    Warning (12110): Net "O1_y[8]" is missing source, defaulting to GND File: C:/Users/sabri/UofT/second_year/ece241/ECE241-Project/visual_display/visual_display.v Line: 35
 Warning (12241): 2 hierarchies have connectivity warnings - see the Connectivity Checks report folder
 Warning (13039): The following bidirectional pins have no drivers
-    Warning (13040): bidirectional pin "PS2_CLK" has no driver File: //vsrv2/D.Homes$/pansabr2/Desktop/ece241/project/visual_display/visual_display.v Line: 27
-    Warning (13040): bidirectional pin "PS2_DAT" has no driver File: //vsrv2/D.Homes$/pansabr2/Desktop/ece241/project/visual_display/visual_display.v Line: 27
+    Warning (13040): bidirectional pin "PS2_CLK" has no driver File: C:/Users/sabri/UofT/second_year/ece241/ECE241-Project/visual_display/visual_display.v Line: 23
+    Warning (13040): bidirectional pin "PS2_DAT" has no driver File: C:/Users/sabri/UofT/second_year/ece241/ECE241-Project/visual_display/visual_display.v Line: 23
 Warning (13024): Output pins are stuck at VCC or GND
-    Warning (13410): Pin "LEDR[8]" is stuck at GND File: //vsrv2/D.Homes$/pansabr2/Desktop/ece241/project/visual_display/visual_display.v Line: 26
-    Warning (13410): Pin "LEDR[9]" is stuck at GND File: //vsrv2/D.Homes$/pansabr2/Desktop/ece241/project/visual_display/visual_display.v Line: 26
-    Warning (13410): Pin "VGA_R[0]" is stuck at GND File: //vsrv2/D.Homes$/pansabr2/Desktop/ece241/project/visual_display/visual_display.v Line: 29
-    Warning (13410): Pin "VGA_R[1]" is stuck at GND File: //vsrv2/D.Homes$/pansabr2/Desktop/ece241/project/visual_display/visual_display.v Line: 29
-    Warning (13410): Pin "VGA_G[0]" is stuck at GND File: //vsrv2/D.Homes$/pansabr2/Desktop/ece241/project/visual_display/visual_display.v Line: 30
-    Warning (13410): Pin "VGA_G[1]" is stuck at GND File: //vsrv2/D.Homes$/pansabr2/Desktop/ece241/project/visual_display/visual_display.v Line: 30
-    Warning (13410): Pin "VGA_B[0]" is stuck at GND File: //vsrv2/D.Homes$/pansabr2/Desktop/ece241/project/visual_display/visual_display.v Line: 31
-    Warning (13410): Pin "VGA_B[1]" is stuck at GND File: //vsrv2/D.Homes$/pansabr2/Desktop/ece241/project/visual_display/visual_display.v Line: 31
-    Warning (13410): Pin "VGA_SYNC_N" is stuck at VCC File: //vsrv2/D.Homes$/pansabr2/Desktop/ece241/project/visual_display/visual_display.v Line: 35
+    Warning (13410): Pin "LEDR[8]" is stuck at GND File: C:/Users/sabri/UofT/second_year/ece241/ECE241-Project/visual_display/visual_display.v Line: 22
+    Warning (13410): Pin "LEDR[9]" is stuck at GND File: C:/Users/sabri/UofT/second_year/ece241/ECE241-Project/visual_display/visual_display.v Line: 22
+    Warning (13410): Pin "VGA_R[0]" is stuck at GND File: C:/Users/sabri/UofT/second_year/ece241/ECE241-Project/visual_display/visual_display.v Line: 25
+    Warning (13410): Pin "VGA_R[1]" is stuck at GND File: C:/Users/sabri/UofT/second_year/ece241/ECE241-Project/visual_display/visual_display.v Line: 25
+    Warning (13410): Pin "VGA_G[0]" is stuck at GND File: C:/Users/sabri/UofT/second_year/ece241/ECE241-Project/visual_display/visual_display.v Line: 26
+    Warning (13410): Pin "VGA_G[1]" is stuck at GND File: C:/Users/sabri/UofT/second_year/ece241/ECE241-Project/visual_display/visual_display.v Line: 26
+    Warning (13410): Pin "VGA_B[0]" is stuck at GND File: C:/Users/sabri/UofT/second_year/ece241/ECE241-Project/visual_display/visual_display.v Line: 27
+    Warning (13410): Pin "VGA_B[1]" is stuck at GND File: C:/Users/sabri/UofT/second_year/ece241/ECE241-Project/visual_display/visual_display.v Line: 27
+    Warning (13410): Pin "VGA_SYNC_N" is stuck at VCC File: C:/Users/sabri/UofT/second_year/ece241/ECE241-Project/visual_display/visual_display.v Line: 31
 Info (286030): Timing-Driven Synthesis is running
 Info (17049): 5 registers lost all their fanouts during netlist optimizations.
 Warning (20013): Ignored 571 assignments for entity "DE1_SoC" -- entity does not exist in design
@@ -2151,40 +2162,41 @@ Warning (20013): Ignored 571 assignments for entity "DE1_SoC" -- entity does not
     Warning (20014): Assignment for entity set_instance_assignment -name OUTPUT_TERMINATION "SERIES 50 OHM WITH CALIBRATION" -to HPS_DDR3_DQ[9] -entity DE1_SoC was ignored
     Warning (20014): Assignment for entity set_instance_assignment -name D5_DELAY 2 -to HPS_DDR3_CK_N -entity DE1_SoC was ignored
     Warning (20014): Assignment for entity set_instance_assignment -name D5_DELAY 2 -to HPS_DDR3_CK_P -entity DE1_SoC was ignored
-Info (144001): Generated suppressed messages file //vsrv2/D.Homes$/pansabr2/Desktop/ece241/project/visual_display/output_files/visual_display.map.smsg
+Info (144001): Generated suppressed messages file C:/Users/sabri/UofT/second_year/ece241/ECE241-Project/visual_display/output_files/visual_display.map.smsg
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 5 node(s), including 0 DDIO, 1 PLL, 0 transceiver and 0 LCELL
-Warning: RST port on the PLL is not properly connected on instance vga_adapter:VGA|vga_pll:mypll|altpll:altpll_component|altpll_80u:auto_generated|generic_pll1. The reset port on the PLL should be connected. If the PLL loses lock for any reason, you might need to manually reset the PLL in order to re-establish lock to the reference clock. File: //vsrv2/D.Homes$/pansabr2/Desktop/ece241/project/visual_display/db/altpll_80u.tdf Line: 34
+Warning: RST port on the PLL is not properly connected on instance vga_adapter:VGA|vga_pll:mypll|altpll:altpll_component|altpll_80u:auto_generated|generic_pll1. The reset port on the PLL should be connected. If the PLL loses lock for any reason, you might need to manually reset the PLL in order to re-establish lock to the reference clock. File: C:/Users/sabri/UofT/second_year/ece241/ECE241-Project/visual_display/db/altpll_80u.tdf Line: 33
     Info: Must be connected
-Warning (21074): Design contains 11 input pin(s) that do not drive logic
-    Warning (15610): No output dependent on input pin "SW[0]" File: //vsrv2/D.Homes$/pansabr2/Desktop/ece241/project/visual_display/visual_display.v Line: 24
-    Warning (15610): No output dependent on input pin "SW[1]" File: //vsrv2/D.Homes$/pansabr2/Desktop/ece241/project/visual_display/visual_display.v Line: 24
-    Warning (15610): No output dependent on input pin "SW[2]" File: //vsrv2/D.Homes$/pansabr2/Desktop/ece241/project/visual_display/visual_display.v Line: 24
-    Warning (15610): No output dependent on input pin "SW[3]" File: //vsrv2/D.Homes$/pansabr2/Desktop/ece241/project/visual_display/visual_display.v Line: 24
-    Warning (15610): No output dependent on input pin "SW[4]" File: //vsrv2/D.Homes$/pansabr2/Desktop/ece241/project/visual_display/visual_display.v Line: 24
-    Warning (15610): No output dependent on input pin "SW[5]" File: //vsrv2/D.Homes$/pansabr2/Desktop/ece241/project/visual_display/visual_display.v Line: 24
-    Warning (15610): No output dependent on input pin "SW[6]" File: //vsrv2/D.Homes$/pansabr2/Desktop/ece241/project/visual_display/visual_display.v Line: 24
-    Warning (15610): No output dependent on input pin "SW[7]" File: //vsrv2/D.Homes$/pansabr2/Desktop/ece241/project/visual_display/visual_display.v Line: 24
-    Warning (15610): No output dependent on input pin "SW[8]" File: //vsrv2/D.Homes$/pansabr2/Desktop/ece241/project/visual_display/visual_display.v Line: 24
-    Warning (15610): No output dependent on input pin "SW[9]" File: //vsrv2/D.Homes$/pansabr2/Desktop/ece241/project/visual_display/visual_display.v Line: 24
-    Warning (15610): No output dependent on input pin "KEY[3]" File: //vsrv2/D.Homes$/pansabr2/Desktop/ece241/project/visual_display/visual_display.v Line: 25
-Info (21057): Implemented 723 device resources after synthesis - the final resource count might be different
+Warning (21074): Design contains 12 input pin(s) that do not drive logic
+    Warning (15610): No output dependent on input pin "SW[0]" File: C:/Users/sabri/UofT/second_year/ece241/ECE241-Project/visual_display/visual_display.v Line: 20
+    Warning (15610): No output dependent on input pin "SW[1]" File: C:/Users/sabri/UofT/second_year/ece241/ECE241-Project/visual_display/visual_display.v Line: 20
+    Warning (15610): No output dependent on input pin "SW[2]" File: C:/Users/sabri/UofT/second_year/ece241/ECE241-Project/visual_display/visual_display.v Line: 20
+    Warning (15610): No output dependent on input pin "SW[3]" File: C:/Users/sabri/UofT/second_year/ece241/ECE241-Project/visual_display/visual_display.v Line: 20
+    Warning (15610): No output dependent on input pin "SW[4]" File: C:/Users/sabri/UofT/second_year/ece241/ECE241-Project/visual_display/visual_display.v Line: 20
+    Warning (15610): No output dependent on input pin "SW[5]" File: C:/Users/sabri/UofT/second_year/ece241/ECE241-Project/visual_display/visual_display.v Line: 20
+    Warning (15610): No output dependent on input pin "SW[6]" File: C:/Users/sabri/UofT/second_year/ece241/ECE241-Project/visual_display/visual_display.v Line: 20
+    Warning (15610): No output dependent on input pin "SW[7]" File: C:/Users/sabri/UofT/second_year/ece241/ECE241-Project/visual_display/visual_display.v Line: 20
+    Warning (15610): No output dependent on input pin "SW[8]" File: C:/Users/sabri/UofT/second_year/ece241/ECE241-Project/visual_display/visual_display.v Line: 20
+    Warning (15610): No output dependent on input pin "SW[9]" File: C:/Users/sabri/UofT/second_year/ece241/ECE241-Project/visual_display/visual_display.v Line: 20
+    Warning (15610): No output dependent on input pin "KEY[2]" File: C:/Users/sabri/UofT/second_year/ece241/ECE241-Project/visual_display/visual_display.v Line: 21
+    Warning (15610): No output dependent on input pin "KEY[3]" File: C:/Users/sabri/UofT/second_year/ece241/ECE241-Project/visual_display/visual_display.v Line: 21
+Info (21057): Implemented 708 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 15 input pins
     Info (21059): Implemented 81 output pins
     Info (21060): Implemented 2 bidirectional pins
-    Info (21061): Implemented 435 logic cells
+    Info (21061): Implemented 420 logic cells
     Info (21064): Implemented 189 RAM segments
     Info (21065): Implemented 1 PLLs
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 621 warnings
-    Info: Peak virtual memory: 4918 megabytes
-    Info: Processing ended: Fri Nov 20 00:25:52 2026
-    Info: Elapsed time: 00:00:32
-    Info: Total CPU time (on all processors): 00:00:23
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 627 warnings
+    Info: Peak virtual memory: 4942 megabytes
+    Info: Processing ended: Fri Nov 20 11:42:35 2026
+    Info: Elapsed time: 00:00:26
+    Info: Total CPU time (on all processors): 00:00:30
 
 
 +------------------------------------------+
 ; Analysis & Synthesis Suppressed Messages ;
 +------------------------------------------+
-The suppressed messages can be found in //vsrv2/D.Homes$/pansabr2/Desktop/ece241/project/visual_display/output_files/visual_display.map.smsg.
+The suppressed messages can be found in C:/Users/sabri/UofT/second_year/ece241/ECE241-Project/visual_display/output_files/visual_display.map.smsg.
 
 
