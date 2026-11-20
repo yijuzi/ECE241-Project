@@ -1,0 +1,200 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/intelFPGA_lite/18.1
+vbackground_mem
+!s110 1795154793
+!i10b 1
+!s100 <Rmlbj5aJZjjYbliJF4RP1
+IzSLe^Sif[MzEm39N1B24n2
+Z0 VDg1SIo80bB@j0V0VzS_@n1
+Z1 dC:/Users/sabri/UofT/second_year/ece241/ECE241-Project/visual_display/simulation
+Z2 w1795153698
+8C:/Users/sabri/UofT/second_year/ece241/ECE241-Project/visual_display/background_mem.v
+FC:/Users/sabri/UofT/second_year/ece241/ECE241-Project/visual_display/background_mem.v
+L0 1
+Z3 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z4 !s108 1795154793.000000
+!s107 C:/Users/sabri/UofT/second_year/ece241/ECE241-Project/visual_display/background_mem.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/sabri/UofT/second_year/ece241/ECE241-Project/visual_display/background_mem.v|
+!i113 1
+Z5 o-work work
+Z6 tCvgOpt 0
+vhex7seg
+Z7 !s110 1795154794
+!i10b 1
+!s100 8Pk>c0D5=l9hI6i2LZFRQ0
+I9[gb?eU1dYbeio>X4]3;Q2
+R0
+R1
+Z8 w1795153988
+Z9 8C:/Users/sabri/UofT/second_year/ece241/ECE241-Project/visual_display/visual_display.v
+Z10 FC:/Users/sabri/UofT/second_year/ece241/ECE241-Project/visual_display/visual_display.v
+L0 261
+R3
+r1
+!s85 0
+31
+Z11 !s108 1795154794.000000
+Z12 !s107 C:/Users/sabri/UofT/second_year/ece241/ECE241-Project/visual_display/visual_display.v|
+Z13 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/sabri/UofT/second_year/ece241/ECE241-Project/visual_display/visual_display.v|
+!i113 1
+R5
+R6
+vobject
+R7
+!i10b 1
+!s100 Z=TkWRfBF3WJlR2J^d;o;1
+IS6KibN>Ld:[L[2:fHkkI@0
+R0
+R1
+R8
+R9
+R10
+L0 300
+R3
+r1
+!s85 0
+31
+R11
+R12
+R13
+!i113 1
+R5
+R6
+vobject_mem
+R7
+!i10b 1
+!s100 2Sk3h183[2]LoiiK?JhB_2
+ITPm>aC`E:V;Wb=7a_YGE@1
+R0
+R1
+R2
+8C:/Users/sabri/UofT/second_year/ece241/ECE241-Project/visual_display/object_mem.v
+FC:/Users/sabri/UofT/second_year/ece241/ECE241-Project/visual_display/object_mem.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/Users/sabri/UofT/second_year/ece241/ECE241-Project/visual_display/object_mem.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/sabri/UofT/second_year/ece241/ECE241-Project/visual_display/object_mem.v|
+!i113 1
+R5
+R6
+vregn
+R7
+!i10b 1
+!s100 >S8l>OmlgjgJnXd:7h7JK2
+I;AC8Ad<6Knl<^edaWbT8?3
+R0
+R1
+R8
+R9
+R10
+L0 229
+R3
+r1
+!s85 0
+31
+R11
+R12
+R13
+!i113 1
+R5
+R6
+vsync
+R7
+!i10b 1
+!s100 C<GQQalW2g:TUG@0ZlO3@0
+IIPg`aB7@jYkfe>Sd0g=Am3
+R0
+R1
+R8
+R9
+R10
+L0 210
+R3
+r1
+!s85 0
+31
+R11
+R12
+R13
+!i113 1
+R5
+R6
+vtestbench
+R7
+!i10b 1
+!s100 lE`EfD6a;nH^b4K2QJZn80
+I<V24TKfVBUSh848DU9kne2
+R0
+R1
+w1795154780
+8C:/Users/sabri/UofT/second_year/ece241/examples/DE1-SoC/object/ModelSim/testbench.v
+FC:/Users/sabri/UofT/second_year/ece241/examples/DE1-SoC/object/ModelSim/testbench.v
+L0 3
+R3
+r1
+!s85 0
+31
+R11
+!s107 C:/Users/sabri/UofT/second_year/ece241/examples/DE1-SoC/object/ModelSim/testbench.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/sabri/UofT/second_year/ece241/examples/DE1-SoC/object/ModelSim/testbench.v|
+!i113 1
+R5
+R6
+vupDn_count
+R7
+!i10b 1
+!s100 WNoafo`aBnJQVT@d^XR=i1
+IK=S8RAmPA?=817:;j13jk0
+R0
+R1
+R8
+R9
+R10
+L0 243
+R3
+r1
+!s85 0
+31
+R11
+R12
+R13
+!i113 1
+R5
+R6
+nup@dn_count
+vvisual_display
+R7
+!i10b 1
+!s100 ?=zmh<d?Sco[WRe;il4]K0
+IhTR]]Vgo?h^nnKZ:Y8AAl0
+R0
+R1
+R8
+R9
+R10
+L0 11
+R3
+r1
+!s85 0
+31
+R11
+R12
+R13
+!i113 1
+R5
+R6
