@@ -9,7 +9,7 @@ z2
 cModel Technology
 Z0 dC:/Users/sabri/UofT/second_year/ece241/ECE241-Project/visual_display/Modelsim
 vbackground_mem
-Z1 !s110 1795192418
+Z1 !s110 1795194565
 !i10b 1
 !s100 kbG3;cbhUeVbnOEQ@:0ES0
 IWaEE?;?76@52^^VZJOQd_0
@@ -23,7 +23,7 @@ Z4 OV;L;10.5b;63
 r1
 !s85 0
 31
-Z5 !s108 1795192418.000000
+Z5 !s108 1795194565.000000
 Z6 !s107 testbench.v|../vga_adapter/vga_pll.v|../vga_adapter/vga_address_translator.v|../vga_adapter/vga_controller.v|../vga_adapter/vga_adapter.v|../background_mem.v|../object_mem.v|../visual_display.v|
 Z7 !s90 -reportprogress|300|-work|work|../visual_display.v|../object_mem.v|../background_mem.v|../vga_adapter/vga_adapter.v|../vga_adapter/vga_controller.v|../vga_adapter/vga_address_translator.v|../vga_adapter/vga_pll.v|testbench.v|
 !i113 1
@@ -36,7 +36,7 @@ R1
 IlGC1U47Ha_9f1R]fNOOgX0
 R2
 R0
-Z10 w1795192039
+Z10 w1795193118
 Z11 8../visual_display.v
 Z12 F../visual_display.v
 L0 240
@@ -53,8 +53,8 @@ R9
 vobject
 R1
 !i10b 1
-!s100 zjmO4LU?YdZNl`2S5Gh1F3
-IhDJDA_H8h;mmb82RIX21B2
+!s100 Jj^CG1am`hIO:1Zo_8B[M2
+IFNL:6ZM^5M?b`BgWih?dR2
 R2
 R0
 R10

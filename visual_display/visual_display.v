@@ -289,7 +289,7 @@ module object (Resetn, Clock, go, ps2_rec, dir, VGA_x, VGA_y, VGA_color, VGA_wri
     parameter BOX_SIZE_X = 1 << xOBJ;
     parameter BOX_SIZE_Y = 1 << yOBJ;
     parameter Mn = xOBJ + yOBJ; // address lines needed for the object memory
-    parameter INIT_FILE = "./MIF/test_sprite.mif";
+    parameter INIT_FILE = "./MIF/test_sprite2.mif";
 	 parameter WORDS = 1 << Mn;
 
     // state names for the FSM that draws the object
