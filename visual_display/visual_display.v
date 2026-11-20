@@ -426,10 +426,10 @@ module object (Resetn, Clock, go, ps2_rec, dir, VGA_x, VGA_y, VGA_color, VGA_wri
 	 
 	 wire [8:0] background_color;
 	 // select color for the pixel stored in the ROM
-	 assign VGA_color = erase_delay ? background_color : obj_color;
+	 // assign VGA_color = erase_delay ? background_color : obj_color;
 	 
 	 wire transparent_pixel;
-	 assign transparent_pixel = (obj_color = 9'b111000111);
+	 assign transparent_pixel = (obj_color == 9'b111000111);
 	 
 	 assign VGA_color = (erase_delay || transparent_pixel) ? background_color : obj_color;
 	 

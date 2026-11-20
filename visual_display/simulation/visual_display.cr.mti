@@ -1,11 +1,4 @@
-C:/Users/sabri/UofT/second_year/ece241/ECE241-Project/visual_display/object_mem.v {1 {vlog -work work -stats=none C:/Users/sabri/UofT/second_year/ece241/ECE241-Project/visual_display/object_mem.v
-Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
--- Compiling module object_mem
-
-Top level modules:
-	object_mem
-
-} {} {}} C:/Users/sabri/UofT/second_year/ece241/ECE241-Project/visual_display/visual_display.v {1 {vlog -work work -stats=none C:/Users/sabri/UofT/second_year/ece241/ECE241-Project/visual_display/visual_display.v
+C:/Users/sabri/UofT/second_year/ece241/ECE241-Project/visual_display/visual_display.v {1 {vlog -work work -stats=none C:/Users/sabri/UofT/second_year/ece241/ECE241-Project/visual_display/visual_display.v
 Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
 -- Compiling module visual_display
 -- Compiling module sync
@@ -23,6 +16,13 @@ Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  
 
 Top level modules:
 	testbench
+
+} {} {}} C:/Users/sabri/UofT/second_year/ece241/ECE241-Project/visual_display/object_mem.v {1 {vlog -work work -stats=none C:/Users/sabri/UofT/second_year/ece241/ECE241-Project/visual_display/object_mem.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module object_mem
+
+Top level modules:
+	object_mem
 
 } {} {}} C:/Users/sabri/UofT/second_year/ece241/ECE241-Project/visual_display/background_mem.v {1 {vlog -work work -stats=none C:/Users/sabri/UofT/second_year/ece241/ECE241-Project/visual_display/background_mem.v
 Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016

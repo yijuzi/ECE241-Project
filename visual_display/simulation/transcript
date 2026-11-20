@@ -1,5 +1,15 @@
-do {C:/Users/sabri/UofT/second_year/ece241/examples/DE1-SoC/object/ModelSim/testbench.tcl}
-# C:/Users/sabri/UofT/second_year/ece241/ECE241-Project/visual_display/simulation
-# C:/Users/sabri/UofT/second_year/ECE241-Project/visual_display
-# C:/Users/sabri/UofT/second_year/ece241/ECE241-Project/visual_display
-# C:/Users/sabri/UofT/second_year/ece241/examples/DE1-SoC/object/ModelSim/visual_display_sim
+# Compile of background_mem.v was successful.
+# Compile of object_mem.v was successful.
+# Compile of visual_display.v was successful.
+# Compile of testbench.v was successful.
+# 4 compiles, 0 failed with no errors.
+ls
+# transcript  visual_display.cr.mti  visual_display.mpf                                                
+# 
+# questa:
+# visual_display.sft  visual_display.vo                                                                              
+# 
+# work:
+# _info  _lib.qdb  _lib1_1.qdb  _lib1_1.qpg  _lib1_1.qtl  _vmake                
+cd {C:/Users/sabri/UofT/second_year/ece241/ECE241-Project/visual_display/Modelsim}
+cd C:/Users/sabri/UofT/second_year/ece241/ECE241-Project/visual_display/Modelsim
