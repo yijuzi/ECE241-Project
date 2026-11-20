@@ -1,0 +1,63 @@
+module top (
+    CLOCK_50,
+    SW,
+    KEY,
+    PS2_CLK,
+    PS2_DAT,
+    HEX0,
+    HEX1,
+    HEX2,
+    HEX3,
+    HEX4,
+    HEX5,
+    LEDR,
+    VGA_R, VGA_G, VGA_B,
+	VGA_HS, VGA_VS, VGA_BLANK_N, VGA_SYNC_N, VGA_CLK
+);
+    input CLOCK_50;
+    input [9:0] SW;
+    input [3:0] KEY;
+
+    inout PS2_CLK;
+    inout PS2_DAT;
+
+    output [6:0] HEX0, HEX1, HEX2, HEX3, HEX4, HEX5;
+    output [9:0] LEDR;
+
+    wire [7:0] keyboard;
+
+    KB_Handler kb (
+        .CLOCK_50(CLOCK_50),
+        .PS2_CLK(PS2_CLK),
+        .PS2_DAT(PS2_DAT),
+        .KEY(KEY),
+        .HEX1(),
+        .HEX0(),
+        .LEDR(LEDR),
+        .out(keyboard)
+    );
+
+    wire [31:0] player_x, player_y;
+
+    game_loop gl (
+        .CLOCK_50(CLOCK_50),
+        .keyboard(keyboard),
+        .player_x(player_x),
+        .player_y(player_y)
+    );
+
+    visual_display vd (CLOCK_50, SW, KEY,
+				VGA_R, VGA_G, VGA_B,
+				VGA_HS, VGA_VS, VGA_BLANK_N, VGA_SYNC_N, VGA_CLK, 
+                player_x[24:16], player_y[23:16]);
+
+
+    seg7 h0 (.s(player_y[19:16]), .display(HEX0));
+    seg7 h1 (.s(player_y[23:20]), .display(HEX1));
+    seg7 h2 (.s(player_y[27:24]), .display(HEX2));
+
+    seg7 h3 (.s(player_x[19:16]), .display(HEX3));
+    seg7 h4 (.s(player_x[23:20]), .display(HEX4));
+    seg7 h5 (.s(player_x[27:24]), .display(HEX5));
+
+endmodule
