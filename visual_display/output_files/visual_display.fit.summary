@@ -1,0 +1,20 @@
+Fitter Status : Successful - Fri Nov 20 00:27:05 2026
+Quartus Prime Version : 23.1std.0 Build 991 11/28/2023 SC Lite Edition
+Revision Name : visual_display
+Top-level Entity Name : visual_display
+Family : Cyclone V
+Device : 5CSEMA5F31C6
+Timing Models : Final
+Logic utilization (in ALMs) : 216 / 32,070 ( < 1 % )
+Total registers : 153
+Total pins : 98 / 457 ( 21 % )
+Total virtual pins : 0
+Total block memory bits : 1,384,704 / 4,065,280 ( 34 % )
+Total RAM Blocks : 173 / 397 ( 44 % )
+Total DSP Blocks : 0 / 87 ( 0 % )
+Total HSSI RX PCSs : 0
+Total HSSI PMA RX Deserializers : 0
+Total HSSI TX PCSs : 0
+Total HSSI PMA TX Serializers : 0
+Total PLLs : 1 / 6 ( 17 % )
+Total DLLs : 0 / 4 ( 0 % )

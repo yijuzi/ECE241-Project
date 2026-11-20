@@ -1,0 +1,4 @@
+Info (10281): Verilog HDL Declaration information at visual_display.v(308): object "RIGHT" differs only in case from object "Right" in the same scope File: //vsrv2/D.Homes$/pansabr2/Desktop/ece241/project/visual_display/visual_display.v Line: 308
+Info (10281): Verilog HDL Declaration information at visual_display.v(308): object "LEFT" differs only in case from object "Left" in the same scope File: //vsrv2/D.Homes$/pansabr2/Desktop/ece241/project/visual_display/visual_display.v Line: 308
+Info (10281): Verilog HDL Declaration information at visual_display.v(308): object "UP" differs only in case from object "Up" in the same scope File: //vsrv2/D.Homes$/pansabr2/Desktop/ece241/project/visual_display/visual_display.v Line: 308
+Info (10281): Verilog HDL Declaration information at visual_display.v(308): object "DOWN" differs only in case from object "Down" in the same scope File: //vsrv2/D.Homes$/pansabr2/Desktop/ece241/project/visual_display/visual_display.v Line: 308
