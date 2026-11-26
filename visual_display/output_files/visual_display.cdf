@@ -6,7 +6,7 @@ JedecChain;
 	P ActionCode(Ign)
 		Device PartName(SOCVHPS) MfrSpec(OpMask(0));
 	P ActionCode(Cfg)
-		Device PartName(5CSEMA5F31) Path("//vsrv2/D.Homes$/pansabr2/Desktop/ece241/project/visual_display/output_files/") File("visual_display.sof") MfrSpec(OpMask(1));
+		Device PartName(5CSEMA5F31) Path("//vsrv2/D.Homes$/pansabr2/Desktop/ECE241-Project/visual_display/output_files/") File("visual_display.sof") MfrSpec(OpMask(1));
 
 ChainEnd;
 

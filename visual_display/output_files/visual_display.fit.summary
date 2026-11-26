@@ -1,16 +1,16 @@
-Fitter Status : Successful - Thu Nov 26 15:30:14 2026
+Fitter Status : Successful - Thu Nov 26 17:25:11 2026
 Quartus Prime Version : 23.1std.0 Build 991 11/28/2023 SC Lite Edition
 Revision Name : visual_display
 Top-level Entity Name : vga_display
 Family : Cyclone V
 Device : 5CSEMA5F31C6
 Timing Models : Final
-Logic utilization (in ALMs) : 130 / 32,070 ( < 1 % )
-Total registers : 107
-Total pins : 34 / 457 ( 7 % )
+Logic utilization (in ALMs) : 181 / 32,070 ( < 1 % )
+Total registers : 113
+Total pins : 47 / 457 ( 10 % )
 Total virtual pins : 0
-Total block memory bits : 691,200 / 4,065,280 ( 17 % )
-Total RAM Blocks : 86 / 397 ( 22 % )
+Total block memory bits : 1,320,192 / 4,065,280 ( 32 % )
+Total RAM Blocks : 164 / 397 ( 41 % )
 Total DSP Blocks : 0 / 87 ( 0 % )
 Total HSSI RX PCSs : 0
 Total HSSI PMA RX Deserializers : 0

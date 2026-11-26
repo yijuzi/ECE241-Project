@@ -905,4 +905,6 @@ set_global_assignment -name VERILOG_FILE "//VSRV2/D.Homes\$/pansabr2/Desktop/ECE
 set_global_assignment -name VERILOG_FILE "//VSRV2/D.Homes\$/pansabr2/Desktop/ECE241-Project/visual_display/tileset_mem.v"
 set_global_assignment -name VERILOG_FILE "//VSRV2/D.Homes\$/pansabr2/Desktop/ECE241-Project/visual_display/tile_map.v"
 set_global_assignment -name VERILOG_FILE "//VSRV2/D.Homes\$/pansabr2/Desktop/ECE241-Project/visual_display/tile_render.v"
+set_global_assignment -name QIP_FILE "//VSRV2/D.Homes\$/pansabr2/Desktop/ECE241-Project/visual_display/rom1024x4.qip"
+set_global_assignment -name VERILOG_FILE "//VSRV2/D.Homes\$/pansabr2/Desktop/ECE241-Project/visual_display/top.v"
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

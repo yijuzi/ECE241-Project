@@ -1,5 +1,5 @@
 Analysis & Synthesis report for visual_display
-Thu Nov 26 15:29:11 2026
+Thu Nov 26 17:24:10 2026
 Quartus Prime Version 23.1std.0 Build 991 11/28/2023 SC Lite Edition
 
 
@@ -17,50 +17,49 @@ Quartus Prime Version 23.1std.0 Build 991 11/28/2023 SC Lite Edition
   9. State Machine - |vga_display|object:O1|y_Q
  10. State Machine - |vga_display|tile_render:t0|y_Q
  11. Registers Removed During Synthesis
- 12. General Register Statistics
- 13. Multiplexer Restructuring Statistics (Restructuring Performed)
- 14. Source assignments for tile_render:t0|tileset_mem:m0|altsyncram:altsyncram_component|altsyncram_9qg1:auto_generated
- 15. Source assignments for object:O1|object_mem:U6|altsyncram:altsyncram_component|altsyncram_m6h1:auto_generated
- 16. Source assignments for object:O1|background_mem:b0|altsyncram:altsyncram_component|altsyncram_hqg1:auto_generated
- 17. Source assignments for vga_adapter:VGA|altsyncram:VideoMemory|altsyncram_esm1:auto_generated
- 18. Parameter Settings for User Entity Instance: tile_render:t0
- 19. Parameter Settings for User Entity Instance: tile_render:t0|tileset_mem:m0
- 20. Parameter Settings for User Entity Instance: tile_render:t0|tileset_mem:m0|altsyncram:altsyncram_component
- 21. Parameter Settings for User Entity Instance: object:O1
- 22. Parameter Settings for User Entity Instance: object:O1|counter_ud:UX
- 23. Parameter Settings for User Entity Instance: object:O1|counter_ud:UY
- 24. Parameter Settings for User Entity Instance: object:O1|counter_ud:U3
- 25. Parameter Settings for User Entity Instance: object:O1|counter_ud:U4
- 26. Parameter Settings for User Entity Instance: object:O1|object_mem:U6
- 27. Parameter Settings for User Entity Instance: object:O1|object_mem:U6|altsyncram:altsyncram_component
- 28. Parameter Settings for User Entity Instance: object:O1|regn:U7
- 29. Parameter Settings for User Entity Instance: object:O1|regn:U8
- 30. Parameter Settings for User Entity Instance: object:O1|regn:U9
- 31. Parameter Settings for User Entity Instance: object:O1|background_mem:b0
- 32. Parameter Settings for User Entity Instance: object:O1|background_mem:b0|altsyncram:altsyncram_component
- 33. Parameter Settings for User Entity Instance: vga_adapter:VGA
- 34. Parameter Settings for User Entity Instance: vga_adapter:VGA|vga_address_translator:user_input_translator
- 35. Parameter Settings for User Entity Instance: vga_adapter:VGA|altsyncram:VideoMemory
- 36. Parameter Settings for User Entity Instance: vga_adapter:VGA|vga_pll:mypll|altpll:altpll_component
- 37. Parameter Settings for User Entity Instance: vga_adapter:VGA|vga_controller:controller
- 38. Parameter Settings for User Entity Instance: vga_adapter:VGA|vga_controller:controller|vga_address_translator:controller_translator
- 39. altsyncram Parameter Settings by Entity Instance
- 40. altpll Parameter Settings by Entity Instance
- 41. Port Connectivity Checks: "vga_adapter:VGA"
- 42. Port Connectivity Checks: "object:O1|regn:U9"
- 43. Port Connectivity Checks: "object:O1|regn:U8"
- 44. Port Connectivity Checks: "object:O1|regn:U7"
- 45. Port Connectivity Checks: "object:O1|counter_ud:U4"
- 46. Port Connectivity Checks: "object:O1|counter_ud:U3"
- 47. Port Connectivity Checks: "object:O1|counter_ud:UY"
- 48. Port Connectivity Checks: "object:O1|counter_ud:UX"
- 49. Port Connectivity Checks: "object:O1"
- 50. Port Connectivity Checks: "tile_render:t0"
- 51. Port Connectivity Checks: "sync:draw_button"
- 52. Post-Synthesis Netlist Statistics for Top Partition
- 53. Elapsed Time Per Partition
- 54. Analysis & Synthesis Messages
- 55. Analysis & Synthesis Suppressed Messages
+ 12. Removed Registers Triggering Further Register Optimizations
+ 13. General Register Statistics
+ 14. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 15. Source assignments for tile_render:t0|tileset_mem:m0|altsyncram:altsyncram_component|altsyncram_9qg1:auto_generated
+ 16. Source assignments for object:O1|object_mem:U6|altsyncram:altsyncram_component|altsyncram_m6h1:auto_generated
+ 17. Source assignments for object:O1|background_mem:b0|altsyncram:altsyncram_component|altsyncram_hqg1:auto_generated
+ 18. Source assignments for vga_adapter:VGA|altsyncram:VideoMemory|altsyncram_esm1:auto_generated
+ 19. Parameter Settings for User Entity Instance: tile_render:t0
+ 20. Parameter Settings for User Entity Instance: tile_render:t0|tileset_mem:m0
+ 21. Parameter Settings for User Entity Instance: tile_render:t0|tileset_mem:m0|altsyncram:altsyncram_component
+ 22. Parameter Settings for User Entity Instance: object:O1
+ 23. Parameter Settings for User Entity Instance: object:O1|counter_ud:UX
+ 24. Parameter Settings for User Entity Instance: object:O1|counter_ud:UY
+ 25. Parameter Settings for User Entity Instance: object:O1|counter_ud:U3
+ 26. Parameter Settings for User Entity Instance: object:O1|counter_ud:U4
+ 27. Parameter Settings for User Entity Instance: object:O1|object_mem:U6
+ 28. Parameter Settings for User Entity Instance: object:O1|object_mem:U6|altsyncram:altsyncram_component
+ 29. Parameter Settings for User Entity Instance: object:O1|regn:U7
+ 30. Parameter Settings for User Entity Instance: object:O1|regn:U8
+ 31. Parameter Settings for User Entity Instance: object:O1|regn:U9
+ 32. Parameter Settings for User Entity Instance: object:O1|background_mem:b0
+ 33. Parameter Settings for User Entity Instance: object:O1|background_mem:b0|altsyncram:altsyncram_component
+ 34. Parameter Settings for User Entity Instance: vga_adapter:VGA
+ 35. Parameter Settings for User Entity Instance: vga_adapter:VGA|vga_address_translator:user_input_translator
+ 36. Parameter Settings for User Entity Instance: vga_adapter:VGA|altsyncram:VideoMemory
+ 37. Parameter Settings for User Entity Instance: vga_adapter:VGA|vga_pll:mypll|altpll:altpll_component
+ 38. Parameter Settings for User Entity Instance: vga_adapter:VGA|vga_controller:controller
+ 39. Parameter Settings for User Entity Instance: vga_adapter:VGA|vga_controller:controller|vga_address_translator:controller_translator
+ 40. altsyncram Parameter Settings by Entity Instance
+ 41. altpll Parameter Settings by Entity Instance
+ 42. Port Connectivity Checks: "vga_adapter:VGA"
+ 43. Port Connectivity Checks: "object:O1|regn:U9"
+ 44. Port Connectivity Checks: "object:O1|regn:U8"
+ 45. Port Connectivity Checks: "object:O1|regn:U7"
+ 46. Port Connectivity Checks: "object:O1|counter_ud:U4"
+ 47. Port Connectivity Checks: "object:O1|counter_ud:U3"
+ 48. Port Connectivity Checks: "object:O1|counter_ud:UY"
+ 49. Port Connectivity Checks: "object:O1|counter_ud:UX"
+ 50. Port Connectivity Checks: "object:O1"
+ 51. Post-Synthesis Netlist Statistics for Top Partition
+ 52. Elapsed Time Per Partition
+ 53. Analysis & Synthesis Messages
+ 54. Analysis & Synthesis Suppressed Messages
 
 
 
@@ -87,16 +86,16 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +---------------------------------+------------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Thu Nov 26 15:29:10 2026          ;
+; Analysis & Synthesis Status     ; Successful - Thu Nov 26 17:24:09 2026          ;
 ; Quartus Prime Version           ; 23.1std.0 Build 991 11/28/2023 SC Lite Edition ;
 ; Revision Name                   ; visual_display                                 ;
 ; Top-level Entity Name           ; vga_display                                    ;
 ; Family                          ; Cyclone V                                      ;
 ; Logic utilization (in ALMs)     ; N/A                                            ;
-; Total registers                 ; 100                                            ;
-; Total pins                      ; 34                                             ;
+; Total registers                 ; 106                                            ;
+; Total pins                      ; 47                                             ;
 ; Total virtual pins              ; 0                                              ;
-; Total block memory bits         ; 691,200                                        ;
+; Total block memory bits         ; 1,320,192                                      ;
 ; Total DSP Blocks                ; 0                                              ;
 ; Total HSSI RX PCSs              ; 0                                              ;
 ; Total HSSI PMA RX Deserializers ; 0                                              ;
@@ -207,7 +206,11 @@ https://fpgasoftware.intel.com/eula.
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processors 2-6         ;   0.0%      ;
+;     Processor 2            ;   0.0%      ;
+;     Processor 3            ;   0.0%      ;
+;     Processor 4            ;   0.0%      ;
+;     Processor 5            ;   0.0%      ;
+;     Processor 6            ;   0.0%      ;
 +----------------------------+-------------+
 
 
@@ -223,7 +226,6 @@ https://fpgasoftware.intel.com/eula.
 ; //VSRV2/D.Homes$/pansabr2/Desktop/ECE241-Project/visual_display/background_mem.v                     ; yes             ; User Verilog HDL File                  ; //VSRV2/D.Homes$/pansabr2/Desktop/ECE241-Project/visual_display/background_mem.v                     ;         ;
 ; //VSRV2/D.Homes$/pansabr2/Desktop/ECE241-Project/visual_display/object_mem.v                         ; yes             ; User Verilog HDL File                  ; //VSRV2/D.Homes$/pansabr2/Desktop/ECE241-Project/visual_display/object_mem.v                         ;         ;
 ; //VSRV2/D.Homes$/pansabr2/Desktop/ECE241-Project/visual_display/vga_display.v                        ; yes             ; User Verilog HDL File                  ; //VSRV2/D.Homes$/pansabr2/Desktop/ECE241-Project/visual_display/vga_display.v                        ;         ;
-; //VSRV2/D.Homes$/pansabr2/Desktop/ECE241-Project/visual_display/tile_map.v                           ; yes             ; User Verilog HDL File                  ; //VSRV2/D.Homes$/pansabr2/Desktop/ECE241-Project/visual_display/tile_map.v                           ;         ;
 ; //VSRV2/D.Homes$/pansabr2/Desktop/ECE241-Project/visual_display/tileset_mem.v                        ; yes             ; User Verilog HDL File                  ; //VSRV2/D.Homes$/pansabr2/Desktop/ECE241-Project/visual_display/tileset_mem.v                        ;         ;
 ; //VSRV2/D.Homes$/pansabr2/Desktop/ECE241-Project/visual_display/tile_render.v                        ; yes             ; User Verilog HDL File                  ; //VSRV2/D.Homes$/pansabr2/Desktop/ECE241-Project/visual_display/tile_render.v                        ;         ;
 ; altsyncram.tdf                                                                                       ; yes             ; Megafunction                           ; c:/intelfpga/quartus_prime_lite_23.1/quartus/libraries/megafunctions/altsyncram.tdf                  ;         ;
@@ -258,20 +260,20 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------+----------------+
 ; Resource                                    ; Usage          ;
 +---------------------------------------------+----------------+
-; Estimate of Logic utilization (ALMs needed) ; 131            ;
+; Estimate of Logic utilization (ALMs needed) ; 180            ;
 ;                                             ;                ;
-; Combinational ALUT usage for logic          ; 216            ;
-;     -- 7 input functions                    ; 0              ;
-;     -- 6 input functions                    ; 44             ;
-;     -- 5 input functions                    ; 36             ;
-;     -- 4 input functions                    ; 26             ;
-;     -- <=3 input functions                  ; 110            ;
+; Combinational ALUT usage for logic          ; 284            ;
+;     -- 7 input functions                    ; 2              ;
+;     -- 6 input functions                    ; 71             ;
+;     -- 5 input functions                    ; 38             ;
+;     -- 4 input functions                    ; 31             ;
+;     -- <=3 input functions                  ; 142            ;
 ;                                             ;                ;
-; Dedicated logic registers                   ; 100            ;
+; Dedicated logic registers                   ; 106            ;
 ;                                             ;                ;
-; I/O pins                                    ; 34             ;
+; I/O pins                                    ; 47             ;
 ; Total MLAB memory bits                      ; 0              ;
-; Total block memory bits                     ; 691200         ;
+; Total block memory bits                     ; 1320192        ;
 ;                                             ;                ;
 ; Total DSP Blocks                            ; 0              ;
 ;                                             ;                ;
@@ -279,50 +281,64 @@ https://fpgasoftware.intel.com/eula.
 ;     -- PLLs                                 ; 1              ;
 ;                                             ;                ;
 ; Maximum fan-out node                        ; CLOCK_50~input ;
-; Maximum fan-out                             ; 157            ;
-; Total fan-out                               ; 3942           ;
-; Average fan-out                             ; 8.30           ;
+; Maximum fan-out                             ; 253            ;
+; Total fan-out                               ; 5584           ;
+; Average fan-out                             ; 8.40           ;
 +---------------------------------------------+----------------+
 
 
-+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                                                                    ;
-+---------------------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+-------------------------------------------------------------------------------------------------------------+------------------------+--------------+
-; Compilation Hierarchy Node                              ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                         ; Entity Name            ; Library Name ;
-+---------------------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+-------------------------------------------------------------------------------------------------------------+------------------------+--------------+
-; |vga_display                                            ; 216 (8)             ; 100 (0)                   ; 691200            ; 0          ; 34   ; 0            ; |vga_display                                                                                                ; vga_display            ; work         ;
-;    |object:O1|                                          ; 54 (22)             ; 44 (8)                    ; 0                 ; 0          ; 0    ; 0            ; |vga_display|object:O1                                                                                      ; object                 ; work         ;
-;       |counter_ud:U3|                                   ; 7 (7)               ; 4 (4)                     ; 0                 ; 0          ; 0    ; 0            ; |vga_display|object:O1|counter_ud:U3                                                                        ; counter_ud             ; work         ;
-;       |counter_ud:U4|                                   ; 5 (5)               ; 4 (4)                     ; 0                 ; 0          ; 0    ; 0            ; |vga_display|object:O1|counter_ud:U4                                                                        ; counter_ud             ; work         ;
-;       |counter_ud:UX|                                   ; 19 (19)             ; 9 (9)                     ; 0                 ; 0          ; 0    ; 0            ; |vga_display|object:O1|counter_ud:UX                                                                        ; counter_ud             ; work         ;
-;       |counter_ud:UY|                                   ; 1 (1)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |vga_display|object:O1|counter_ud:UY                                                                        ; counter_ud             ; work         ;
-;       |regn:U7|                                         ; 0 (0)               ; 9 (9)                     ; 0                 ; 0          ; 0    ; 0            ; |vga_display|object:O1|regn:U7                                                                              ; regn                   ; work         ;
-;       |regn:U8|                                         ; 0 (0)               ; 8 (8)                     ; 0                 ; 0          ; 0    ; 0            ; |vga_display|object:O1|regn:U8                                                                              ; regn                   ; work         ;
-;       |regn:U9|                                         ; 0 (0)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |vga_display|object:O1|regn:U9                                                                              ; regn                   ; work         ;
-;    |tile_render:t0|                                     ; 30 (30)             ; 22 (22)                   ; 0                 ; 0          ; 0    ; 0            ; |vga_display|tile_render:t0                                                                                 ; tile_render            ; work         ;
-;    |vga_adapter:VGA|                                    ; 124 (5)             ; 34 (0)                    ; 691200            ; 0          ; 0    ; 0            ; |vga_display|vga_adapter:VGA                                                                                ; vga_adapter            ; work         ;
-;       |altsyncram:VideoMemory|                          ; 38 (0)              ; 8 (0)                     ; 691200            ; 0          ; 0    ; 0            ; |vga_display|vga_adapter:VGA|altsyncram:VideoMemory                                                         ; altsyncram             ; work         ;
-;          |altsyncram_esm1:auto_generated|               ; 38 (0)              ; 8 (8)                     ; 691200            ; 0          ; 0    ; 0            ; |vga_display|vga_adapter:VGA|altsyncram:VideoMemory|altsyncram_esm1:auto_generated                          ; altsyncram_esm1        ; work         ;
-;             |decode_g2a:rden_decode_b|                  ; 10 (10)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |vga_display|vga_adapter:VGA|altsyncram:VideoMemory|altsyncram_esm1:auto_generated|decode_g2a:rden_decode_b ; decode_g2a             ; work         ;
-;             |decode_nma:decode2|                        ; 10 (10)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |vga_display|vga_adapter:VGA|altsyncram:VideoMemory|altsyncram_esm1:auto_generated|decode_nma:decode2       ; decode_nma             ; work         ;
-;             |mux_8hb:mux3|                              ; 18 (18)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |vga_display|vga_adapter:VGA|altsyncram:VideoMemory|altsyncram_esm1:auto_generated|mux_8hb:mux3             ; mux_8hb                ; work         ;
-;       |vga_address_translator:user_input_translator|    ; 18 (18)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |vga_display|vga_adapter:VGA|vga_address_translator:user_input_translator                                   ; vga_address_translator ; work         ;
-;       |vga_controller:controller|                       ; 63 (52)             ; 26 (26)                   ; 0                 ; 0          ; 0    ; 0            ; |vga_display|vga_adapter:VGA|vga_controller:controller                                                      ; vga_controller         ; work         ;
-;          |vga_address_translator:controller_translator| ; 11 (11)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |vga_display|vga_adapter:VGA|vga_controller:controller|vga_address_translator:controller_translator         ; vga_address_translator ; work         ;
-;       |vga_pll:mypll|                                   ; 0 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |vga_display|vga_adapter:VGA|vga_pll:mypll                                                                  ; vga_pll                ; work         ;
-;          |altpll:altpll_component|                      ; 0 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |vga_display|vga_adapter:VGA|vga_pll:mypll|altpll:altpll_component                                          ; altpll                 ; work         ;
-;             |altpll_80u:auto_generated|                 ; 0 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |vga_display|vga_adapter:VGA|vga_pll:mypll|altpll:altpll_component|altpll_80u:auto_generated                ; altpll_80u             ; work         ;
-+---------------------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+-------------------------------------------------------------------------------------------------------------+------------------------+--------------+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                                                                                       ;
++---------------------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+--------------------------------------------------------------------------------------------------------------------------------+------------------------+--------------+
+; Compilation Hierarchy Node                              ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                                            ; Entity Name            ; Library Name ;
++---------------------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+--------------------------------------------------------------------------------------------------------------------------------+------------------------+--------------+
+; |vga_display                                            ; 284 (38)            ; 106 (0)                   ; 1320192           ; 0          ; 47   ; 0            ; |vga_display                                                                                                                   ; vga_display            ; work         ;
+;    |object:O1|                                          ; 85 (45)             ; 48 (9)                    ; 592128            ; 0          ; 0    ; 0            ; |vga_display|object:O1                                                                                                         ; object                 ; work         ;
+;       |background_mem:b0|                               ; 8 (0)               ; 3 (0)                     ; 589824            ; 0          ; 0    ; 0            ; |vga_display|object:O1|background_mem:b0                                                                                       ; background_mem         ; work         ;
+;          |altsyncram:altsyncram_component|              ; 8 (0)               ; 3 (0)                     ; 589824            ; 0          ; 0    ; 0            ; |vga_display|object:O1|background_mem:b0|altsyncram:altsyncram_component                                                       ; altsyncram             ; work         ;
+;             |altsyncram_hqg1:auto_generated|            ; 8 (0)               ; 3 (3)                     ; 589824            ; 0          ; 0    ; 0            ; |vga_display|object:O1|background_mem:b0|altsyncram:altsyncram_component|altsyncram_hqg1:auto_generated                        ; altsyncram_hqg1        ; work         ;
+;                |decode_g2a:rden_decode|                 ; 8 (8)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |vga_display|object:O1|background_mem:b0|altsyncram:altsyncram_component|altsyncram_hqg1:auto_generated|decode_g2a:rden_decode ; decode_g2a             ; work         ;
+;       |counter_ud:U3|                                   ; 7 (7)               ; 4 (4)                     ; 0                 ; 0          ; 0    ; 0            ; |vga_display|object:O1|counter_ud:U3                                                                                           ; counter_ud             ; work         ;
+;       |counter_ud:U4|                                   ; 5 (5)               ; 4 (4)                     ; 0                 ; 0          ; 0    ; 0            ; |vga_display|object:O1|counter_ud:U4                                                                                           ; counter_ud             ; work         ;
+;       |counter_ud:UX|                                   ; 19 (19)             ; 9 (9)                     ; 0                 ; 0          ; 0    ; 0            ; |vga_display|object:O1|counter_ud:UX                                                                                           ; counter_ud             ; work         ;
+;       |counter_ud:UY|                                   ; 1 (1)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |vga_display|object:O1|counter_ud:UY                                                                                           ; counter_ud             ; work         ;
+;       |object_mem:U6|                                   ; 0 (0)               ; 0 (0)                     ; 2304              ; 0          ; 0    ; 0            ; |vga_display|object:O1|object_mem:U6                                                                                           ; object_mem             ; work         ;
+;          |altsyncram:altsyncram_component|              ; 0 (0)               ; 0 (0)                     ; 2304              ; 0          ; 0    ; 0            ; |vga_display|object:O1|object_mem:U6|altsyncram:altsyncram_component                                                           ; altsyncram             ; work         ;
+;             |altsyncram_m6h1:auto_generated|            ; 0 (0)               ; 0 (0)                     ; 2304              ; 0          ; 0    ; 0            ; |vga_display|object:O1|object_mem:U6|altsyncram:altsyncram_component|altsyncram_m6h1:auto_generated                            ; altsyncram_m6h1        ; work         ;
+;       |regn:U7|                                         ; 0 (0)               ; 9 (9)                     ; 0                 ; 0          ; 0    ; 0            ; |vga_display|object:O1|regn:U7                                                                                                 ; regn                   ; work         ;
+;       |regn:U8|                                         ; 0 (0)               ; 8 (8)                     ; 0                 ; 0          ; 0    ; 0            ; |vga_display|object:O1|regn:U8                                                                                                 ; regn                   ; work         ;
+;       |regn:U9|                                         ; 0 (0)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |vga_display|object:O1|regn:U9                                                                                                 ; regn                   ; work         ;
+;    |sync:draw_button|                                   ; 0 (0)               ; 2 (2)                     ; 0                 ; 0          ; 0    ; 0            ; |vga_display|sync:draw_button                                                                                                  ; sync                   ; work         ;
+;    |tile_render:t0|                                     ; 38 (38)             ; 22 (22)                   ; 36864             ; 0          ; 0    ; 0            ; |vga_display|tile_render:t0                                                                                                    ; tile_render            ; work         ;
+;       |tileset_mem:m0|                                  ; 0 (0)               ; 0 (0)                     ; 36864             ; 0          ; 0    ; 0            ; |vga_display|tile_render:t0|tileset_mem:m0                                                                                     ; tileset_mem            ; work         ;
+;          |altsyncram:altsyncram_component|              ; 0 (0)               ; 0 (0)                     ; 36864             ; 0          ; 0    ; 0            ; |vga_display|tile_render:t0|tileset_mem:m0|altsyncram:altsyncram_component                                                     ; altsyncram             ; work         ;
+;             |altsyncram_9qg1:auto_generated|            ; 0 (0)               ; 0 (0)                     ; 36864             ; 0          ; 0    ; 0            ; |vga_display|tile_render:t0|tileset_mem:m0|altsyncram:altsyncram_component|altsyncram_9qg1:auto_generated                      ; altsyncram_9qg1        ; work         ;
+;    |vga_adapter:VGA|                                    ; 123 (4)             ; 34 (0)                    ; 691200            ; 0          ; 0    ; 0            ; |vga_display|vga_adapter:VGA                                                                                                   ; vga_adapter            ; work         ;
+;       |altsyncram:VideoMemory|                          ; 38 (0)              ; 8 (0)                     ; 691200            ; 0          ; 0    ; 0            ; |vga_display|vga_adapter:VGA|altsyncram:VideoMemory                                                                            ; altsyncram             ; work         ;
+;          |altsyncram_esm1:auto_generated|               ; 38 (0)              ; 8 (8)                     ; 691200            ; 0          ; 0    ; 0            ; |vga_display|vga_adapter:VGA|altsyncram:VideoMemory|altsyncram_esm1:auto_generated                                             ; altsyncram_esm1        ; work         ;
+;             |decode_g2a:rden_decode_b|                  ; 10 (10)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |vga_display|vga_adapter:VGA|altsyncram:VideoMemory|altsyncram_esm1:auto_generated|decode_g2a:rden_decode_b                    ; decode_g2a             ; work         ;
+;             |decode_nma:decode2|                        ; 10 (10)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |vga_display|vga_adapter:VGA|altsyncram:VideoMemory|altsyncram_esm1:auto_generated|decode_nma:decode2                          ; decode_nma             ; work         ;
+;             |mux_8hb:mux3|                              ; 18 (18)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |vga_display|vga_adapter:VGA|altsyncram:VideoMemory|altsyncram_esm1:auto_generated|mux_8hb:mux3                                ; mux_8hb                ; work         ;
+;       |vga_address_translator:user_input_translator|    ; 18 (18)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |vga_display|vga_adapter:VGA|vga_address_translator:user_input_translator                                                      ; vga_address_translator ; work         ;
+;       |vga_controller:controller|                       ; 63 (52)             ; 26 (26)                   ; 0                 ; 0          ; 0    ; 0            ; |vga_display|vga_adapter:VGA|vga_controller:controller                                                                         ; vga_controller         ; work         ;
+;          |vga_address_translator:controller_translator| ; 11 (11)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |vga_display|vga_adapter:VGA|vga_controller:controller|vga_address_translator:controller_translator                            ; vga_address_translator ; work         ;
+;       |vga_pll:mypll|                                   ; 0 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |vga_display|vga_adapter:VGA|vga_pll:mypll                                                                                     ; vga_pll                ; work         ;
+;          |altpll:altpll_component|                      ; 0 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |vga_display|vga_adapter:VGA|vga_pll:mypll|altpll:altpll_component                                                             ; altpll                 ; work         ;
+;             |altpll_80u:auto_generated|                 ; 0 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |vga_display|vga_adapter:VGA|vga_pll:mypll|altpll:altpll_component|altpll_80u:auto_generated                                   ; altpll_80u             ; work         ;
++---------------------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+--------------------------------------------------------------------------------------------------------------------------------+------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis RAM Summary                                                                                                                                                                      ;
-+----------------------------------------------------------------------------------+------+------------------+--------------+--------------+--------------+--------------+--------+---------------------+
-; Name                                                                             ; Type ; Mode             ; Port A Depth ; Port A Width ; Port B Depth ; Port B Width ; Size   ; MIF                 ;
-+----------------------------------------------------------------------------------+------+------------------+--------------+--------------+--------------+--------------+--------+---------------------+
-; vga_adapter:VGA|altsyncram:VideoMemory|altsyncram_esm1:auto_generated|ALTSYNCRAM ; AUTO ; Simple Dual Port ; 76800        ; 9            ; 76800        ; 9            ; 691200 ; ./MIF/bmp_320_9.mif ;
-+----------------------------------------------------------------------------------+------+------------------+--------------+--------------+--------------+--------------+--------+---------------------+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis RAM Summary                                                                                                                                                                                                ;
++---------------------------------------------------------------------------------------------------------+------+------------------+--------------+--------------+--------------+--------------+--------+------------------------+
+; Name                                                                                                    ; Type ; Mode             ; Port A Depth ; Port A Width ; Port B Depth ; Port B Width ; Size   ; MIF                    ;
++---------------------------------------------------------------------------------------------------------+------+------------------+--------------+--------------+--------------+--------------+--------+------------------------+
+; object:O1|background_mem:b0|altsyncram:altsyncram_component|altsyncram_hqg1:auto_generated|ALTSYNCRAM   ; AUTO ; ROM              ; 76800        ; 9            ; --           ; --           ; 691200 ; ./MIF/bmp_320_9.mif    ;
+; object:O1|object_mem:U6|altsyncram:altsyncram_component|altsyncram_m6h1:auto_generated|ALTSYNCRAM       ; AUTO ; ROM              ; 256          ; 9            ; --           ; --           ; 2304   ; ./MIF/test_sprite2.mif ;
+; tile_render:t0|tileset_mem:m0|altsyncram:altsyncram_component|altsyncram_9qg1:auto_generated|ALTSYNCRAM ; AUTO ; ROM              ; 4096         ; 9            ; --           ; --           ; 36864  ; ./MIF/tileset.mif      ;
+; vga_adapter:VGA|altsyncram:VideoMemory|altsyncram_esm1:auto_generated|ALTSYNCRAM                        ; AUTO ; Simple Dual Port ; 76800        ; 9            ; 76800        ; 9            ; 691200 ; ./MIF/bmp_320_9.mif    ;
++---------------------------------------------------------------------------------------------------------+------+------------------+--------------+--------------+--------------+--------------+--------+------------------------+
 
 
 Encoding Type:  One-Hot
@@ -354,20 +370,30 @@ Encoding Type:  One-Hot
 +-------+-------+-------+-------------------------+
 
 
-+-----------------------------------------------------------------------------------+
-; Registers Removed During Synthesis                                                ;
-+----------------------------------------+------------------------------------------+
-; Register name                          ; Reason for Removal                       ;
-+----------------------------------------+------------------------------------------+
-; object:O1|counter_ud:UY|Q[8]           ; Lost fanout                              ;
-; object:O1|counter_ud:UY|Q[1,2,7]       ; Merged with object:O1|counter_ud:UY|Q[0] ;
-; object:O1|counter_ud:UY|Q[4..6]        ; Merged with object:O1|counter_ud:UY|Q[3] ;
-; object:O1|counter_ud:UY|Q[0]           ; Stuck at GND due to stuck port data_in   ;
-; object:O1|y_Q~2                        ; Lost fanout                              ;
-; object:O1|y_Q~3                        ; Lost fanout                              ;
-; object:O1|y_Q~4                        ; Lost fanout                              ;
-; Total Number of Removed Registers = 11 ;                                          ;
-+----------------------------------------+------------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Registers Removed During Synthesis                                                                                                                     ;
++-------------------------------------------------------------------------------------------------------------+------------------------------------------+
+; Register name                                                                                               ; Reason for Removal                       ;
++-------------------------------------------------------------------------------------------------------------+------------------------------------------+
+; object:O1|counter_ud:UY|Q[1,2,7,8]                                                                          ; Merged with object:O1|counter_ud:UY|Q[0] ;
+; object:O1|counter_ud:UY|Q[4..6]                                                                             ; Merged with object:O1|counter_ud:UY|Q[3] ;
+; object:O1|counter_ud:UY|Q[0]                                                                                ; Stuck at GND due to stuck port data_in   ;
+; object:O1|background_mem:b0|altsyncram:altsyncram_component|altsyncram_hqg1:auto_generated|address_reg_a[3] ; Stuck at GND due to stuck port data_in   ;
+; object:O1|y_Q~2                                                                                             ; Lost fanout                              ;
+; object:O1|y_Q~3                                                                                             ; Lost fanout                              ;
+; object:O1|y_Q~4                                                                                             ; Lost fanout                              ;
+; Total Number of Removed Registers = 12                                                                      ;                                          ;
++-------------------------------------------------------------------------------------------------------------+------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Removed Registers Triggering Further Register Optimizations                                                                                                            ;
++------------------------------+---------------------------+-------------------------------------------------------------------------------------------------------------+
+; Register name                ; Reason for Removal        ; Registers Removed due to This Register                                                                      ;
++------------------------------+---------------------------+-------------------------------------------------------------------------------------------------------------+
+; object:O1|counter_ud:UY|Q[0] ; Stuck at GND              ; object:O1|background_mem:b0|altsyncram:altsyncram_component|altsyncram_hqg1:auto_generated|address_reg_a[3] ;
+;                              ; due to stuck port data_in ;                                                                                                             ;
++------------------------------+---------------------------+-------------------------------------------------------------------------------------------------------------+
 
 
 +------------------------------------------------------+
@@ -375,8 +401,8 @@ Encoding Type:  One-Hot
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 100   ;
-; Number of registers using Synchronous Clear  ; 70    ;
+; Total registers                              ; 106   ;
+; Number of registers using Synchronous Clear  ; 74    ;
 ; Number of registers using Synchronous Load   ; 0     ;
 ; Number of registers using Asynchronous Clear ; 20    ;
 ; Number of registers using Asynchronous Load  ; 0     ;
@@ -390,14 +416,15 @@ Encoding Type:  One-Hot
 +--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------------------------------------------------------------------------------+
 ; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                                                                           ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------------------------------------------------------------------------------+
-; 3:1                ; 10 bits   ; 20 LEs        ; 0 LEs                ; 20 LEs                 ; Yes        ; |vga_display|vga_adapter:VGA|vga_controller:controller|yCounter[9]                                                   ;
-; 3:1                ; 9 bits    ; 18 LEs        ; 0 LEs                ; 18 LEs                 ; Yes        ; |vga_display|tile_render:t0|tileset_address[4]                                                                       ;
-; 4:1                ; 9 bits    ; 18 LEs        ; 9 LEs                ; 9 LEs                  ; Yes        ; |vga_display|object:O1|counter_ud:UX|Q[0]                                                                            ;
+; 3:1                ; 10 bits   ; 20 LEs        ; 0 LEs                ; 20 LEs                 ; Yes        ; |vga_display|vga_adapter:VGA|vga_controller:controller|yCounter[2]                                                   ;
+; 3:1                ; 9 bits    ; 18 LEs        ; 0 LEs                ; 18 LEs                 ; Yes        ; |vga_display|tile_render:t0|pixel_y[6]                                                                               ;
+; 4:1                ; 9 bits    ; 18 LEs        ; 9 LEs                ; 9 LEs                  ; Yes        ; |vga_display|object:O1|counter_ud:UX|Q[8]                                                                            ;
 ; 4:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; Yes        ; |vga_display|object:O1|counter_ud:U4|Q[2]                                                                            ;
-; 4:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; Yes        ; |vga_display|object:O1|counter_ud:U3|Q[0]                                                                            ;
-; 5:1                ; 9 bits    ; 27 LEs        ; 0 LEs                ; 27 LEs                 ; Yes        ; |vga_display|tile_render:t0|pixel_x[8]                                                                               ;
+; 4:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; Yes        ; |vga_display|object:O1|counter_ud:U3|Q[3]                                                                            ;
+; 5:1                ; 9 bits    ; 27 LEs        ; 0 LEs                ; 27 LEs                 ; Yes        ; |vga_display|tile_render:t0|pixel_x[5]                                                                               ;
 ; 3:1                ; 3 bits    ; 6 LEs         ; 6 LEs                ; 0 LEs                  ; No         ; |vga_display|tile_render:t0|y_Q                                                                                      ;
-; 9:1                ; 9 bits    ; 54 LEs        ; 54 LEs               ; 0 LEs                  ; No         ; |vga_display|vga_adapter:VGA|altsyncram:VideoMemory|altsyncram_esm1:auto_generated|mux_8hb:mux3|l4_w1_n0_mux_dataout ;
+; 9:1                ; 9 bits    ; 54 LEs        ; 54 LEs               ; 0 LEs                  ; No         ; |vga_display|vga_adapter:VGA|altsyncram:VideoMemory|altsyncram_esm1:auto_generated|mux_8hb:mux3|l4_w2_n0_mux_dataout ;
+; 10:1               ; 9 bits    ; 54 LEs        ; 54 LEs               ; 0 LEs                  ; No         ; |vga_display|comb                                                                                                    ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------------------------------------------------------------------------------+
 
 
@@ -1336,15 +1363,13 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-------------------------------+-------------------------------------------------------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "vga_adapter:VGA"                                                                                                                                                                       ;
-+-------------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Port        ; Type  ; Severity ; Details                                                                                                                                                                          ;
-+-------------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; color[8..6] ; Input ; Info     ; Stuck at VCC                                                                                                                                                                     ;
-; color[5..0] ; Input ; Info     ; Stuck at GND                                                                                                                                                                     ;
-; y           ; Input ; Warning  ; Input port expression (9 bits) is wider than the input port (8 bits) it drives.  The 1 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
-+-------------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "vga_adapter:VGA"                                                                                                                                                                ;
++------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                                                                                                                                                          ;
++------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; y    ; Input ; Warning  ; Input port expression (9 bits) is wider than the input port (8 bits) it drives.  The 1 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
++------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 
 +-----------------------------------------------+
@@ -1423,30 +1448,10 @@ Note: In order to hide this table in the UI and the text report file, please set
 +------------+--------+----------+-------------------------------------------------------------------------------------+
 ; Port       ; Type   ; Severity ; Details                                                                             ;
 +------------+--------+----------+-------------------------------------------------------------------------------------+
-; go         ; Input  ; Info     ; Stuck at GND                                                                        ;
 ; dir        ; Input  ; Info     ; Stuck at GND                                                                        ;
-; VGA_color  ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
 ; done_write ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
 ; ps2_rec    ; Input  ; Info     ; Stuck at GND                                                                        ;
 +------------+--------+----------+-------------------------------------------------------------------------------------+
-
-
-+-----------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "tile_render:t0"                                                                            ;
-+-------------+--------+----------+-------------------------------------------------------------------------------------+
-; Port        ; Type   ; Severity ; Details                                                                             ;
-+-------------+--------+----------+-------------------------------------------------------------------------------------+
-; pixel_color ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-+-------------+--------+----------+-------------------------------------------------------------------------------------+
-
-
-+----------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "sync:draw_button"                                                                   ;
-+------+--------+----------+-------------------------------------------------------------------------------------+
-; Port ; Type   ; Severity ; Details                                                                             ;
-+------+--------+----------+-------------------------------------------------------------------------------------+
-; Q    ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-+------+--------+----------+-------------------------------------------------------------------------------------+
 
 
 +-----------------------------------------------------+
@@ -1454,39 +1459,42 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; arriav_ff             ; 100                         ;
+; arriav_ff             ; 106                         ;
 ;     CLR SCLR          ; 10                          ;
 ;     ENA               ; 11                          ;
 ;     ENA CLR SCLR      ; 10                          ;
 ;     ENA SCLR          ; 27                          ;
-;     SCLR              ; 23                          ;
-;     plain             ; 19                          ;
-; arriav_lcell_comb     ; 217                         ;
-;     arith             ; 74                          ;
+;     SCLR              ; 27                          ;
+;     plain             ; 21                          ;
+; arriav_lcell_comb     ; 286                         ;
+;     arith             ; 99                          ;
 ;         0 data inputs ; 2                           ;
-;         1 data inputs ; 52                          ;
-;         2 data inputs ; 4                           ;
-;         3 data inputs ; 6                           ;
-;         4 data inputs ; 8                           ;
-;         5 data inputs ; 2                           ;
-;     normal            ; 132                         ;
+;         1 data inputs ; 60                          ;
+;         2 data inputs ; 15                          ;
+;         3 data inputs ; 9                           ;
+;         4 data inputs ; 9                           ;
+;         5 data inputs ; 4                           ;
+;     extend            ; 2                           ;
+;         7 data inputs ; 2                           ;
+;     normal            ; 174                         ;
 ;         0 data inputs ; 2                           ;
-;         2 data inputs ; 19                          ;
-;         3 data inputs ; 15                          ;
-;         4 data inputs ; 18                          ;
+;         1 data inputs ; 1                           ;
+;         2 data inputs ; 21                          ;
+;         3 data inputs ; 23                          ;
+;         4 data inputs ; 22                          ;
 ;         5 data inputs ; 34                          ;
-;         6 data inputs ; 44                          ;
+;         6 data inputs ; 71                          ;
 ;     shared            ; 11                          ;
 ;         0 data inputs ; 1                           ;
 ;         1 data inputs ; 2                           ;
 ;         2 data inputs ; 7                           ;
 ;         3 data inputs ; 1                           ;
-; boundary_port         ; 34                          ;
+; boundary_port         ; 47                          ;
 ; generic_pll           ; 1                           ;
-; stratixv_ram_block    ; 90                          ;
+; stratixv_ram_block    ; 180                         ;
 ;                       ;                             ;
-; Max LUT depth         ; 4.00                        ;
-; Average LUT depth     ; 2.16                        ;
+; Max LUT depth         ; 4.50                        ;
+; Average LUT depth     ; 2.34                        ;
 +-----------------------+-----------------------------+
 
 
@@ -1505,7 +1513,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 23.1std.0 Build 991 11/28/2023 SC Lite Edition
-    Info: Processing started: Thu Nov 26 15:28:42 2026
+    Info: Processing started: Thu Nov 26 17:23:39 2026
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off visual_display -c visual_display
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 6 of the 6 processors detected
@@ -1533,23 +1541,25 @@ Info (15248): File "//VSRV2/D.Homes$/pansabr2/Desktop/ece241/project/visual_disp
 Info (12021): Found 0 design units, including 0 entities, in source file //vsrv2/d.homes$/pansabr2/desktop/ece241/project/visual_display/background_mem.v
 Info (12021): Found 5 design units, including 5 entities, in source file vga_display.v
     Info (12023): Found entity 1: vga_display File: //VSRV2/D.Homes$/pansabr2/Desktop/ECE241-Project/visual_display/vga_display.v Line: 6
-    Info (12023): Found entity 2: sync File: //VSRV2/D.Homes$/pansabr2/Desktop/ECE241-Project/visual_display/vga_display.v Line: 86
-    Info (12023): Found entity 3: regn File: //VSRV2/D.Homes$/pansabr2/Desktop/ECE241-Project/visual_display/vga_display.v Line: 105
-    Info (12023): Found entity 4: counter_ud File: //VSRV2/D.Homes$/pansabr2/Desktop/ECE241-Project/visual_display/vga_display.v Line: 121
-    Info (12023): Found entity 5: object File: //VSRV2/D.Homes$/pansabr2/Desktop/ECE241-Project/visual_display/vga_display.v Line: 141
+    Info (12023): Found entity 2: sync File: //VSRV2/D.Homes$/pansabr2/Desktop/ECE241-Project/visual_display/vga_display.v Line: 92
+    Info (12023): Found entity 3: regn File: //VSRV2/D.Homes$/pansabr2/Desktop/ECE241-Project/visual_display/vga_display.v Line: 111
+    Info (12023): Found entity 4: counter_ud File: //VSRV2/D.Homes$/pansabr2/Desktop/ECE241-Project/visual_display/vga_display.v Line: 127
+    Info (12023): Found entity 5: object File: //VSRV2/D.Homes$/pansabr2/Desktop/ECE241-Project/visual_display/vga_display.v Line: 147
 Info (12021): Found 1 design units, including 1 entities, in source file tile_map.v
     Info (12023): Found entity 1: tile_map File: //VSRV2/D.Homes$/pansabr2/Desktop/ECE241-Project/visual_display/tile_map.v Line: 7
 Info (12021): Found 1 design units, including 1 entities, in source file tileset_mem.v
     Info (12023): Found entity 1: tileset_mem File: //VSRV2/D.Homes$/pansabr2/Desktop/ECE241-Project/visual_display/tileset_mem.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file tile_render.v
     Info (12023): Found entity 1: tile_render File: //VSRV2/D.Homes$/pansabr2/Desktop/ECE241-Project/visual_display/tile_render.v Line: 3
+Info (12021): Found 1 design units, including 1 entities, in source file rom1024x4.v
+    Info (12023): Found entity 1: rom1024x4 File: //VSRV2/D.Homes$/pansabr2/Desktop/ECE241-Project/visual_display/rom1024x4.v Line: 40
+Info (12021): Found 1 design units, including 1 entities, in source file top.v
+    Info (12023): Found entity 1: top File: //VSRV2/D.Homes$/pansabr2/Desktop/ECE241-Project/visual_display/top.v Line: 1
 Info (12127): Elaborating entity "vga_display" for the top level hierarchy
-Info (12128): Elaborating entity "sync" for hierarchy "sync:draw_button" File: //VSRV2/D.Homes$/pansabr2/Desktop/ECE241-Project/visual_display/vga_display.v Line: 30
-Info (12128): Elaborating entity "tile_render" for hierarchy "tile_render:t0" File: //VSRV2/D.Homes$/pansabr2/Desktop/ECE241-Project/visual_display/vga_display.v Line: 42
-Warning (10230): Verilog HDL assignment warning at tile_render.v(75): truncated value with size 9 to match size of target (1) File: //VSRV2/D.Homes$/pansabr2/Desktop/ECE241-Project/visual_display/tile_render.v Line: 75
-Info (12128): Elaborating entity "tile_map" for hierarchy "tile_render:t0|tile_map:t0" File: //VSRV2/D.Homes$/pansabr2/Desktop/ECE241-Project/visual_display/tile_render.v Line: 30
-Warning (10858): Verilog HDL warning at tile_map.v(12): object tiles used but never assigned File: //VSRV2/D.Homes$/pansabr2/Desktop/ECE241-Project/visual_display/tile_map.v Line: 12
-Info (12128): Elaborating entity "tileset_mem" for hierarchy "tile_render:t0|tileset_mem:m0" File: //VSRV2/D.Homes$/pansabr2/Desktop/ECE241-Project/visual_display/tile_render.v Line: 46
+Info (12128): Elaborating entity "sync" for hierarchy "sync:draw_button" File: //VSRV2/D.Homes$/pansabr2/Desktop/ECE241-Project/visual_display/vga_display.v Line: 34
+Info (12128): Elaborating entity "tile_render" for hierarchy "tile_render:t0" File: //VSRV2/D.Homes$/pansabr2/Desktop/ECE241-Project/visual_display/vga_display.v Line: 48
+Warning (10230): Verilog HDL assignment warning at tile_render.v(84): truncated value with size 9 to match size of target (1) File: //VSRV2/D.Homes$/pansabr2/Desktop/ECE241-Project/visual_display/tile_render.v Line: 84
+Info (12128): Elaborating entity "tileset_mem" for hierarchy "tile_render:t0|tileset_mem:m0" File: //VSRV2/D.Homes$/pansabr2/Desktop/ECE241-Project/visual_display/tile_render.v Line: 55
 Info (12128): Elaborating entity "altsyncram" for hierarchy "tile_render:t0|tileset_mem:m0|altsyncram:altsyncram_component" File: //VSRV2/D.Homes$/pansabr2/Desktop/ECE241-Project/visual_display/tileset_mem.v Line: 35
 Info (12130): Elaborated megafunction instantiation "tile_render:t0|tileset_mem:m0|altsyncram:altsyncram_component" File: //VSRV2/D.Homes$/pansabr2/Desktop/ECE241-Project/visual_display/tileset_mem.v Line: 35
 Info (12133): Instantiated megafunction "tile_render:t0|tileset_mem:m0|altsyncram:altsyncram_component" with the following parameter: File: //VSRV2/D.Homes$/pansabr2/Desktop/ECE241-Project/visual_display/tileset_mem.v Line: 35
@@ -1570,12 +1580,12 @@ Info (12133): Instantiated megafunction "tile_render:t0|tileset_mem:m0|altsyncra
 Warning (12125): Using design file db/altsyncram_9qg1.tdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
     Info (12023): Found entity 1: altsyncram_9qg1 File: //VSRV2/D.Homes$/pansabr2/Desktop/ECE241-Project/visual_display/db/altsyncram_9qg1.tdf Line: 28
 Info (12128): Elaborating entity "altsyncram_9qg1" for hierarchy "tile_render:t0|tileset_mem:m0|altsyncram:altsyncram_component|altsyncram_9qg1:auto_generated" File: c:/intelfpga/quartus_prime_lite_23.1/quartus/libraries/megafunctions/altsyncram.tdf Line: 792
-Info (12128): Elaborating entity "object" for hierarchy "object:O1" File: //VSRV2/D.Homes$/pansabr2/Desktop/ECE241-Project/visual_display/vga_display.v Line: 57
-Warning (10230): Verilog HDL assignment warning at vga_display.v(186): truncated value with size 32 to match size of target (9) File: //VSRV2/D.Homes$/pansabr2/Desktop/ECE241-Project/visual_display/vga_display.v Line: 186
-Warning (10230): Verilog HDL assignment warning at vga_display.v(187): truncated value with size 32 to match size of target (9) File: //VSRV2/D.Homes$/pansabr2/Desktop/ECE241-Project/visual_display/vga_display.v Line: 187
-Info (12128): Elaborating entity "counter_ud" for hierarchy "object:O1|counter_ud:UX" File: //VSRV2/D.Homes$/pansabr2/Desktop/ECE241-Project/visual_display/vga_display.v Line: 189
-Info (12128): Elaborating entity "counter_ud" for hierarchy "object:O1|counter_ud:U3" File: //VSRV2/D.Homes$/pansabr2/Desktop/ECE241-Project/visual_display/vga_display.v Line: 196
-Info (12128): Elaborating entity "object_mem" for hierarchy "object:O1|object_mem:U6" File: //VSRV2/D.Homes$/pansabr2/Desktop/ECE241-Project/visual_display/vga_display.v Line: 305
+Info (12128): Elaborating entity "object" for hierarchy "object:O1" File: //VSRV2/D.Homes$/pansabr2/Desktop/ECE241-Project/visual_display/vga_display.v Line: 63
+Warning (10230): Verilog HDL assignment warning at vga_display.v(192): truncated value with size 32 to match size of target (9) File: //VSRV2/D.Homes$/pansabr2/Desktop/ECE241-Project/visual_display/vga_display.v Line: 192
+Warning (10230): Verilog HDL assignment warning at vga_display.v(193): truncated value with size 32 to match size of target (9) File: //VSRV2/D.Homes$/pansabr2/Desktop/ECE241-Project/visual_display/vga_display.v Line: 193
+Info (12128): Elaborating entity "counter_ud" for hierarchy "object:O1|counter_ud:UX" File: //VSRV2/D.Homes$/pansabr2/Desktop/ECE241-Project/visual_display/vga_display.v Line: 195
+Info (12128): Elaborating entity "counter_ud" for hierarchy "object:O1|counter_ud:U3" File: //VSRV2/D.Homes$/pansabr2/Desktop/ECE241-Project/visual_display/vga_display.v Line: 202
+Info (12128): Elaborating entity "object_mem" for hierarchy "object:O1|object_mem:U6" File: //VSRV2/D.Homes$/pansabr2/Desktop/ECE241-Project/visual_display/vga_display.v Line: 311
 Info (12128): Elaborating entity "altsyncram" for hierarchy "object:O1|object_mem:U6|altsyncram:altsyncram_component" File: //VSRV2/D.Homes$/pansabr2/Desktop/ECE241-Project/visual_display/object_mem.v Line: 35
 Info (12130): Elaborated megafunction instantiation "object:O1|object_mem:U6|altsyncram:altsyncram_component" File: //VSRV2/D.Homes$/pansabr2/Desktop/ECE241-Project/visual_display/object_mem.v Line: 35
 Info (12133): Instantiated megafunction "object:O1|object_mem:U6|altsyncram:altsyncram_component" with the following parameter: File: //VSRV2/D.Homes$/pansabr2/Desktop/ECE241-Project/visual_display/object_mem.v Line: 35
@@ -1596,9 +1606,9 @@ Info (12133): Instantiated megafunction "object:O1|object_mem:U6|altsyncram:alts
 Warning (12125): Using design file db/altsyncram_m6h1.tdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
     Info (12023): Found entity 1: altsyncram_m6h1 File: //VSRV2/D.Homes$/pansabr2/Desktop/ECE241-Project/visual_display/db/altsyncram_m6h1.tdf Line: 28
 Info (12128): Elaborating entity "altsyncram_m6h1" for hierarchy "object:O1|object_mem:U6|altsyncram:altsyncram_component|altsyncram_m6h1:auto_generated" File: c:/intelfpga/quartus_prime_lite_23.1/quartus/libraries/megafunctions/altsyncram.tdf Line: 792
-Info (12128): Elaborating entity "regn" for hierarchy "object:O1|regn:U7" File: //VSRV2/D.Homes$/pansabr2/Desktop/ECE241-Project/visual_display/vga_display.v Line: 312
-Info (12128): Elaborating entity "regn" for hierarchy "object:O1|regn:U9" File: //VSRV2/D.Homes$/pansabr2/Desktop/ECE241-Project/visual_display/vga_display.v Line: 319
-Info (12128): Elaborating entity "background_mem" for hierarchy "object:O1|background_mem:b0" File: //VSRV2/D.Homes$/pansabr2/Desktop/ECE241-Project/visual_display/vga_display.v Line: 357
+Info (12128): Elaborating entity "regn" for hierarchy "object:O1|regn:U7" File: //VSRV2/D.Homes$/pansabr2/Desktop/ECE241-Project/visual_display/vga_display.v Line: 318
+Info (12128): Elaborating entity "regn" for hierarchy "object:O1|regn:U9" File: //VSRV2/D.Homes$/pansabr2/Desktop/ECE241-Project/visual_display/vga_display.v Line: 325
+Info (12128): Elaborating entity "background_mem" for hierarchy "object:O1|background_mem:b0" File: //VSRV2/D.Homes$/pansabr2/Desktop/ECE241-Project/visual_display/vga_display.v Line: 363
 Info (12128): Elaborating entity "altsyncram" for hierarchy "object:O1|background_mem:b0|altsyncram:altsyncram_component" File: //VSRV2/D.Homes$/pansabr2/Desktop/ECE241-Project/visual_display/background_mem.v Line: 35
 Info (12130): Elaborated megafunction instantiation "object:O1|background_mem:b0|altsyncram:altsyncram_component" File: //VSRV2/D.Homes$/pansabr2/Desktop/ECE241-Project/visual_display/background_mem.v Line: 35
 Info (12133): Instantiated megafunction "object:O1|background_mem:b0|altsyncram:altsyncram_component" with the following parameter: File: //VSRV2/D.Homes$/pansabr2/Desktop/ECE241-Project/visual_display/background_mem.v Line: 35
@@ -1625,7 +1635,7 @@ Info (12128): Elaborating entity "decode_g2a" for hierarchy "object:O1|backgroun
 Warning (12125): Using design file db/mux_8hb.tdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
     Info (12023): Found entity 1: mux_8hb File: //VSRV2/D.Homes$/pansabr2/Desktop/ECE241-Project/visual_display/db/mux_8hb.tdf Line: 23
 Info (12128): Elaborating entity "mux_8hb" for hierarchy "object:O1|background_mem:b0|altsyncram:altsyncram_component|altsyncram_hqg1:auto_generated|mux_8hb:mux2" File: //VSRV2/D.Homes$/pansabr2/Desktop/ECE241-Project/visual_display/db/altsyncram_hqg1.tdf Line: 41
-Info (12128): Elaborating entity "vga_adapter" for hierarchy "vga_adapter:VGA" File: //VSRV2/D.Homes$/pansabr2/Desktop/ECE241-Project/visual_display/vga_display.v Line: 75
+Info (12128): Elaborating entity "vga_adapter" for hierarchy "vga_adapter:VGA" File: //VSRV2/D.Homes$/pansabr2/Desktop/ECE241-Project/visual_display/vga_display.v Line: 81
 Info (12128): Elaborating entity "vga_address_translator" for hierarchy "vga_adapter:VGA|vga_address_translator:user_input_translator" File: //VSRV2/D.Homes$/pansabr2/Desktop/ECE241-Project/visual_display/vga_adapter/vga_adapter.v Line: 128
 Info (12128): Elaborating entity "altsyncram" for hierarchy "vga_adapter:VGA|altsyncram:VideoMemory" File: //VSRV2/D.Homes$/pansabr2/Desktop/ECE241-Project/visual_display/vga_adapter/vga_adapter.v Line: 151
 Info (12130): Elaborated megafunction instantiation "vga_adapter:VGA|altsyncram:VideoMemory" File: //VSRV2/D.Homes$/pansabr2/Desktop/ECE241-Project/visual_display/vga_adapter/vga_adapter.v Line: 151
@@ -1672,114 +1682,24 @@ Info (12128): Elaborating entity "altpll_80u" for hierarchy "vga_adapter:VGA|vga
 Info (12128): Elaborating entity "vga_controller" for hierarchy "vga_adapter:VGA|vga_controller:controller" File: //VSRV2/D.Homes$/pansabr2/Desktop/ECE241-Project/visual_display/vga_adapter/vga_adapter.v Line: 188
 Warning (14284): Synthesized away the following node(s):
     Warning (14285): Synthesized away the following RAM node(s):
-        Warning (14320): Synthesized away node "object:O1|background_mem:b0|altsyncram:altsyncram_component|altsyncram_hqg1:auto_generated|ram_block1a0" File: //VSRV2/D.Homes$/pansabr2/Desktop/ECE241-Project/visual_display/db/altsyncram_hqg1.tdf Line: 42
-        Warning (14320): Synthesized away node "object:O1|background_mem:b0|altsyncram:altsyncram_component|altsyncram_hqg1:auto_generated|ram_block1a1" File: //VSRV2/D.Homes$/pansabr2/Desktop/ECE241-Project/visual_display/db/altsyncram_hqg1.tdf Line: 63
-        Warning (14320): Synthesized away node "object:O1|background_mem:b0|altsyncram:altsyncram_component|altsyncram_hqg1:auto_generated|ram_block1a2" File: //VSRV2/D.Homes$/pansabr2/Desktop/ECE241-Project/visual_display/db/altsyncram_hqg1.tdf Line: 84
-        Warning (14320): Synthesized away node "object:O1|background_mem:b0|altsyncram:altsyncram_component|altsyncram_hqg1:auto_generated|ram_block1a3" File: //VSRV2/D.Homes$/pansabr2/Desktop/ECE241-Project/visual_display/db/altsyncram_hqg1.tdf Line: 105
-        Warning (14320): Synthesized away node "object:O1|background_mem:b0|altsyncram:altsyncram_component|altsyncram_hqg1:auto_generated|ram_block1a4" File: //VSRV2/D.Homes$/pansabr2/Desktop/ECE241-Project/visual_display/db/altsyncram_hqg1.tdf Line: 126
-        Warning (14320): Synthesized away node "object:O1|background_mem:b0|altsyncram:altsyncram_component|altsyncram_hqg1:auto_generated|ram_block1a5" File: //VSRV2/D.Homes$/pansabr2/Desktop/ECE241-Project/visual_display/db/altsyncram_hqg1.tdf Line: 147
-        Warning (14320): Synthesized away node "object:O1|background_mem:b0|altsyncram:altsyncram_component|altsyncram_hqg1:auto_generated|ram_block1a6" File: //VSRV2/D.Homes$/pansabr2/Desktop/ECE241-Project/visual_display/db/altsyncram_hqg1.tdf Line: 168
-        Warning (14320): Synthesized away node "object:O1|background_mem:b0|altsyncram:altsyncram_component|altsyncram_hqg1:auto_generated|ram_block1a7" File: //VSRV2/D.Homes$/pansabr2/Desktop/ECE241-Project/visual_display/db/altsyncram_hqg1.tdf Line: 189
-        Warning (14320): Synthesized away node "object:O1|background_mem:b0|altsyncram:altsyncram_component|altsyncram_hqg1:auto_generated|ram_block1a8" File: //VSRV2/D.Homes$/pansabr2/Desktop/ECE241-Project/visual_display/db/altsyncram_hqg1.tdf Line: 210
-        Warning (14320): Synthesized away node "object:O1|background_mem:b0|altsyncram:altsyncram_component|altsyncram_hqg1:auto_generated|ram_block1a9" File: //VSRV2/D.Homes$/pansabr2/Desktop/ECE241-Project/visual_display/db/altsyncram_hqg1.tdf Line: 231
-        Warning (14320): Synthesized away node "object:O1|background_mem:b0|altsyncram:altsyncram_component|altsyncram_hqg1:auto_generated|ram_block1a10" File: //VSRV2/D.Homes$/pansabr2/Desktop/ECE241-Project/visual_display/db/altsyncram_hqg1.tdf Line: 252
-        Warning (14320): Synthesized away node "object:O1|background_mem:b0|altsyncram:altsyncram_component|altsyncram_hqg1:auto_generated|ram_block1a11" File: //VSRV2/D.Homes$/pansabr2/Desktop/ECE241-Project/visual_display/db/altsyncram_hqg1.tdf Line: 273
-        Warning (14320): Synthesized away node "object:O1|background_mem:b0|altsyncram:altsyncram_component|altsyncram_hqg1:auto_generated|ram_block1a12" File: //VSRV2/D.Homes$/pansabr2/Desktop/ECE241-Project/visual_display/db/altsyncram_hqg1.tdf Line: 294
-        Warning (14320): Synthesized away node "object:O1|background_mem:b0|altsyncram:altsyncram_component|altsyncram_hqg1:auto_generated|ram_block1a13" File: //VSRV2/D.Homes$/pansabr2/Desktop/ECE241-Project/visual_display/db/altsyncram_hqg1.tdf Line: 315
-        Warning (14320): Synthesized away node "object:O1|background_mem:b0|altsyncram:altsyncram_component|altsyncram_hqg1:auto_generated|ram_block1a14" File: //VSRV2/D.Homes$/pansabr2/Desktop/ECE241-Project/visual_display/db/altsyncram_hqg1.tdf Line: 336
-        Warning (14320): Synthesized away node "object:O1|background_mem:b0|altsyncram:altsyncram_component|altsyncram_hqg1:auto_generated|ram_block1a15" File: //VSRV2/D.Homes$/pansabr2/Desktop/ECE241-Project/visual_display/db/altsyncram_hqg1.tdf Line: 357
-        Warning (14320): Synthesized away node "object:O1|background_mem:b0|altsyncram:altsyncram_component|altsyncram_hqg1:auto_generated|ram_block1a16" File: //VSRV2/D.Homes$/pansabr2/Desktop/ECE241-Project/visual_display/db/altsyncram_hqg1.tdf Line: 378
-        Warning (14320): Synthesized away node "object:O1|background_mem:b0|altsyncram:altsyncram_component|altsyncram_hqg1:auto_generated|ram_block1a17" File: //VSRV2/D.Homes$/pansabr2/Desktop/ECE241-Project/visual_display/db/altsyncram_hqg1.tdf Line: 399
-        Warning (14320): Synthesized away node "object:O1|background_mem:b0|altsyncram:altsyncram_component|altsyncram_hqg1:auto_generated|ram_block1a18" File: //VSRV2/D.Homes$/pansabr2/Desktop/ECE241-Project/visual_display/db/altsyncram_hqg1.tdf Line: 420
-        Warning (14320): Synthesized away node "object:O1|background_mem:b0|altsyncram:altsyncram_component|altsyncram_hqg1:auto_generated|ram_block1a19" File: //VSRV2/D.Homes$/pansabr2/Desktop/ECE241-Project/visual_display/db/altsyncram_hqg1.tdf Line: 441
-        Warning (14320): Synthesized away node "object:O1|background_mem:b0|altsyncram:altsyncram_component|altsyncram_hqg1:auto_generated|ram_block1a20" File: //VSRV2/D.Homes$/pansabr2/Desktop/ECE241-Project/visual_display/db/altsyncram_hqg1.tdf Line: 462
-        Warning (14320): Synthesized away node "object:O1|background_mem:b0|altsyncram:altsyncram_component|altsyncram_hqg1:auto_generated|ram_block1a21" File: //VSRV2/D.Homes$/pansabr2/Desktop/ECE241-Project/visual_display/db/altsyncram_hqg1.tdf Line: 483
-        Warning (14320): Synthesized away node "object:O1|background_mem:b0|altsyncram:altsyncram_component|altsyncram_hqg1:auto_generated|ram_block1a22" File: //VSRV2/D.Homes$/pansabr2/Desktop/ECE241-Project/visual_display/db/altsyncram_hqg1.tdf Line: 504
-        Warning (14320): Synthesized away node "object:O1|background_mem:b0|altsyncram:altsyncram_component|altsyncram_hqg1:auto_generated|ram_block1a23" File: //VSRV2/D.Homes$/pansabr2/Desktop/ECE241-Project/visual_display/db/altsyncram_hqg1.tdf Line: 525
-        Warning (14320): Synthesized away node "object:O1|background_mem:b0|altsyncram:altsyncram_component|altsyncram_hqg1:auto_generated|ram_block1a24" File: //VSRV2/D.Homes$/pansabr2/Desktop/ECE241-Project/visual_display/db/altsyncram_hqg1.tdf Line: 546
-        Warning (14320): Synthesized away node "object:O1|background_mem:b0|altsyncram:altsyncram_component|altsyncram_hqg1:auto_generated|ram_block1a25" File: //VSRV2/D.Homes$/pansabr2/Desktop/ECE241-Project/visual_display/db/altsyncram_hqg1.tdf Line: 567
-        Warning (14320): Synthesized away node "object:O1|background_mem:b0|altsyncram:altsyncram_component|altsyncram_hqg1:auto_generated|ram_block1a26" File: //VSRV2/D.Homes$/pansabr2/Desktop/ECE241-Project/visual_display/db/altsyncram_hqg1.tdf Line: 588
-        Warning (14320): Synthesized away node "object:O1|background_mem:b0|altsyncram:altsyncram_component|altsyncram_hqg1:auto_generated|ram_block1a27" File: //VSRV2/D.Homes$/pansabr2/Desktop/ECE241-Project/visual_display/db/altsyncram_hqg1.tdf Line: 609
-        Warning (14320): Synthesized away node "object:O1|background_mem:b0|altsyncram:altsyncram_component|altsyncram_hqg1:auto_generated|ram_block1a28" File: //VSRV2/D.Homes$/pansabr2/Desktop/ECE241-Project/visual_display/db/altsyncram_hqg1.tdf Line: 630
-        Warning (14320): Synthesized away node "object:O1|background_mem:b0|altsyncram:altsyncram_component|altsyncram_hqg1:auto_generated|ram_block1a29" File: //VSRV2/D.Homes$/pansabr2/Desktop/ECE241-Project/visual_display/db/altsyncram_hqg1.tdf Line: 651
-        Warning (14320): Synthesized away node "object:O1|background_mem:b0|altsyncram:altsyncram_component|altsyncram_hqg1:auto_generated|ram_block1a30" File: //VSRV2/D.Homes$/pansabr2/Desktop/ECE241-Project/visual_display/db/altsyncram_hqg1.tdf Line: 672
-        Warning (14320): Synthesized away node "object:O1|background_mem:b0|altsyncram:altsyncram_component|altsyncram_hqg1:auto_generated|ram_block1a31" File: //VSRV2/D.Homes$/pansabr2/Desktop/ECE241-Project/visual_display/db/altsyncram_hqg1.tdf Line: 693
-        Warning (14320): Synthesized away node "object:O1|background_mem:b0|altsyncram:altsyncram_component|altsyncram_hqg1:auto_generated|ram_block1a32" File: //VSRV2/D.Homes$/pansabr2/Desktop/ECE241-Project/visual_display/db/altsyncram_hqg1.tdf Line: 714
-        Warning (14320): Synthesized away node "object:O1|background_mem:b0|altsyncram:altsyncram_component|altsyncram_hqg1:auto_generated|ram_block1a33" File: //VSRV2/D.Homes$/pansabr2/Desktop/ECE241-Project/visual_display/db/altsyncram_hqg1.tdf Line: 735
-        Warning (14320): Synthesized away node "object:O1|background_mem:b0|altsyncram:altsyncram_component|altsyncram_hqg1:auto_generated|ram_block1a34" File: //VSRV2/D.Homes$/pansabr2/Desktop/ECE241-Project/visual_display/db/altsyncram_hqg1.tdf Line: 756
-        Warning (14320): Synthesized away node "object:O1|background_mem:b0|altsyncram:altsyncram_component|altsyncram_hqg1:auto_generated|ram_block1a35" File: //VSRV2/D.Homes$/pansabr2/Desktop/ECE241-Project/visual_display/db/altsyncram_hqg1.tdf Line: 777
-        Warning (14320): Synthesized away node "object:O1|background_mem:b0|altsyncram:altsyncram_component|altsyncram_hqg1:auto_generated|ram_block1a36" File: //VSRV2/D.Homes$/pansabr2/Desktop/ECE241-Project/visual_display/db/altsyncram_hqg1.tdf Line: 798
-        Warning (14320): Synthesized away node "object:O1|background_mem:b0|altsyncram:altsyncram_component|altsyncram_hqg1:auto_generated|ram_block1a37" File: //VSRV2/D.Homes$/pansabr2/Desktop/ECE241-Project/visual_display/db/altsyncram_hqg1.tdf Line: 819
-        Warning (14320): Synthesized away node "object:O1|background_mem:b0|altsyncram:altsyncram_component|altsyncram_hqg1:auto_generated|ram_block1a38" File: //VSRV2/D.Homes$/pansabr2/Desktop/ECE241-Project/visual_display/db/altsyncram_hqg1.tdf Line: 840
-        Warning (14320): Synthesized away node "object:O1|background_mem:b0|altsyncram:altsyncram_component|altsyncram_hqg1:auto_generated|ram_block1a39" File: //VSRV2/D.Homes$/pansabr2/Desktop/ECE241-Project/visual_display/db/altsyncram_hqg1.tdf Line: 861
-        Warning (14320): Synthesized away node "object:O1|background_mem:b0|altsyncram:altsyncram_component|altsyncram_hqg1:auto_generated|ram_block1a40" File: //VSRV2/D.Homes$/pansabr2/Desktop/ECE241-Project/visual_display/db/altsyncram_hqg1.tdf Line: 882
-        Warning (14320): Synthesized away node "object:O1|background_mem:b0|altsyncram:altsyncram_component|altsyncram_hqg1:auto_generated|ram_block1a41" File: //VSRV2/D.Homes$/pansabr2/Desktop/ECE241-Project/visual_display/db/altsyncram_hqg1.tdf Line: 903
-        Warning (14320): Synthesized away node "object:O1|background_mem:b0|altsyncram:altsyncram_component|altsyncram_hqg1:auto_generated|ram_block1a42" File: //VSRV2/D.Homes$/pansabr2/Desktop/ECE241-Project/visual_display/db/altsyncram_hqg1.tdf Line: 924
-        Warning (14320): Synthesized away node "object:O1|background_mem:b0|altsyncram:altsyncram_component|altsyncram_hqg1:auto_generated|ram_block1a43" File: //VSRV2/D.Homes$/pansabr2/Desktop/ECE241-Project/visual_display/db/altsyncram_hqg1.tdf Line: 945
-        Warning (14320): Synthesized away node "object:O1|background_mem:b0|altsyncram:altsyncram_component|altsyncram_hqg1:auto_generated|ram_block1a44" File: //VSRV2/D.Homes$/pansabr2/Desktop/ECE241-Project/visual_display/db/altsyncram_hqg1.tdf Line: 966
-        Warning (14320): Synthesized away node "object:O1|background_mem:b0|altsyncram:altsyncram_component|altsyncram_hqg1:auto_generated|ram_block1a45" File: //VSRV2/D.Homes$/pansabr2/Desktop/ECE241-Project/visual_display/db/altsyncram_hqg1.tdf Line: 987
-        Warning (14320): Synthesized away node "object:O1|background_mem:b0|altsyncram:altsyncram_component|altsyncram_hqg1:auto_generated|ram_block1a46" File: //VSRV2/D.Homes$/pansabr2/Desktop/ECE241-Project/visual_display/db/altsyncram_hqg1.tdf Line: 1008
-        Warning (14320): Synthesized away node "object:O1|background_mem:b0|altsyncram:altsyncram_component|altsyncram_hqg1:auto_generated|ram_block1a47" File: //VSRV2/D.Homes$/pansabr2/Desktop/ECE241-Project/visual_display/db/altsyncram_hqg1.tdf Line: 1029
-        Warning (14320): Synthesized away node "object:O1|background_mem:b0|altsyncram:altsyncram_component|altsyncram_hqg1:auto_generated|ram_block1a48" File: //VSRV2/D.Homes$/pansabr2/Desktop/ECE241-Project/visual_display/db/altsyncram_hqg1.tdf Line: 1050
-        Warning (14320): Synthesized away node "object:O1|background_mem:b0|altsyncram:altsyncram_component|altsyncram_hqg1:auto_generated|ram_block1a49" File: //VSRV2/D.Homes$/pansabr2/Desktop/ECE241-Project/visual_display/db/altsyncram_hqg1.tdf Line: 1071
-        Warning (14320): Synthesized away node "object:O1|background_mem:b0|altsyncram:altsyncram_component|altsyncram_hqg1:auto_generated|ram_block1a50" File: //VSRV2/D.Homes$/pansabr2/Desktop/ECE241-Project/visual_display/db/altsyncram_hqg1.tdf Line: 1092
-        Warning (14320): Synthesized away node "object:O1|background_mem:b0|altsyncram:altsyncram_component|altsyncram_hqg1:auto_generated|ram_block1a51" File: //VSRV2/D.Homes$/pansabr2/Desktop/ECE241-Project/visual_display/db/altsyncram_hqg1.tdf Line: 1113
-        Warning (14320): Synthesized away node "object:O1|background_mem:b0|altsyncram:altsyncram_component|altsyncram_hqg1:auto_generated|ram_block1a52" File: //VSRV2/D.Homes$/pansabr2/Desktop/ECE241-Project/visual_display/db/altsyncram_hqg1.tdf Line: 1134
-        Warning (14320): Synthesized away node "object:O1|background_mem:b0|altsyncram:altsyncram_component|altsyncram_hqg1:auto_generated|ram_block1a53" File: //VSRV2/D.Homes$/pansabr2/Desktop/ECE241-Project/visual_display/db/altsyncram_hqg1.tdf Line: 1155
-        Warning (14320): Synthesized away node "object:O1|background_mem:b0|altsyncram:altsyncram_component|altsyncram_hqg1:auto_generated|ram_block1a54" File: //VSRV2/D.Homes$/pansabr2/Desktop/ECE241-Project/visual_display/db/altsyncram_hqg1.tdf Line: 1176
-        Warning (14320): Synthesized away node "object:O1|background_mem:b0|altsyncram:altsyncram_component|altsyncram_hqg1:auto_generated|ram_block1a55" File: //VSRV2/D.Homes$/pansabr2/Desktop/ECE241-Project/visual_display/db/altsyncram_hqg1.tdf Line: 1197
-        Warning (14320): Synthesized away node "object:O1|background_mem:b0|altsyncram:altsyncram_component|altsyncram_hqg1:auto_generated|ram_block1a56" File: //VSRV2/D.Homes$/pansabr2/Desktop/ECE241-Project/visual_display/db/altsyncram_hqg1.tdf Line: 1218
-        Warning (14320): Synthesized away node "object:O1|background_mem:b0|altsyncram:altsyncram_component|altsyncram_hqg1:auto_generated|ram_block1a57" File: //VSRV2/D.Homes$/pansabr2/Desktop/ECE241-Project/visual_display/db/altsyncram_hqg1.tdf Line: 1239
-        Warning (14320): Synthesized away node "object:O1|background_mem:b0|altsyncram:altsyncram_component|altsyncram_hqg1:auto_generated|ram_block1a58" File: //VSRV2/D.Homes$/pansabr2/Desktop/ECE241-Project/visual_display/db/altsyncram_hqg1.tdf Line: 1260
-        Warning (14320): Synthesized away node "object:O1|background_mem:b0|altsyncram:altsyncram_component|altsyncram_hqg1:auto_generated|ram_block1a59" File: //VSRV2/D.Homes$/pansabr2/Desktop/ECE241-Project/visual_display/db/altsyncram_hqg1.tdf Line: 1281
-        Warning (14320): Synthesized away node "object:O1|background_mem:b0|altsyncram:altsyncram_component|altsyncram_hqg1:auto_generated|ram_block1a60" File: //VSRV2/D.Homes$/pansabr2/Desktop/ECE241-Project/visual_display/db/altsyncram_hqg1.tdf Line: 1302
-        Warning (14320): Synthesized away node "object:O1|background_mem:b0|altsyncram:altsyncram_component|altsyncram_hqg1:auto_generated|ram_block1a61" File: //VSRV2/D.Homes$/pansabr2/Desktop/ECE241-Project/visual_display/db/altsyncram_hqg1.tdf Line: 1323
-        Warning (14320): Synthesized away node "object:O1|background_mem:b0|altsyncram:altsyncram_component|altsyncram_hqg1:auto_generated|ram_block1a62" File: //VSRV2/D.Homes$/pansabr2/Desktop/ECE241-Project/visual_display/db/altsyncram_hqg1.tdf Line: 1344
-        Warning (14320): Synthesized away node "object:O1|background_mem:b0|altsyncram:altsyncram_component|altsyncram_hqg1:auto_generated|ram_block1a63" File: //VSRV2/D.Homes$/pansabr2/Desktop/ECE241-Project/visual_display/db/altsyncram_hqg1.tdf Line: 1365
-        Warning (14320): Synthesized away node "object:O1|background_mem:b0|altsyncram:altsyncram_component|altsyncram_hqg1:auto_generated|ram_block1a64" File: //VSRV2/D.Homes$/pansabr2/Desktop/ECE241-Project/visual_display/db/altsyncram_hqg1.tdf Line: 1386
-        Warning (14320): Synthesized away node "object:O1|background_mem:b0|altsyncram:altsyncram_component|altsyncram_hqg1:auto_generated|ram_block1a65" File: //VSRV2/D.Homes$/pansabr2/Desktop/ECE241-Project/visual_display/db/altsyncram_hqg1.tdf Line: 1407
-        Warning (14320): Synthesized away node "object:O1|background_mem:b0|altsyncram:altsyncram_component|altsyncram_hqg1:auto_generated|ram_block1a66" File: //VSRV2/D.Homes$/pansabr2/Desktop/ECE241-Project/visual_display/db/altsyncram_hqg1.tdf Line: 1428
-        Warning (14320): Synthesized away node "object:O1|background_mem:b0|altsyncram:altsyncram_component|altsyncram_hqg1:auto_generated|ram_block1a67" File: //VSRV2/D.Homes$/pansabr2/Desktop/ECE241-Project/visual_display/db/altsyncram_hqg1.tdf Line: 1449
-        Warning (14320): Synthesized away node "object:O1|background_mem:b0|altsyncram:altsyncram_component|altsyncram_hqg1:auto_generated|ram_block1a68" File: //VSRV2/D.Homes$/pansabr2/Desktop/ECE241-Project/visual_display/db/altsyncram_hqg1.tdf Line: 1470
-        Warning (14320): Synthesized away node "object:O1|background_mem:b0|altsyncram:altsyncram_component|altsyncram_hqg1:auto_generated|ram_block1a69" File: //VSRV2/D.Homes$/pansabr2/Desktop/ECE241-Project/visual_display/db/altsyncram_hqg1.tdf Line: 1491
-        Warning (14320): Synthesized away node "object:O1|background_mem:b0|altsyncram:altsyncram_component|altsyncram_hqg1:auto_generated|ram_block1a70" File: //VSRV2/D.Homes$/pansabr2/Desktop/ECE241-Project/visual_display/db/altsyncram_hqg1.tdf Line: 1512
-        Warning (14320): Synthesized away node "object:O1|background_mem:b0|altsyncram:altsyncram_component|altsyncram_hqg1:auto_generated|ram_block1a71" File: //VSRV2/D.Homes$/pansabr2/Desktop/ECE241-Project/visual_display/db/altsyncram_hqg1.tdf Line: 1533
-        Warning (14320): Synthesized away node "object:O1|background_mem:b0|altsyncram:altsyncram_component|altsyncram_hqg1:auto_generated|ram_block1a72" File: //VSRV2/D.Homes$/pansabr2/Desktop/ECE241-Project/visual_display/db/altsyncram_hqg1.tdf Line: 1554
-        Warning (14320): Synthesized away node "object:O1|background_mem:b0|altsyncram:altsyncram_component|altsyncram_hqg1:auto_generated|ram_block1a73" File: //VSRV2/D.Homes$/pansabr2/Desktop/ECE241-Project/visual_display/db/altsyncram_hqg1.tdf Line: 1575
-        Warning (14320): Synthesized away node "object:O1|background_mem:b0|altsyncram:altsyncram_component|altsyncram_hqg1:auto_generated|ram_block1a74" File: //VSRV2/D.Homes$/pansabr2/Desktop/ECE241-Project/visual_display/db/altsyncram_hqg1.tdf Line: 1596
-        Warning (14320): Synthesized away node "object:O1|background_mem:b0|altsyncram:altsyncram_component|altsyncram_hqg1:auto_generated|ram_block1a75" File: //VSRV2/D.Homes$/pansabr2/Desktop/ECE241-Project/visual_display/db/altsyncram_hqg1.tdf Line: 1617
-        Warning (14320): Synthesized away node "object:O1|background_mem:b0|altsyncram:altsyncram_component|altsyncram_hqg1:auto_generated|ram_block1a76" File: //VSRV2/D.Homes$/pansabr2/Desktop/ECE241-Project/visual_display/db/altsyncram_hqg1.tdf Line: 1638
-        Warning (14320): Synthesized away node "object:O1|background_mem:b0|altsyncram:altsyncram_component|altsyncram_hqg1:auto_generated|ram_block1a77" File: //VSRV2/D.Homes$/pansabr2/Desktop/ECE241-Project/visual_display/db/altsyncram_hqg1.tdf Line: 1659
         Warning (14320): Synthesized away node "object:O1|background_mem:b0|altsyncram:altsyncram_component|altsyncram_hqg1:auto_generated|ram_block1a78" File: //VSRV2/D.Homes$/pansabr2/Desktop/ECE241-Project/visual_display/db/altsyncram_hqg1.tdf Line: 1680
-        Warning (14320): Synthesized away node "object:O1|background_mem:b0|altsyncram:altsyncram_component|altsyncram_hqg1:auto_generated|ram_block1a79" File: //VSRV2/D.Homes$/pansabr2/Desktop/ECE241-Project/visual_display/db/altsyncram_hqg1.tdf Line: 1701
-        Warning (14320): Synthesized away node "object:O1|background_mem:b0|altsyncram:altsyncram_component|altsyncram_hqg1:auto_generated|ram_block1a80" File: //VSRV2/D.Homes$/pansabr2/Desktop/ECE241-Project/visual_display/db/altsyncram_hqg1.tdf Line: 1722
-        Warning (14320): Synthesized away node "object:O1|background_mem:b0|altsyncram:altsyncram_component|altsyncram_hqg1:auto_generated|ram_block1a81" File: //VSRV2/D.Homes$/pansabr2/Desktop/ECE241-Project/visual_display/db/altsyncram_hqg1.tdf Line: 1743
-        Warning (14320): Synthesized away node "object:O1|background_mem:b0|altsyncram:altsyncram_component|altsyncram_hqg1:auto_generated|ram_block1a82" File: //VSRV2/D.Homes$/pansabr2/Desktop/ECE241-Project/visual_display/db/altsyncram_hqg1.tdf Line: 1764
-        Warning (14320): Synthesized away node "object:O1|background_mem:b0|altsyncram:altsyncram_component|altsyncram_hqg1:auto_generated|ram_block1a83" File: //VSRV2/D.Homes$/pansabr2/Desktop/ECE241-Project/visual_display/db/altsyncram_hqg1.tdf Line: 1785
-        Warning (14320): Synthesized away node "object:O1|background_mem:b0|altsyncram:altsyncram_component|altsyncram_hqg1:auto_generated|ram_block1a84" File: //VSRV2/D.Homes$/pansabr2/Desktop/ECE241-Project/visual_display/db/altsyncram_hqg1.tdf Line: 1806
-        Warning (14320): Synthesized away node "object:O1|background_mem:b0|altsyncram:altsyncram_component|altsyncram_hqg1:auto_generated|ram_block1a85" File: //VSRV2/D.Homes$/pansabr2/Desktop/ECE241-Project/visual_display/db/altsyncram_hqg1.tdf Line: 1827
-        Warning (14320): Synthesized away node "object:O1|background_mem:b0|altsyncram:altsyncram_component|altsyncram_hqg1:auto_generated|ram_block1a86" File: //VSRV2/D.Homes$/pansabr2/Desktop/ECE241-Project/visual_display/db/altsyncram_hqg1.tdf Line: 1848
         Warning (14320): Synthesized away node "object:O1|background_mem:b0|altsyncram:altsyncram_component|altsyncram_hqg1:auto_generated|ram_block1a87" File: //VSRV2/D.Homes$/pansabr2/Desktop/ECE241-Project/visual_display/db/altsyncram_hqg1.tdf Line: 1869
+        Warning (14320): Synthesized away node "object:O1|background_mem:b0|altsyncram:altsyncram_component|altsyncram_hqg1:auto_generated|ram_block1a79" File: //VSRV2/D.Homes$/pansabr2/Desktop/ECE241-Project/visual_display/db/altsyncram_hqg1.tdf Line: 1701
         Warning (14320): Synthesized away node "object:O1|background_mem:b0|altsyncram:altsyncram_component|altsyncram_hqg1:auto_generated|ram_block1a88" File: //VSRV2/D.Homes$/pansabr2/Desktop/ECE241-Project/visual_display/db/altsyncram_hqg1.tdf Line: 1890
+        Warning (14320): Synthesized away node "object:O1|background_mem:b0|altsyncram:altsyncram_component|altsyncram_hqg1:auto_generated|ram_block1a80" File: //VSRV2/D.Homes$/pansabr2/Desktop/ECE241-Project/visual_display/db/altsyncram_hqg1.tdf Line: 1722
         Warning (14320): Synthesized away node "object:O1|background_mem:b0|altsyncram:altsyncram_component|altsyncram_hqg1:auto_generated|ram_block1a89" File: //VSRV2/D.Homes$/pansabr2/Desktop/ECE241-Project/visual_display/db/altsyncram_hqg1.tdf Line: 1911
-        Warning (14320): Synthesized away node "object:O1|object_mem:U6|altsyncram:altsyncram_component|altsyncram_m6h1:auto_generated|q_a[0]" File: //VSRV2/D.Homes$/pansabr2/Desktop/ECE241-Project/visual_display/db/altsyncram_m6h1.tdf Line: 35
-        Warning (14320): Synthesized away node "object:O1|object_mem:U6|altsyncram:altsyncram_component|altsyncram_m6h1:auto_generated|q_a[1]" File: //VSRV2/D.Homes$/pansabr2/Desktop/ECE241-Project/visual_display/db/altsyncram_m6h1.tdf Line: 56
-        Warning (14320): Synthesized away node "object:O1|object_mem:U6|altsyncram:altsyncram_component|altsyncram_m6h1:auto_generated|q_a[2]" File: //VSRV2/D.Homes$/pansabr2/Desktop/ECE241-Project/visual_display/db/altsyncram_m6h1.tdf Line: 77
-        Warning (14320): Synthesized away node "object:O1|object_mem:U6|altsyncram:altsyncram_component|altsyncram_m6h1:auto_generated|q_a[3]" File: //VSRV2/D.Homes$/pansabr2/Desktop/ECE241-Project/visual_display/db/altsyncram_m6h1.tdf Line: 98
-        Warning (14320): Synthesized away node "object:O1|object_mem:U6|altsyncram:altsyncram_component|altsyncram_m6h1:auto_generated|q_a[4]" File: //VSRV2/D.Homes$/pansabr2/Desktop/ECE241-Project/visual_display/db/altsyncram_m6h1.tdf Line: 119
-        Warning (14320): Synthesized away node "object:O1|object_mem:U6|altsyncram:altsyncram_component|altsyncram_m6h1:auto_generated|q_a[5]" File: //VSRV2/D.Homes$/pansabr2/Desktop/ECE241-Project/visual_display/db/altsyncram_m6h1.tdf Line: 140
-        Warning (14320): Synthesized away node "object:O1|object_mem:U6|altsyncram:altsyncram_component|altsyncram_m6h1:auto_generated|q_a[6]" File: //VSRV2/D.Homes$/pansabr2/Desktop/ECE241-Project/visual_display/db/altsyncram_m6h1.tdf Line: 161
-        Warning (14320): Synthesized away node "object:O1|object_mem:U6|altsyncram:altsyncram_component|altsyncram_m6h1:auto_generated|q_a[7]" File: //VSRV2/D.Homes$/pansabr2/Desktop/ECE241-Project/visual_display/db/altsyncram_m6h1.tdf Line: 182
-        Warning (14320): Synthesized away node "object:O1|object_mem:U6|altsyncram:altsyncram_component|altsyncram_m6h1:auto_generated|q_a[8]" File: //VSRV2/D.Homes$/pansabr2/Desktop/ECE241-Project/visual_display/db/altsyncram_m6h1.tdf Line: 203
-        Warning (14320): Synthesized away node "tile_render:t0|tileset_mem:m0|altsyncram:altsyncram_component|altsyncram_9qg1:auto_generated|q_a[0]" File: //VSRV2/D.Homes$/pansabr2/Desktop/ECE241-Project/visual_display/db/altsyncram_9qg1.tdf Line: 35
-        Warning (14320): Synthesized away node "tile_render:t0|tileset_mem:m0|altsyncram:altsyncram_component|altsyncram_9qg1:auto_generated|q_a[1]" File: //VSRV2/D.Homes$/pansabr2/Desktop/ECE241-Project/visual_display/db/altsyncram_9qg1.tdf Line: 56
-        Warning (14320): Synthesized away node "tile_render:t0|tileset_mem:m0|altsyncram:altsyncram_component|altsyncram_9qg1:auto_generated|q_a[2]" File: //VSRV2/D.Homes$/pansabr2/Desktop/ECE241-Project/visual_display/db/altsyncram_9qg1.tdf Line: 77
-        Warning (14320): Synthesized away node "tile_render:t0|tileset_mem:m0|altsyncram:altsyncram_component|altsyncram_9qg1:auto_generated|q_a[3]" File: //VSRV2/D.Homes$/pansabr2/Desktop/ECE241-Project/visual_display/db/altsyncram_9qg1.tdf Line: 98
-        Warning (14320): Synthesized away node "tile_render:t0|tileset_mem:m0|altsyncram:altsyncram_component|altsyncram_9qg1:auto_generated|q_a[4]" File: //VSRV2/D.Homes$/pansabr2/Desktop/ECE241-Project/visual_display/db/altsyncram_9qg1.tdf Line: 119
-        Warning (14320): Synthesized away node "tile_render:t0|tileset_mem:m0|altsyncram:altsyncram_component|altsyncram_9qg1:auto_generated|q_a[5]" File: //VSRV2/D.Homes$/pansabr2/Desktop/ECE241-Project/visual_display/db/altsyncram_9qg1.tdf Line: 140
-        Warning (14320): Synthesized away node "tile_render:t0|tileset_mem:m0|altsyncram:altsyncram_component|altsyncram_9qg1:auto_generated|q_a[6]" File: //VSRV2/D.Homes$/pansabr2/Desktop/ECE241-Project/visual_display/db/altsyncram_9qg1.tdf Line: 161
-        Warning (14320): Synthesized away node "tile_render:t0|tileset_mem:m0|altsyncram:altsyncram_component|altsyncram_9qg1:auto_generated|q_a[7]" File: //VSRV2/D.Homes$/pansabr2/Desktop/ECE241-Project/visual_display/db/altsyncram_9qg1.tdf Line: 182
-        Warning (14320): Synthesized away node "tile_render:t0|tileset_mem:m0|altsyncram:altsyncram_component|altsyncram_9qg1:auto_generated|q_a[8]" File: //VSRV2/D.Homes$/pansabr2/Desktop/ECE241-Project/visual_display/db/altsyncram_9qg1.tdf Line: 203
+        Warning (14320): Synthesized away node "object:O1|background_mem:b0|altsyncram:altsyncram_component|altsyncram_hqg1:auto_generated|ram_block1a75" File: //VSRV2/D.Homes$/pansabr2/Desktop/ECE241-Project/visual_display/db/altsyncram_hqg1.tdf Line: 1617
+        Warning (14320): Synthesized away node "object:O1|background_mem:b0|altsyncram:altsyncram_component|altsyncram_hqg1:auto_generated|ram_block1a84" File: //VSRV2/D.Homes$/pansabr2/Desktop/ECE241-Project/visual_display/db/altsyncram_hqg1.tdf Line: 1806
+        Warning (14320): Synthesized away node "object:O1|background_mem:b0|altsyncram:altsyncram_component|altsyncram_hqg1:auto_generated|ram_block1a76" File: //VSRV2/D.Homes$/pansabr2/Desktop/ECE241-Project/visual_display/db/altsyncram_hqg1.tdf Line: 1638
+        Warning (14320): Synthesized away node "object:O1|background_mem:b0|altsyncram:altsyncram_component|altsyncram_hqg1:auto_generated|ram_block1a85" File: //VSRV2/D.Homes$/pansabr2/Desktop/ECE241-Project/visual_display/db/altsyncram_hqg1.tdf Line: 1827
+        Warning (14320): Synthesized away node "object:O1|background_mem:b0|altsyncram:altsyncram_component|altsyncram_hqg1:auto_generated|ram_block1a77" File: //VSRV2/D.Homes$/pansabr2/Desktop/ECE241-Project/visual_display/db/altsyncram_hqg1.tdf Line: 1659
+        Warning (14320): Synthesized away node "object:O1|background_mem:b0|altsyncram:altsyncram_component|altsyncram_hqg1:auto_generated|ram_block1a86" File: //VSRV2/D.Homes$/pansabr2/Desktop/ECE241-Project/visual_display/db/altsyncram_hqg1.tdf Line: 1848
+        Warning (14320): Synthesized away node "object:O1|background_mem:b0|altsyncram:altsyncram_component|altsyncram_hqg1:auto_generated|ram_block1a72" File: //VSRV2/D.Homes$/pansabr2/Desktop/ECE241-Project/visual_display/db/altsyncram_hqg1.tdf Line: 1554
+        Warning (14320): Synthesized away node "object:O1|background_mem:b0|altsyncram:altsyncram_component|altsyncram_hqg1:auto_generated|ram_block1a81" File: //VSRV2/D.Homes$/pansabr2/Desktop/ECE241-Project/visual_display/db/altsyncram_hqg1.tdf Line: 1743
+        Warning (14320): Synthesized away node "object:O1|background_mem:b0|altsyncram:altsyncram_component|altsyncram_hqg1:auto_generated|ram_block1a73" File: //VSRV2/D.Homes$/pansabr2/Desktop/ECE241-Project/visual_display/db/altsyncram_hqg1.tdf Line: 1575
+        Warning (14320): Synthesized away node "object:O1|background_mem:b0|altsyncram:altsyncram_component|altsyncram_hqg1:auto_generated|ram_block1a82" File: //VSRV2/D.Homes$/pansabr2/Desktop/ECE241-Project/visual_display/db/altsyncram_hqg1.tdf Line: 1764
+        Warning (14320): Synthesized away node "object:O1|background_mem:b0|altsyncram:altsyncram_component|altsyncram_hqg1:auto_generated|ram_block1a74" File: //VSRV2/D.Homes$/pansabr2/Desktop/ECE241-Project/visual_display/db/altsyncram_hqg1.tdf Line: 1596
+        Warning (14320): Synthesized away node "object:O1|background_mem:b0|altsyncram:altsyncram_component|altsyncram_hqg1:auto_generated|ram_block1a83" File: //VSRV2/D.Homes$/pansabr2/Desktop/ECE241-Project/visual_display/db/altsyncram_hqg1.tdf Line: 1785
 Warning (12241): 1 hierarchies have connectivity warnings - see the Connectivity Checks report folder
 Warning (13024): Output pins are stuck at VCC or GND
     Warning (13410): Pin "VGA_R[0]" is stuck at GND File: //VSRV2/D.Homes$/pansabr2/Desktop/ECE241-Project/visual_display/vga_display.v Line: 14
@@ -1790,7 +1710,7 @@ Warning (13024): Output pins are stuck at VCC or GND
     Warning (13410): Pin "VGA_B[1]" is stuck at GND File: //VSRV2/D.Homes$/pansabr2/Desktop/ECE241-Project/visual_display/vga_display.v Line: 14
     Warning (13410): Pin "VGA_SYNC_N" is stuck at VCC File: //VSRV2/D.Homes$/pansabr2/Desktop/ECE241-Project/visual_display/vga_display.v Line: 15
 Info (286030): Timing-Driven Synthesis is running
-Info (17049): 4 registers lost all their fanouts during netlist optimizations.
+Info (17049): 3 registers lost all their fanouts during netlist optimizations.
 Warning (20013): Ignored 571 assignments for entity "DE1_SoC" -- entity does not exist in design
     Warning (20014): Assignment for entity set_instance_assignment -name PACKAGE_SKEW_COMPENSATION OFF -to HPS_DDR3_ADDR[0] -entity DE1_SoC was ignored
     Warning (20014): Assignment for entity set_instance_assignment -name PACKAGE_SKEW_COMPENSATION OFF -to HPS_DDR3_ADDR[10] -entity DE1_SoC was ignored
@@ -2368,21 +2288,20 @@ Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 5 node(s), including 0 DDIO, 1 PLL, 0 transceiver and 0 LCELL
 Warning: RST port on the PLL is not properly connected on instance vga_adapter:VGA|vga_pll:mypll|altpll:altpll_component|altpll_80u:auto_generated|generic_pll1. The reset port on the PLL should be connected. If the PLL loses lock for any reason, you might need to manually reset the PLL in order to re-establish lock to the reference clock. File: //VSRV2/D.Homes$/pansabr2/Desktop/ECE241-Project/visual_display/db/altpll_80u.tdf Line: 34
     Info: Must be connected
-Warning (21074): Design contains 3 input pin(s) that do not drive logic
-    Warning (15610): No output dependent on input pin "KEY[1]" File: //VSRV2/D.Homes$/pansabr2/Desktop/ECE241-Project/visual_display/vga_display.v Line: 9
+Warning (21074): Design contains 2 input pin(s) that do not drive logic
     Warning (15610): No output dependent on input pin "KEY[2]" File: //VSRV2/D.Homes$/pansabr2/Desktop/ECE241-Project/visual_display/vga_display.v Line: 9
     Warning (15610): No output dependent on input pin "KEY[3]" File: //VSRV2/D.Homes$/pansabr2/Desktop/ECE241-Project/visual_display/vga_display.v Line: 9
-Info (21057): Implemented 359 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 5 input pins
-    Info (21059): Implemented 29 output pins
-    Info (21061): Implemented 234 logic cells
-    Info (21064): Implemented 90 RAM segments
+Info (21057): Implemented 543 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 9 input pins
+    Info (21059): Implemented 38 output pins
+    Info (21061): Implemented 315 logic cells
+    Info (21064): Implemented 180 RAM segments
     Info (21065): Implemented 1 PLLs
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 709 warnings
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 617 warnings
     Info: Peak virtual memory: 4917 megabytes
-    Info: Processing ended: Thu Nov 26 15:29:12 2026
-    Info: Elapsed time: 00:00:30
-    Info: Total CPU time (on all processors): 00:00:20
+    Info: Processing ended: Thu Nov 26 17:24:10 2026
+    Info: Elapsed time: 00:00:31
+    Info: Total CPU time (on all processors): 00:00:21
 
 
 +------------------------------------------+

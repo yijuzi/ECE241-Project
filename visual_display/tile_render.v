@@ -1,6 +1,6 @@
 // gives color of the tiles
 
-module tile_render (Clock, Resetn, pixel_x, pixel_y, pixel_color, pixel_write, done);
+module tile_render (Clock, Resetn, pixel_x, pixel_y, pixel_color, pixel_write, done, tile_map_address, tile_map_id);
 
 	// FSM parameters
 	parameter A = 2'b00, B = 2'b01, C = 2'b10;
@@ -11,8 +11,12 @@ module tile_render (Clock, Resetn, pixel_x, pixel_y, pixel_color, pixel_write, d
     output wire [8:0] pixel_color;
     output wire pixel_write;
     output reg done;
+	 
+	 // TILE MAP
+	output wire [8:0] tile_map_address;
+	input wire [3:0] tile_map_id;
 	
-	wire [4:0] tile_column, tile_row;
+	 wire [4:0] tile_column, tile_row;
     wire [8:0] map_address;
     wire [3:0] tile_id;
 
@@ -21,13 +25,18 @@ module tile_render (Clock, Resetn, pixel_x, pixel_y, pixel_color, pixel_write, d
     assign tile_row = pixel_y[8:4];
 
     assign map_address = tile_row * 9'd20 + tile_column;
+	 
+	 assign tile_map_address = map_address;
+	 assign tile_id = tile_map_id;
 	
 	// read ID from tile map
+	/*
 	tile_map t0 (
         .Clock(Clock),
-        .address(map_address),
-        .tile_id(tile_id)
+        .render_address(map_address),
+        .render_tile_id(tile_id)
     );
+	 */
 	
 	// find pixel inside tile map 
 	wire [11:0] tileset_address;
@@ -48,7 +57,7 @@ module tile_render (Clock, Resetn, pixel_x, pixel_y, pixel_color, pixel_write, d
 	// FSM
 	reg [1:0] y_Q, Y_D;
 	
-	assign pixel_write = Resetn && ~done && (y_Q == C);
+	assign pixel_write = Resetn && ~done && (y_Q == C) && (tile_id != 4'd0);
 	
 	always @(*) begin
 		case(y_Q)

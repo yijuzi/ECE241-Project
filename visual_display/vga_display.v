@@ -3,7 +3,7 @@
 // 320 x 240 display, 9-bit RGB colour.
 // KEY[0]: reset. KEY[1]: draw sprite at its starting position.
 // no keyboard yet
-module vga_display (CLOCK_50, KEY, VGA_R, VGA_G, VGA_B, VGA_HS, VGA_VS, VGA_BLANK_N, VGA_SYNC_N, VGA_CLK);
+module vga_display (CLOCK_50, KEY, VGA_R, VGA_G, VGA_B, VGA_HS, VGA_VS, VGA_BLANK_N, VGA_SYNC_N, VGA_CLK, tile_map_address, tile_map_id);
 					
 	input wire CLOCK_50;
 	input wire [3:0] KEY;
@@ -13,6 +13,10 @@ module vga_display (CLOCK_50, KEY, VGA_R, VGA_G, VGA_B, VGA_HS, VGA_VS, VGA_BLAN
 	// VGA
 	output wire [7:0] VGA_R, VGA_G, VGA_B;
 	output wire VGA_HS, VGA_VS, VGA_BLANK_N, VGA_SYNC_N, VGA_CLK;
+	
+	// TILE MAP
+	output wire [8:0] tile_map_address;
+	input wire [3:0] tile_map_id;
 	
 	// object
 	wire [8:0] O1_x, O1_y;
@@ -38,7 +42,9 @@ module vga_display (CLOCK_50, KEY, VGA_R, VGA_G, VGA_B, VGA_HS, VGA_VS, VGA_BLAN
 		.pixel_y(map_y),
 		.pixel_color(map_color),
 		.pixel_write(map_write),
-		.done(map_done)
+		.done(map_done),
+		.tile_map_address(tile_map_address), 
+		.tile_map_id(tile_map_id)
 	);
 	
 	// instatiate the sprite (change this)
@@ -46,7 +52,7 @@ module vga_display (CLOCK_50, KEY, VGA_R, VGA_G, VGA_B, VGA_HS, VGA_VS, VGA_BLAN
 	object O1 (
         .Resetn(Resetn),
         .Clock(CLOCK_50),
-        .go(1'b0), // draw_sprite
+        .go(draw_sprite), // draw_sprite
         .dir(2'b00),
         .VGA_x(O1_x),
         .VGA_y(O1_y),
@@ -60,7 +66,7 @@ module vga_display (CLOCK_50, KEY, VGA_R, VGA_G, VGA_B, VGA_HS, VGA_VS, VGA_BLAN
     vga_adapter VGA (
 		.resetn(Resetn),
 		.clock(CLOCK_50),
-		.color(9'b111000000), // map_done ? O1_color : map_color
+		.color(map_done ? O1_color : map_color), // map_done ? O1_color : map_color
 		.x(map_done ? O1_x : map_x),
 		.y(map_done ? O1_y : map_y),
 		.write(map_done ? O1_write : map_write),
