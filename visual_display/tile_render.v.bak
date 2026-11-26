@@ -1,0 +1,94 @@
+// gives color of the tiles
+
+module tile_render (Clock, Resetn, pixel_x, pixel_y, pixel_color, pixel_write, done);
+
+	// FSM parameters
+	parameter A = 2'd00, B = 2'd01, C = 2'd10;
+	
+	input wire Clock, Resetn;
+
+    output reg [8:0] pixel_x, pixel_y;
+    output wire [8:0] pixel_color;
+    output wire pixel_write;
+    output reg done;
+	
+	wire [4:0] tile_column, tile_row;
+    wire [8:0] map_address;
+    wire [3:0] tile_id;
+
+    assign tile_column = pixel_x[8:4];
+    assign tile_row = pixel_y[8:4];
+
+    assign map_address = tile_row * 9'd20 + tile_column;
+	
+	// read ID from tile map
+	tile_map t0 (
+        .Clock(Clock),
+        .address(map_address),
+        .tile_id(tile_id)
+    );
+	
+	// find pixel inside tile map 
+	wire [11:0] tileset_address;
+
+    assign tileset_address = {
+        tile_id,
+        pixel_y[3:0],
+        pixel_x[3:0]
+    };
+	
+	// read image tile mif 
+	tileset_mem m0 (
+        .address(tileset_address),
+        .clock(Clock),
+        .q(pixel_color)
+    );
+	
+	// FSM
+	reg [1:0] y_Q, Y_D;
+	
+	assign pixel_write = Resetn && !done (y_Q == C);
+	
+	always @(*) begin
+		case(y_Q)
+			A: Y_D = B; // map reads tile id 
+			B: Y_D = C; // tileset reads the pixel color 
+			C: Y_D = A; // writes the pixel and moves to next pixel
+			default: Y_D = A;
+		endcase
+	end
+	
+	always @(posedge Clock) begin
+		if (!Resetn)
+			y_Q <= A;
+		else if (!done) begin
+			y_Q <= Y_D;
+	end
+	
+	assign pixel_write = Resetn && !done && (y_Q == C);
+	
+	// screen pixel counter to draw pixels
+	always @(posedge Clock) begin
+		if (!Resetn) begin
+			pixel_x <= 9'd0;
+			pixel_y <= 9'd0;
+			done <= 9'b0;
+		end
+		else if (!done && y_Q == C) begin // drawing pixels
+			if (pixel_x == 9'd319) begin
+				if (pixel_y == 9'd239) begin
+					done <= 1'b1;
+				end
+				else begin
+					pixel_x <= 9'd0;
+					pixel_y <= pixel_y + 9'd1;
+				end
+			end
+			else begin
+				pixel_x <= pixel_x + 9'd1;
+			end
+
+		end
+	end
+			
+endmodule

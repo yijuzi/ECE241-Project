@@ -1,0 +1,47 @@
+`default_nettype none
+
+module vga_display (CLOCK_50, SW, KEY, LEDR, PS2_CLK, PS2_DAT, 
+				    VGA_R, VGA_G, VGA_B,VGA_HS, VGA_VS, VGA_BLANK_N, VGA_SYNC_N, VGA_CLK);
+					
+	input wire CLOCK_50, Resetn;
+	input wire [3:0] KEY;
+	
+	// VGA
+	output wire [7:0] VGA_R;
+	output wire [7:0] VGA_G;
+	output wire [7:0] VGA_B;
+	output wire VGA_HS;
+	output wire VGA_VS;
+	output wire VGA_BLANK_N;
+	output wire VGA_SYNC_N;
+	output wire VGA_CLK;
+	
+	// object
+	wire [8:0] color; // 9-bit depth
+	wire write;
+	
+	// ps2 keyboard control (to be updated)
+	
+	// 
+	
+	
+
+					
+endmodule
+
+// only needs the updated object coordinates
+module object (Resetn, Clock, go, dir, VGA_x, VGA_y, VGA_color, VGA_write, done);
+	input wire Clock, Resetn;
+	
+	// vga communication
+	output wire [9:0] vga_X, vga_Y;
+	output wire [8:0] vga_color;
+	output wire VGA_write;
+	output reg done_write;
+	
+	// objects
+	wire [9:0] obj_X, obj_Y; // starting location
+	
+	
+	
+	
