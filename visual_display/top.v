@@ -25,7 +25,7 @@ module top (
 	 output wire [7:0] VGA_R, VGA_G, VGA_B;
 	 output wire VGA_HS, VGA_VS, VGA_BLANK_N, VGA_SYNC_N, VGA_CLK;
 
-	 /*
+	 
     wire [7:0] keyboard;
 
     KB_Handler kb (
@@ -47,7 +47,7 @@ module top (
         .player_x(player_x),
         .player_y(player_y)
     );
-	 */
+	 
 	 
 	 wire [8:0] tile_map_render_address, tile_map_logic_address;
 	 wire [3:0] tile_map_render_id, tile_map_logic_id;
@@ -75,7 +75,7 @@ module top (
 		  .tile_map_id(tile_map_render_id)
 	 );
 
-	 /*
+	 
     seg7 h0 (.s(player_y[19:16]), .display(HEX0));
     seg7 h1 (.s(player_y[23:20]), .display(HEX1));
     seg7 h2 (.s(player_y[27:24]), .display(HEX2));
@@ -83,6 +83,6 @@ module top (
     seg7 h3 (.s(player_x[19:16]), .display(HEX3));
     seg7 h4 (.s(player_x[23:20]), .display(HEX4));
     seg7 h5 (.s(player_x[27:24]), .display(HEX5));
-	 */
+	 
 
 endmodule
