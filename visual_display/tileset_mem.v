@@ -7,7 +7,7 @@ module tileset_mem (address, clock, q);
 	input wire clock;
 	output [n-1:0]  q;
 	wire [n-1:0] sub_wire0;
-	wire q = sub_wire0; // altsyncram ->   
+	wire [n-1:0] q = sub_wire0[n-1:0]; // altsyncram ->   
 
 	altsyncram	altsyncram_component (
 				.address_a (address),

@@ -3,7 +3,7 @@
 module tile_render (Clock, Resetn, pixel_x, pixel_y, pixel_color, pixel_write, done);
 
 	// FSM parameters
-	parameter A = 2'd00, B = 2'd01, C = 2'd10;
+	parameter A = 2'b00, B = 2'b01, C = 2'b10;
 	
 	input wire Clock, Resetn;
 

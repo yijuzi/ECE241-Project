@@ -60,7 +60,7 @@ module vga_display (CLOCK_50, KEY, VGA_R, VGA_G, VGA_B, VGA_HS, VGA_VS, VGA_BLAN
     vga_adapter VGA (
 		.resetn(Resetn),
 		.clock(CLOCK_50),
-		.color(map_done ? O1_color : map_color),
+		.color(9'b111000000), // map_done ? O1_color : map_color
 		.x(map_done ? O1_x : map_x),
 		.y(map_done ? O1_y : map_y),
 		.write(map_done ? O1_write : map_write),

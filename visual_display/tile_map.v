@@ -13,7 +13,7 @@ module tile_map (Clock, address, tile_id);
 	
 	initial begin
 		//$readmemh("./MIF/level1.mif", tiles); // read into tiles
-		(* ram_init_file = "./MIF/level1.mif" *) reg [7:0] mem [0:255];
+		(* ram_init_file = "./MIF/level1.mif" *) reg [7:0] tiles [0:255];
 	end
 	
 	always @(*) begin
