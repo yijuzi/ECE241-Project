@@ -4,25 +4,26 @@
 `default_nettype none
 
 
-module tile_map (Clock, address, tile_ID);
+module tile_map (Clock, address, tile_id);
 	input wire Clock;
 	input wire [8:0] address;
-	output reg [3:0] title_ID;
+	output reg [3:0] tile_id;
 	
 	reg [3:0] tiles [0:299]; // 300 4-bit tiles
 	
 	initial begin
-		$readmemh("./MIF/level1.mif", tiles); // read into tiles
+		//$readmemh("./MIF/level1.mif", tiles); // read into tiles
+		(* ram_init_file = "./MIF/level1.mif" *) reg [7:0] mem [0:255];
 	end
 	
 	always @(*) begin
 		if (address < 300)
-			tile_ID = titles[address]; // return ID of requested tile at address
+			tile_id = tiles[address]; // return ID of requested tile at address
 		else 
-			tile_ID = 4'd0;
+			tile_id = 4'd0;
 	end
 	
-endmodule;
+endmodule
 	
 	
 

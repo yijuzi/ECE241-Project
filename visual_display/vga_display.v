@@ -3,7 +3,7 @@
 // 320 x 240 display, 9-bit RGB colour.
 // KEY[0]: reset. KEY[1]: draw sprite at its starting position.
 // no keyboard yet
-module visual_display (CLOCK_50, KEY, VGA_R, VGA_G, VGA_B, VGA_HS, VGA_VS, VGA_BLANK_N, VGA_SYNC_N, VGA_CLK);
+module vga_display (CLOCK_50, KEY, VGA_R, VGA_G, VGA_B, VGA_HS, VGA_VS, VGA_BLANK_N, VGA_SYNC_N, VGA_CLK);
 					
 	input wire CLOCK_50;
 	input wire [3:0] KEY;
@@ -29,12 +29,6 @@ module visual_display (CLOCK_50, KEY, VGA_R, VGA_G, VGA_B, VGA_HS, VGA_VS, VGA_B
 	assign Resetn = KEY[0];
 	sync draw_button (~KEY[1], Resetn, CLOCK_50, draw_sprite);
 	
-	// tilemaps (disable sprite drawing when testing
-	wire [8:0] map_x, map_y;
-	wire [8:0] map_color;
-	wire map_write;
-	wire map_done;
-	
 	
 	// draw to tiles
 	tile_render t0 (
@@ -52,13 +46,13 @@ module visual_display (CLOCK_50, KEY, VGA_R, VGA_G, VGA_B, VGA_HS, VGA_VS, VGA_B
 	object O1 (
         .Resetn(Resetn),
         .Clock(CLOCK_50),
-        .go(draw_sprite),
+        .go(1'b0), // draw_sprite
         .dir(2'b00),
         .VGA_x(O1_x),
         .VGA_y(O1_y),
         .VGA_color(O1_color),
         .VGA_write(O1_write),
-        .done_write(O1_done),
+        .done_write(O1_done), 
         .ps2_rec(1'b0)
     );
 		

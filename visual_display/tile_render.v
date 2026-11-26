@@ -48,7 +48,7 @@ module tile_render (Clock, Resetn, pixel_x, pixel_y, pixel_color, pixel_write, d
 	// FSM
 	reg [1:0] y_Q, Y_D;
 	
-	assign pixel_write = Resetn && !done (y_Q == C);
+	assign pixel_write = Resetn && ~done && (y_Q == C);
 	
 	always @(*) begin
 		case(y_Q)
@@ -64,10 +64,9 @@ module tile_render (Clock, Resetn, pixel_x, pixel_y, pixel_color, pixel_write, d
 			y_Q <= A;
 		else if (!done) begin
 			y_Q <= Y_D;
+		end
 	end
-	
-	assign pixel_write = Resetn && !done && (y_Q == C);
-	
+		
 	// screen pixel counter to draw pixels
 	always @(posedge Clock) begin
 		if (!Resetn) begin
@@ -91,5 +90,4 @@ module tile_render (Clock, Resetn, pixel_x, pixel_y, pixel_color, pixel_write, d
 
 		end
 	end
-			
 endmodule
